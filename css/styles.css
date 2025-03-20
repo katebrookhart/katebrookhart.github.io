@@ -1,5 +1,5 @@
 /* Custom Styles for Golden Bear Studios */
-
+@import "tailwindcss";
 
 /* Global Styles */
 body {
@@ -533,14 +533,14 @@ footer img {
 
 #mobile-menu-toggle i {
 	font-size: 32px;
-	color: var(--doodle-gold);	
+	color: var(--doodle-gold);
 }
 .case-study-page #mobile-menu-toggle i {
-    color: var(--off-white);  
+    color: var(--off-white);
 }
 
 .case-study-page .shrink #mobile-menu-toggle i {
-    color: var(--doodle-gold);  
+    color: var(--doodle-gold);
 }
 
 .social-icons i {
@@ -815,7 +815,7 @@ body.mobile-menu-open {
 }
 
 .work-row {
-    display: contents; 
+    display: contents;
 }
 
 .work-label, .work-value {
