@@ -6,7 +6,7 @@ const nunjucks = require('nunjucks');
 nunjucks.configure('.', { autoescape: false });
 
 const pagesDir = 'pages';
-const distDir = 'dist';
+const distDir = 'docs';
 const assetDirs = ['img', 'js', 'css']; // Directories to copy
 
 // Ensure the dist directory exists
@@ -31,7 +31,7 @@ pages.forEach(page => {
 
     const output = nunjucks.render('templates/base.html', context);
     fs.writeFileSync(`${distDir}/${page.replace('.njk', '.html')}`, output);
-    console.log(`Generated: dist/${page.replace('.njk', '.html')}`);
+    console.log(`Generated: ${distDir}/${page.replace('.njk', '.html')}`);
 });
 
 // Function to copy directories
@@ -54,7 +54,7 @@ function copyDirectory(src, dest) {
 // Copy asset directories
 assetDirs.forEach(dir => {
     copyDirectory(dir, path.join(distDir, dir));
-    console.log(`Copied: ${dir} -> dist/${dir}`);
+    console.log(`Copied: ${dir} -> ${distDir}/${dir}`);
 });
 
 console.log('Build complete!');
