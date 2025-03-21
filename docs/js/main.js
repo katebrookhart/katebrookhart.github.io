@@ -67,13 +67,16 @@ document.addEventListener("scroll", function () {
     });
 });
 
+console.log("Script loaded and running!");
 
 document.addEventListener("DOMContentLoaded", function () {
     const fadeInElements = document.querySelectorAll(".fade-in");
+    console.log("Fade-in elements found:", fadeInElements.length);
 
     const observer = new IntersectionObserver(
         (entries, observer) => {
             entries.forEach((entry, index) => {
+                console.log("Observed element:", entry.target, "Is intersecting:", entry.isIntersecting);
                 if (entry.isIntersecting) {
                     setTimeout(() => {
                         entry.target.classList.add("visible");
@@ -90,6 +93,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         // 👇 If element is already visible on load, trigger immediately
         if (element.getBoundingClientRect().top < window.innerHeight) {
+            console.log("Element already in view:", element);
             element.classList.add("visible");
         }
     });
