@@ -23,7 +23,7 @@ Build the site:
 ```node build.js```
 
 Validate the HTML:
-```html-validate docs/*.html```
+```npx html-validate docs/*.html```
 
 Push to github:
 ```
