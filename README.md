@@ -8,8 +8,8 @@ Your system needs to have node and npm installed. The best way to do this is via
 
 ```/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"```
 
-Then install node:
-```brew install node```
+Then install node and git:
+```brew install node git```
 
 Then finally install all of the build requirements:
 ```npm install```
