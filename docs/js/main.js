@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
   // Ensure the case-study-page element exists before initializing the animations
   const caseStudyPage = document.querySelector(".case-study-page");
-  
+
   if (caseStudyPage) {
     initScrollAnimations();
   }
@@ -41,7 +41,7 @@ function initScrollAnimations() {
 
   // Zoom effect on each image individually
   const images = document.querySelectorAll(".case-study-page img.zoom-effect");
-  
+
   images.forEach((image, index) => {
     gsap.from(image, {
       scrollTrigger: {
@@ -83,7 +83,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
             });
         },
-        { threshold: 0.25 } // Trigger when 10% of the element is visible
+        { threshold: 0.10 } // Trigger when 10% of the element is visible
     );
 
     fadeInElements.forEach((element) => observer.observe(element));
@@ -104,8 +104,8 @@ document.addEventListener("DOMContentLoaded", function () {
     const isCaseStudyPage = body.classList.contains("case-study-page");
 
     // Set the initial logo based on the page
-    const defaultLogo = isCaseStudyPage 
-        ? "img/golden-bear-logo-full-white.png" 
+    const defaultLogo = isCaseStudyPage
+        ? "img/golden-bear-logo-full-white.png"
         : "img/golden-bear-logo-full-gold.png";
 
     const scrolledLogo = "img/golden-bear-logo.png"; // Logo used after scroll
@@ -214,7 +214,7 @@ document.addEventListener("DOMContentLoaded", function () {
 function adjustHeroMargin() {
     const header = document.getElementById("main-header");
     const hero = document.getElementById("big-hero");
-    
+
     if (header && hero) {
         hero.style.marginTop = `-${header.offsetHeight}px`;
     }
