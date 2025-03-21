@@ -72,23 +72,28 @@ document.addEventListener("DOMContentLoaded", function () {
     const fadeInElements = document.querySelectorAll(".fade-in");
 
     const observer = new IntersectionObserver(
-        (entries) => {
+        (entries, observer) => {
             entries.forEach((entry, index) => {
                 if (entry.isIntersecting) {
-                    // Add a staggered delay using setTimeout
                     setTimeout(() => {
                         entry.target.classList.add("visible");
-                    }, index * 100); // Adjust delay timing (e.g., 150ms per element)
-                    observer.unobserve(entry.target); // Stop observing once animated
+                    }, index * 100);
+                    observer.unobserve(entry.target);
                 }
             });
         },
-        { threshold: 0.10 } // Trigger when 10% of the element is visible
+        { threshold: 0.1 } // Trigger earlier (10% visible)
     );
 
-    fadeInElements.forEach((element) => observer.observe(element));
-});
+    fadeInElements.forEach((element) => {
+        observer.observe(element);
 
+        // 👇 If element is already visible on load, trigger immediately
+        if (element.getBoundingClientRect().top < window.innerHeight) {
+            element.classList.add("visible");
+        }
+    });
+});
 
 
 
