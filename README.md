@@ -16,9 +16,6 @@ Then finally install all of the build requirements:
 
 ## Building
 
-Compile the tailwind css:
-```npx tailwindcss -i css/styles.css -o css/styles2.css```
-
 Build the site:
 ```node build.js```
 

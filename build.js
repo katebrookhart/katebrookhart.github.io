@@ -1,5 +1,6 @@
 const fs = require('fs');
 const path = require('path');
+const { spawnSync } = require('child_process'); // Import child_process
 const nunjucks = require('nunjucks');
 
 // Configure Nunjucks to use the current directory
@@ -13,6 +14,26 @@ const assetDirs = ['img', 'js', 'css']; // Directories to copy
 if (!fs.existsSync(distDir)) {
     fs.mkdirSync(distDir);
 }
+
+// Function to compile Tailwind CSS
+function compileTailwind() {
+    console.log('Compiling Tailwind CSS...');
+    const result = spawnSync('npx', [
+        'tailwindcss',
+        '-i', 'css/styles.css', // Input file
+        '-o', 'css/styles2.css', // Output file
+        '--minify' // Minify the output CSS
+    ], { stdio: 'inherit' });
+
+    if (result.error) {
+        console.error('Error compiling Tailwind:', result.error);
+        process.exit(1);
+    }
+    console.log('Tailwind CSS compiled successfully!');
+}
+
+// Compile Tailwind before copying assets
+compileTailwind();
 
 // Process HTML pages
 const pages = fs.readdirSync(pagesDir).filter(file => file.endsWith('.njk'));
@@ -51,7 +72,7 @@ function copyDirectory(src, dest) {
     });
 }
 
-// Copy asset directories
+// Copy asset directories (including compiled CSS)
 assetDirs.forEach(dir => {
     copyDirectory(dir, path.join(distDir, dir));
     console.log(`Copied: ${dir} -> ${distDir}/${dir}`);
