@@ -18,7 +18,7 @@ bodyclass: mx-auto bg-off-white text-forest-black case-study-page
     <div class="image-overlay"></div>
 
     <div class="image-overlay-container container w-full md:mx-auto relative grid grid-cols-12 gap-4 gap-y-8 text-left mx-8 sm:px-8 xl:pl-32 sm:pt-24">
-        <img class="hero-logo col-span-8 md:col-span-12 fade-in" src="img/logos/tnf-cropped.png">
+        <img class="hero-logo col-span-8 md:col-span-12 fade-in" alt="Adidas Logo" src="img/logos/adidas-cropped.png">
         <h1 class="sans-serif-heading-1-light text-off-white col-span-8 md:col-span-12 fade-in">
             Engaged experiences
         </h1>
@@ -191,33 +191,6 @@ bodyclass: mx-auto bg-off-white text-forest-black case-study-page
 
 <!-- CONTENT END -->
 
-<!-- CASE STUDY NAVIGATOR START -->
-<div class="w-full px-8 my-16 flex justify-between items-center">
-    <!-- Left: Previous Case Study (on mobile, only show the arrow) -->
-    <a href="#" class="flex items-center text-gray-800 no-underline hover:text-gray-600 sm:hidden">
-        <i class="fa-solid fa-arrow-left"></i>
-    </a>
-    <a href="#" class="hidden sm:flex items-center text-gray-800 no-underline hover:text-gray-600">
-        <i class="fa-solid fa-arrow-left mr-2"></i>
-        <span>Previous case study</span>
-    </a>
+{% include "snippets/case_study_navigator.html" %}
 
-    <!-- Center: View All (on mobile, use 4-square grid icon) -->
-    <a href="work.html" class="flex items-center text-gray-800 no-underline hover:text-gray-600 sm:hidden">
-        <i class="fa-solid fa-grip"></i>
-    </a>
-    <a href="work.html" class="hidden sm:flex text-gray-800 no-underline hover:text-gray-600">
-        <span>View all</span>
-    </a>
-
-    <!-- Right: Next Case Study (on mobile, only show the arrow) -->
-    <a href="#" class="flex items-center text-gray-800 no-underline hover:text-gray-600 sm:hidden">
-        <i class="fa-solid fa-arrow-right"></i>
-    </a>
-    <a href="#" class="hidden sm:flex items-center text-gray-800 no-underline hover:text-gray-600">
-        <span>Next case study</span>
-        <i class="fa-solid fa-arrow-right ml-2"></i>
-    </a>
-</div>
-<!-- CASE STUDY NAVIGATOR END -->
 
