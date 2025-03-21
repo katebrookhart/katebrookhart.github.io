@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden Bear Studios</title>
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="css/styles2.css">
+
+    <!-- CUSTOM ICONS-->
+    <script src="https://kit.fontawesome.com/e28f322942.js" crossorigin="anonymous"></script>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Geist:wght@100..900&display=swap" rel="stylesheet">
+
+
+    <!-- FAVICON START-->
+    <link rel="icon" type="image/png" href="img/favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="img/favicon/favicon.svg">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <!-- FAVICON END -->
+
+</head>
+
+    <body class="mx-auto bg-off-white text-forest-black case-study-page">
+
+        <div class="loader w-full bg-green-grey fixed items-center">GOLDEN BEAR STUDIOS</div>
+
+<!-- BARBA CONTENT START -->
+
+<div data-barba="container" class="barba-container">
+    <div data-barba="wrapper" id="barba-wrapper">
+
+        <!-- NAVIGATION START -->
+<header id="main-header" class="fixed top-0 left-0 w-full transition-all duration-300">
+    <div id="inner-nav-container" class="container mx-auto flex items-center justify-between px-8 py-6 transition-all duration-300">
+        <!-- Logo: Left-aligned -->
+        <a href="index.html"><img id="header-logo" src="img/golden-bear-logo-full-gold.png" alt="Golden Bear Studios" class="md:h-[100px] h-20 transition-all duration-300"></a>
+
+        <!-- Navigation: Right-aligned -->
+        <nav aria-label="Header" class="hidden md:flex xl:space-x-12 lg:space-x-8 md:space-x-4 sm:space-x-4 space-x-4 ml-auto serif-heading-4">
+            <a href="index.html" class="hover:text-gold">Home</a>
+            <a href="about.html" class="hover:text-gold">About</a>
+            <a href="work.html" class="hover:text-gold">Work</a>
+            <!--<a href="#" class="hover:text-gold">Bear & Brush</a>-->
+            <a href="contact.html" class="hover:text-gold">Contact</a>
+        </nav>
+
+        <!-- Mobile Menu Button -->
+        <button aria-label="Toggle mobile menu" type="button" id="mobile-menu-toggle" class="text-white md:hidden">
+            <i class="fa-solid fa-grip-lines"></i>
+        </button>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="inset-0 flex flex-col items-center justify-center space-y-8 serif-heading-5 pb-12">
+            <img src="img/golden-bear-logo.png" alt="Golden Bear Studios" class="h-20 absolute top-6 left-8">
+            <button aria-label="Close mobile menu" type="button" id="mobile-menu-close" class="absolute top-4 right-8 text-[32px]"><i class="fa-solid fa-xmark"></i></button>
+            <a href="index.html" class="hover:text-gold">Home</a>
+            <a href="about.html" class="hover:text-gold">About</a>
+            <a href="work.html" class="hover:text-gold">Work</a>
+            <!--<a href="#" class="hover:text-gold">Bear & Brush</a>-->
+            <a href="contact.html" class="hover:text-gold">Contact</a>
+
+            <!-- BOTTOM FOOTER -->
+            <div class="section w-full absolute bottom-0 pb-8">
+                <div class="border-t border-light my-6"></div>
+                <div class="flex flex-col md:flex-row md:justify-between md:items-center text-center">
+                    <p class="sans-serif-body-3 text-dirty-grey">© <span id="year"></span> Golden Bear Studios. All rights reserved.</p>
+                    <div class="flex space-x-8 text-xl mt-4 md:mt-0 justify-center">
+                        <a aria-label="My LinkedIn profile" href="https://www.linkedin.com/in/katebrookhart/"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a aria-label="My Instagram Profile" href="https://www.instagram.com/katebrookhart/"><i class="fa-brands fa-instagram"></i></a>
+                        <a aria-label="My dribbble profile" href="https://dribbble.com/katebrookhart"><i class="fa-brands fa-dribbble"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- -->
+
+        </div>
+    </div>
+</header>
+<!-- NAVIGATION END -->
+
+        <!-- HERO SECTION START -->
+        <section id="big-hero" class="work-hero relative h-screen flex items-end xl:pb-24 pb-16">
+
+            <!-- Video Background -->
+            <video
+                class="absolute inset-0 w-full h-full object-cover"
+                autoplay
+                loop
+                muted
+                playsinline
+                poster="img/mpp-hero.jpg">
+                <source src="img/mpp-hero.mp4" type="video/mp4">
+                <!-- Fallback Image -->
+                <img src="img/mpp-hero.jpg" alt="MealPrepPro AI Planner">
+            </video>
+
+
+            <!-- Transparent Overlay -->
+            <div class="image-overlay"></div>
+
+            <div class="image-overlay-container container w-full md:mx-auto relative grid grid-cols-12 gap-4 gap-y-8 text-left mx-8 sm:px-8 xl:pl-32 sm:pt-24">
+                <img class="hero-logo col-span-8 md:col-span-12 fade-in" src="img/logos/mpp-cropped.png">
+                <h1 class="sans-serif-heading-1-light text-off-white col-span-8 md:col-span-12 fade-in">
+                    AI Meal Planner
+                </h1>
+                <div class="flex flex-wrap col-span-8 md:col-span-12 fade-in gap-2">
+                    <div class="label-tag white sans-serif-body-3">UX/UI design</div>
+                    <div class="label-tag white sans-serif-body-3">Animation</div>
+                </div>
+            </div>
+
+        </section>
+        <!-- HERO SECTION END -->
+
+
+
+        <!-- CONTENT START -->
+
+        <!-- Intro section start -->
+        <section class="mx-8 m-8">
+            <div class="container w-full mx-auto">
+
+                <!-- Left + right container -->
+                <div class="grid grid-cols-12">
+
+                    <!-- Left column -->
+                    <div class="xl:col-start-2 col-span-12 lg:col-span-5 xl:col-span-4 lg:mr-16 xl:mr-24 lg:mt-4">
+                        <div class="grid grid-cols-12">
+
+                            <!-- Table -->
+                            <div class="col-span-12 md:col-span-6 lg:col-span-12 work-info-table">
+                                    <div class="work-row">
+                                      <div class="work-label border-b border-b-gray-300">CLIENT</div>
+                                      <div class="work-value border-b border-b-gray-300">
+                                        <a href="https://www.mealpreppro.com/" target="_blank" rel="noopener">MealPrepPro<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                                      </div>
+                                    </div>
+                                    <div class="work-row">
+                                      <div class="work-label border-b border-b-gray-300">DATE</div>
+                                      <div class="work-value border-b border-b-gray-300">2024-2025</div>
+                                    </div>
+                                    <div class="work-row">
+                                      <div class="work-label">ROLE</div>
+                                      <div class="work-value">Lead designer &amp; animator</div>
+                                    </div>
+
+                            </div>
+
+                            <!-- Metrics -->
+                            <div class="col-span-12 md:col-span-6 lg:col-span-12 mt-8 md:mt-0 lg:mt-8 pl-0 md:pl-16 lg:pl-0 ">
+                                <div class="metric-box p-6">
+                                  <div class="flex items-center mb-4">
+                                    <div class="w-12 h-12 flex justify-center items-center">
+                                      <div class="text-2xl">🔮</div>
+                                    </div>
+                                    <div class="ml-4">
+                                        <div class="sans-serif-body-2 font-[500]">Smarter UI</div>
+                                        <div class="sans-serif-body-5 text-gray-500 font-[200]">Made AI meal planning feel intuitive</div>
+                                    </div>
+                                  </div>
+                                  <div class="flex items-center mb-4">
+                                    <div class="w-12 h-12 flex justify-center items-center">
+                                      <div class="text-2xl">✨</div>
+                                    </div>
+                                    <div class="ml-4">
+                                      <div class="sans-serif-body-2 font-[500]">Increased engagement</div>
+                                      <div class="sans-serif-body-5 text-gray-500 font-[200]">And reduced drop-off</div>
+                                    </div>
+                                  </div>
+                                  <div class="flex items-center mb-4">
+                                    <div class="w-12 h-12 flex justify-center items-center">
+                                      <div class="text-2xl">⚡</div>
+                                    </div>
+                                    <div class="ml-4">
+                                      <div class="sans-serif-body-2 font-[500]">Optimised UX</div>
+                                      <div class="sans-serif-body-5 text-gray-500 font-[200]">Faster, clearer, and more engaging</div>
+                                    </div>
+                                  </div>
+                                </div>
+                            </div>
+                            <!-- Metrics end -->
+
+                        </div>
+                    </div>
+                    <!-- Left column end -->
+
+                    <!-- Right column -->
+                    <div class="col-span-12 lg:col-span-7 xl:col-span-6 lg:mt-4 mt-16">
+                        <div class="serif-heading-2 font-bold mb-8 leading-[1]">
+                        Smart meal planning UI &amp; review experience
+                        </div>
+
+                        <p class="sans-serif-body-2 text-classic-grey mb-4">
+                            MealPrepPro is a meal-planning app designed to simplify healthy eating by generating customised weekly meal plans. Its intelligent algorithm considers calorie targets, activity levels, allergies, and food preferences to create optimised plans, making meal prep effortless.
+                        </p>
+                        <p class="sans-serif-body-2 text-classic-grey mb-4">
+                            To enhance user engagement and reinforce the intelligence behind its meal-planning process, MealPrepPro sought to improve two key areas of the user journey:
+                        </p>
+                        <ol class="list-decimal list-inside sans-serif-body-2 text-classic-grey mb-4">
+                           <li class="mb-2"> The <span class="font-[600]">animated orb</span>, which visualises how the app processes user inputs to generate a personalised meal plan.</li>
+                            <li>The <span class="font-[600]">meal planner review</span> experience, which guides users in understanding and customising their weekly meal plan more effectively.</li>
+                        </ol>
+                        <p class="sans-serif-body-2 text-classic-grey">
+                            The meal planner flow was refined, a compelling 2D animation was designed for the AI-powered system, and the review experience was restructured to improve clarity and reduce drop-off rates.
+                        </p>
+                    </div>
+                    <!-- Right column end -->
+
+                </div>
+                <!-- Left + right container end -->
+
+            </div>
+        </section>
+        <!-- Intro section end -->
+
+
+        <!-- Text + image section start -->
+        <section class="mx-8 m-8">
+
+            <!-- Image 1 -->
+            <div class="w-full mt-16 sm:my-16 fade-in">
+
+                <video
+                    class="zoom-effect w-full h-full object-cover"
+                    autoplay
+                    loop
+                    muted
+                    playsinline
+                    controls
+                    poster="img/mpp-cs-1.jpg">
+                    <source src="img/mpp-cs-1.mp4" type="video/mp4">
+                    <!-- Fallback Image -->
+                    <img src="img/mpp-cs-1.jpg" alt="MealPrepPro AI Planner">
+                </video>
+
+                <!-- <img src="img/placeholder-cs-ls.jpg" alt="" class="zoom-effect w-full h-full object-cover border border-gray-200"> -->
+            </div>
+
+            <!-- Text 1 -->
+            <div class="container w-full mx-auto grid grid-cols-12">
+                <div class="sm:col-start-3 sm:col-span-8 col-span-12 space-y-6 text-classic-grey">
+                    <p class="sans-serif-body-2 mt-16 sm:mt-0 fade-in">
+                        <strong>The Problem</strong>
+                    </p>
+                    <p class="sans-serif-body-2 text-classic-grey mb-4 fade-in">
+                        MealPrepPro’s core value proposition lies in its ability to generate tailored meal plans based on a wide range of user preferences. However, two key challenges were identified:
+                    </p>
+                    <ol class="list-decimal list-inside sans-serif-body-2 text-classic-grey mb-4 fade-in">
+                       <li class="mb-2"> <span class="font-[600]">Invisible intelligence</span> – The customisation process was happening behind the scenes, leaving users unaware of how their plan was being generated.</li>
+                        <li>The <span class="font-[600]">High drop-off in the review screen</span> – New users were struggling to understand why meals repeated across multiple days and what actions they needed to take to refine their plan.</li>
+                    </ol>
+
+                    <p class="sans-serif-body-2 text-classic-grey fade-in">
+                        The goal was to design engaging UI elements and animations that visually reinforced the intelligence behind the meal planner while also streamlining the review experience to improve user retention.
+                    </p>
+                    <br><br>
+                    <p class="sans-serif-body-2 fade-in">
+                        <strong>Constraints &amp; Challenges</strong>
+
+                        <ol class="list-decimal list-inside sans-serif-body-2 text-classic-grey mb-4 fade-in">
+                           <li class="mb-2"> <span class="font-[600]">The animated orb</span> – The animation needed to be dynamic, incorporating real-time user inputs while maintaining smooth performance. It had to balance aesthetics with responsiveness and align with MealPrepPro’s flat and vector-based brand aesthetic.</li>
+                            <li class="mb-2"><span class="font-[600]">Review screen complexity</span>The review process needed to clearly communicate meal repetition logic while ensuring users could easily swap meals, use up ingredients, and set preferences without overwhelming them with too many options.</li>
+                            <li><span class="font-[600]">Diverse dietary needs</span> – The interface had to be inclusive and adaptable for users with different dietary restrictions, cultural food preferences, and varying levels of cooking experience.</li>
+                        </ol>
+
+                    </p>
+                </div>
+            </div>
+
+            <!-- Image 2 -->
+            <div class="w-full mt-16 sm:my-16 fade-in">
+
+                <video
+                    class="zoom-effect w-full h-full object-cover"
+                    autoplay
+                    loop
+                    muted
+                    playsinline
+                    controls
+                    poster="img/mpp-cs-2.jpg">
+                    <source src="img/mpp-cs-2.mp4" type="video/mp4">
+                    <!-- Fallback Image -->
+                    <img src="img/mpp-cs-2.jpg" alt="MealPrepPro AI Planner">
+                </video>
+
+                <!-- <img src="img/placeholder-cs-ls.jpg" alt="" class="zoom-effect w-full h-full object-cover border border-gray-200"> -->
+            </div>
+
+            <!-- Text 2 -->
+            <div class="container w-full mx-auto grid grid-cols-12">
+                <div class="sm:col-start-3 sm:col-span-8 col-span-12 space-y-6 text-classic-grey">
+                    <p class="sans-serif-body-2 mt-16 sm:mt-0 mb-16 fade-in">
+                        <strong>Approach</strong>
+                        <br>
+                        <span class="font-[400]">Animated orb</span>
+                        <br>
+                        Different visual styles for the animation were explored, including AI-inspired glowing elements, spinning flows, and floating bubbles. Using Rive, an interactive animation was developed where a central orb pulsed and cycled through user inputs—such as flavour preferences, activity levels, and portion sizes—before generating a customised meal plan. Floating meal images appeared in animated bubbles, reinforcing the personalised selections.
+                        <br><br>
+                        <span class="font-[400]">Meal planner review</span>
+                        <br>
+                        The review screen was restructured to improve clarity by introducing a revised layout and clearer visual indicators, such as meal repetition dots, to help users understand how meals were scheduled. Expandable tool sections were added to enhance usability, including features like 'Use Up an Ingredient' to help users find meals based on leftover ingredients, 'Time Constraints' to allow filtering by preparation time, and 'Recipe Mix' to prioritise user favourites. To refine interaction patterns, swipable cards replaced static lists, making meal comparisons more intuitive, and a "Browse All Recipes" button was introduced to provide additional flexibility. Accessibility was also increased by incorporating features such as text contrast adjustments, alternative text for images, and voice-over compatibility to support a broader range of users.
+                    </p>
+                    <p class="sans-serif-body-2 fade-in">
+                        <strong>The Solution</strong>
+
+                        The final experience featured a dynamic AI-powered animation that made the meal planning process tangible and engaging. The review flow was streamlined with intuitive filtering tools and clearer meal repetition logic. Interaction design was improved with a swipable carousel for meal alternatives, clearer call-to-action buttons, and an optimised layout that reduced cognitive load. Greater inclusivity was also achieved by ensuring diverse dietary needs were better accommodated within the meal selection process.
+                    </p>
+                </div>
+            </div>
+
+            <!-- Image 3 & 4 -->
+            <div class="w-full mt-16 sm:my-16 grid grid-cols-1 md:grid-cols-2 gap-8">
+                <img src="img/mpp-cs-3.jpg" alt="" class="zoom-effect w-full h-full object-cover border border-gray-200">
+                <img src="img/mpp-cs-4.jpg" alt="" class="zoom-effect w-full h-full object-cover border border-gray-200">
+            </div>
+
+            <!-- Text 3 -->
+            <div class="container w-full mx-auto grid grid-cols-12">
+                <div class="sm:col-start-3 sm:col-span-8 col-span-12 space-y-6 text-classic-grey">
+                    <p class="sans-serif-body-2 mt-16 sm:mt-0 fade-in">
+                        <strong>Results &amp; Impact</strong>
+
+                        Initial feedback indicates that the animated orb has helped users feel more connected to the intelligence behind their meal plan. The improved review experience has made meal customisation more intuitive, reducing confusion around meal repetition and refining workflows for finding alternatives. Engagement with the refinement tools suggests that users appreciate having more control over their plans, though further data collection is needed to quantify impact. The added accessibility features have improved usability for a wider range of users, making the app more inclusive.
+                    </p>
+                    <br><br>
+                    <p class="sans-serif-body-2 fade-in">
+                        <strong>Learnings &amp; Next Steps</strong>
+
+                        This is an ongoing project, and the team will continue to optimise and iterate on various parts of the journey through A/B testing and gathering user feedback. This case study focuses on two specific areas of the journey, with more to follow in the future.
+                        <br><br>
+                        User feedback reinforced the importance of balancing animation length with engagement and ensuring the review process is both flexible and intuitive. Future iterations could explore additional interactivity within the orb animation to further personalise the meal plan generation process. More advanced filtering and customisation tools could be developed to provide greater flexibility in the review experience. AI-driven micro-interactions may offer real-time feedback and guidance within the meal planner, and further accessibility improvements, such as personalised meal suggestions based on cultural preferences or ingredient substitutions for dietary restrictions, could be introduced.
+                        <br><br>
+                        By continuing to refine these areas, MealPrepPro can further enhance its value proposition and improve overall user retention.
+
+                    </p>
+                </div>
+            </div>
+
+            <!-- Disclaimer text -->
+            <div class="w-full mt-0 sm:my-16 grid grid-cols-1 md:grid-cols-2 gap-8 hidden">
+                    <p class="w-full sans-serif-body-4 text-classic-grey italic font-extralight">
+                        *Figures based on forecasted projection
+                    </p>
+            </div>
+
+
+        </section>
+        <!-- Text + image section end -->
+
+        <!-- CONTENT END -->
+
+
+
+        <!-- CASE STUDY NAVIGATOR START -->
+        <div class="w-full px-8 my-16 flex justify-between items-center mt-24">
+            <!-- Left: Previous Case Study (on mobile, only show the arrow) -->
+            <a href="#" class="flex items-center text-gray-800 no-underline hover:text-gray-600 sm:hidden">
+                <i class="fa-solid fa-arrow-left"></i>
+            </a>
+            <a href="#" class="hidden sm:flex items-center text-gray-800 no-underline hover:text-gray-600">
+                <i class="fa-solid fa-arrow-left mr-2"></i>
+                <span>Previous case study</span>
+            </a>
+
+            <!-- Center: View All (on mobile, use 4-square grid icon) -->
+            <a href="work.html" class="flex items-center text-gray-800 no-underline hover:text-gray-600 sm:hidden">
+                <i class="fa-solid fa-grip"></i>
+            </a>
+            <a href="work.html" class="hidden sm:flex text-gray-800 no-underline hover:text-gray-600">
+                <span>View all</span>
+            </a>
+
+            <!-- Right: Next Case Study (on mobile, only show the arrow) -->
+            <a href="#" class="flex items-center text-gray-800 no-underline hover:text-gray-600 sm:hidden">
+                <i class="fa-solid fa-arrow-right"></i>
+            </a>
+            <a href="#" class="hidden sm:flex items-center text-gray-800 no-underline hover:text-gray-600">
+                <span>Next case study</span>
+                <i class="fa-solid fa-arrow-right ml-2"></i>
+            </a>
+        </div>
+        <!-- CASE STUDY NAVIGATOR END -->
+
+
+    </div>
+
+    <!-- BARBA CONTENT END -->
+</div>
+        <!-- FOOTER START -->
+<footer class="bg-forest-black text-off-white py-12 md:py-36">
+    <div class="container mx-auto px-6 text-center md:text-left fade-in">
+        <!-- Top Row: Logo & Navigation -->
+        <div class="flex flex-col md:flex-row md:justify-between md:items-center">
+            <img src="img/golden-bear-logo.png" alt="Golden Bear Studios" class="md:h-[85px] h-20 sm:mb-12 mb-0 md:mb-0 object-contain">
+            <nav aria-label="Footer" class="flex xl:space-x-12 space-x-8 serif-heading-4 md:justify-start justify-center hidden sm:block">
+                <a href="#" class="hover:text-doodle-gold">Home</a>
+                <a href="#" class="hover:text-doodle-gold">About</a>
+                <a href="#" class="hover:text-doodle-gold">Work</a>
+                <!--<a href="#" class="hover:text-doodle-gold">Bear & Brush</a>-->
+                <a href="contact.html" class="hover:text-doodle-gold">Contact</a>
+            </nav>
+        </div>
+
+        <!-- BOTTOM FOOTER -->
+        <div class="border-t border-light my-12"></div>
+        <div class="flex flex-col md:flex-row md:justify-between md:items-center text-center">
+            <p class="sans-serif-body-3 text-dirty-grey">© <span id="year"></span> Golden Bear Studios. All rights reserved.</p>
+            <div class="flex space-x-4 text-xl mt-4 md:mt-0 justify-center social-icons">
+                <a aria-label="My LinkedIn profile" href="https://www.linkedin.com/in/katebrookhart/" class="hover:text-doodle-gold"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a aria-label="My Instagram profile" href="https://www.instagram.com/katebrookhart/" class="hover:text-doodle-gold"><i class="fa-brands fa-instagram"></i></a>
+                <a aria-label="My dribbble profile" href="https://dribbble.com/katebrookhart" class="hover:text-doodle-gold"><i class="fa-brands fa-dribbble"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- FOOTER END -->
+        <!-- SCRIPTS -->
+
+<!-- Gsap -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script> -->
+<script src="js/gsap.min.js"></script>
+
+<!-- Scroll trigger -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
+
+<!-- Barba.js -->
+<!-- <script src="https://unpkg.com/@barba/core"></script> -->
+<script src="js/barba.core.js"></script>
+
+<!--  <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script> -->
+<script src="js/barba.umd.js"></script>
+
+
+<!-- CUSTOM ICONS-->
+<script src="https://kit.fontawesome.com/e28f322942.js" crossorigin="anonymous"></script>
+<script src="js/main.js" defer></script>
+<!-- SCRIPTS -->
+
+    </body>
+</html>

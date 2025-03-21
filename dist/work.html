@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Golden Bear Studios</title>
+
+    <!-- CUSTOM CSS -->
+    <link rel="stylesheet" href="css/styles2.css">
+
+    <!-- CUSTOM ICONS-->
+    <script src="https://kit.fontawesome.com/e28f322942.js" crossorigin="anonymous"></script>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Geist:wght@100..900&display=swap" rel="stylesheet">
+
+
+    <!-- FAVICON START-->
+    <link rel="icon" type="image/png" href="img/favicon/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/svg+xml" href="img/favicon/favicon.svg">
+    <link rel="shortcut icon" href="img/favicon/favicon.ico">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon.png">
+    <!-- FAVICON END -->
+
+</head>
+
+    <body class="mx-auto bg-green-grey text-forest-black">
+
+        <div class="loader w-full bg-green-grey fixed items-center">GOLDEN BEAR STUDIOS</div>
+
+    <!-- BARBA CONTENT START -->
+
+    <div data-barba="container" class="barba-container">
+        <div data-barba="wrapper" id="barba-wrapper">
+
+            <!-- NAVIGATION START -->
+<header id="main-header" class="fixed top-0 left-0 w-full transition-all duration-300">
+    <div id="inner-nav-container" class="container mx-auto flex items-center justify-between px-8 py-6 transition-all duration-300">
+        <!-- Logo: Left-aligned -->
+        <a href="index.html"><img id="header-logo" src="img/golden-bear-logo-full-gold.png" alt="Golden Bear Studios" class="md:h-[100px] h-20 transition-all duration-300"></a>
+
+        <!-- Navigation: Right-aligned -->
+        <nav aria-label="Header" class="hidden md:flex xl:space-x-12 lg:space-x-8 md:space-x-4 sm:space-x-4 space-x-4 ml-auto serif-heading-4">
+            <a href="index.html" class="hover:text-gold">Home</a>
+            <a href="about.html" class="hover:text-gold">About</a>
+            <a href="work.html" class="hover:text-gold">Work</a>
+            <!--<a href="#" class="hover:text-gold">Bear & Brush</a>-->
+            <a href="contact.html" class="hover:text-gold">Contact</a>
+        </nav>
+
+        <!-- Mobile Menu Button -->
+        <button aria-label="Toggle mobile menu" type="button" id="mobile-menu-toggle" class="text-white md:hidden">
+            <i class="fa-solid fa-grip-lines"></i>
+        </button>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="inset-0 flex flex-col items-center justify-center space-y-8 serif-heading-5 pb-12">
+            <img src="img/golden-bear-logo.png" alt="Golden Bear Studios" class="h-20 absolute top-6 left-8">
+            <button aria-label="Close mobile menu" type="button" id="mobile-menu-close" class="absolute top-4 right-8 text-[32px]"><i class="fa-solid fa-xmark"></i></button>
+            <a href="index.html" class="hover:text-gold">Home</a>
+            <a href="about.html" class="hover:text-gold">About</a>
+            <a href="work.html" class="hover:text-gold">Work</a>
+            <!--<a href="#" class="hover:text-gold">Bear & Brush</a>-->
+            <a href="contact.html" class="hover:text-gold">Contact</a>
+
+            <!-- BOTTOM FOOTER -->
+            <div class="section w-full absolute bottom-0 pb-8">
+                <div class="border-t border-light my-6"></div>
+                <div class="flex flex-col md:flex-row md:justify-between md:items-center text-center">
+                    <p class="sans-serif-body-3 text-dirty-grey">© <span id="year"></span> Golden Bear Studios. All rights reserved.</p>
+                    <div class="flex space-x-8 text-xl mt-4 md:mt-0 justify-center">
+                        <a aria-label="My LinkedIn profile" href="https://www.linkedin.com/in/katebrookhart/"><i class="fa-brands fa-linkedin-in"></i></a>
+                        <a aria-label="My Instagram Profile" href="https://www.instagram.com/katebrookhart/"><i class="fa-brands fa-instagram"></i></a>
+                        <a aria-label="My dribbble profile" href="https://dribbble.com/katebrookhart"><i class="fa-brands fa-dribbble"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- -->
+
+        </div>
+    </div>
+</header>
+<!-- NAVIGATION END -->
+
+            <!-- CONTENT START -->
+
+
+            <!-- HEADLINE -->
+            <div class="container px-8 mx-auto sm-py-24 py-12 grid grid-cols-12">
+                <h1 class="serif-heading-1 col-span-10 fade-in text-forest-black">Featured work &amp; case studies.</h1>
+            </div>
+
+
+            <!-- MASONRY GRID -->
+            <div class="masonry-work mb-12 mx-auto sm:px-8 px-4">
+                <div class="columns-1 sm:columns-3 gap-4 sm:block grid">
+
+                    <!------------>
+                    <!-- Card 1 -->
+                    <!------------>
+                    <div class="work-card order-1 sm:order-1 fade-in" style="background-image: url('img/work-masonry-mpp.jpg');">
+                        <a href="work-mpp.html">
+                            <div class="container flex flex-col h-full">
+                                <div class="flex-grow"></div>
+                                <div class="p-0">
+                                    <img class="work-logo" src="img/logos/mpp-cropped.png" alt="MealPrepPro logo">
+                                    <h2 class="sans-serif-body-1 py-6">AI Meal Planner</h2>
+                                    <div class="flex flex-wrap gap-2">
+                                        <div class="label-tag light sans-serif-body-3">UX/UI design</div>
+                                        <div class="label-tag light sans-serif-body-3">Animation</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+
+
+                    <!------------>
+                    <!-- Card 4 -->
+                    <!------------>
+                    <div class="work-card order-4 sm:order-2 fade-in" style="background-image: url('img/work-masonry-asos-2.jpg');">
+                      <a href="work-asos-2.html">
+                            <div class="container flex flex-col h-full">
+                                <div class="flex-grow"></div>
+                                <div class="p-0">
+                                    <img class="work-logo" src="img/logos/asos-cropped.png" alt="ASOS logo">
+                                    <h2 class="sans-serif-body-1 py-6">Style experience concept</h2>
+                                    <div class="flex flex-wrap gap-2">
+                                        <div class="label-tag light sans-serif-body-3">Concept design</div>
+                                        <div class="label-tag light sans-serif-body-3">Strategy</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <!------------>
+                    <!-- Card 7 -->
+                    <!------------>
+                    <div class="work-card large order-7 sm:order-3 fade-in relative overflow-hidden">
+
+                        <!-- Video Background -->
+                        <video
+                            class="absolute inset-0 w-full h-full object-cover"
+                            autoplay
+                            loop
+                            muted
+                            playsinline
+                            poster="img/work-masonry-aqualung.jpg">
+                            <source src="img/work-masonry-aqualung.mp4" type="video/mp4">
+                            <!-- Fallback Image -->
+                            <img src="img/work-masonry-aqualung.jpg" alt="Aqualung Project">
+                        </video>
+
+                        <!-- Overlay -->
+                        <div class="absolute inset-0 bg-black opacity-40"></div>
+
+                        <!-- Content -->
+                        <a href="work-aqualung.html" class="relative z-10">
+
+                            <div class="container flex flex-col h-full">
+                                <div class="flex-grow"></div>
+                                <div class="p-0">
+                                    <img class="work-logo" src="img/logos/aql-cropped.png" alt="Aqualung logo">
+                                    <h2 class="sans-serif-body-1 py-6">E-commerce design</h2>
+                                    <div class="flex flex-wrap gap-2">
+                                        <div class="label-tag light sans-serif-body-3">Product design</div>
+                                        <div class="label-tag light sans-serif-body-3">B2C</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <!------------>
+                    <!-- Card 2 -->
+                    <!------------>
+                    <div class="work-card large order-2 sm:order-4 fade-in relative overflow-hidden">
+                        <!-- Video Background -->
+                        <video
+                            class="absolute inset-0 w-full h-full object-cover"
+                            autoplay
+                            loop
+                            muted
+                            playsinline
+                            poster="img/work-masonry-asos-1.jpg">
+                            <source src="img/work-masonry-asos-1.mp4" type="video/mp4">
+                            <!-- Fallback Image -->
+                            <img src="img/work-masonry-asos-1.jpg" alt="ASOS Project">
+                        </video>
+
+                        <!-- Overlay -->
+                        <div class="absolute inset-0 bg-black opacity-40"></div>
+
+                        <!-- Content -->
+                        <a href="work-asos-1.html" class="relative z-10">
+                            <div class="container flex flex-col h-full">
+                                <div class="flex-grow"></div>
+                                <div class="p-0 text-white">
+                                    <img class="work-logo" src="img/logos/asos-cropped.png" alt="ASOS logo">
+                                    <h2 class="sans-serif-body-1 py-6">Curated shopping</h2>
+                                    <div class="flex flex-wrap gap-2">
+                                        <div class="label-tag light sans-serif-body-3">Concept design</div>
+                                        <div class="label-tag light sans-serif-body-3">Product design</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+
+
+                    <!------------>
+                    <!-- Card 5 -->
+                    <!------------>
+                    <div class="work-card order-5 sm:order-5 fade-in" style="background-image: url('img/work-masonry-coop.jpg');">
+                      <a href="work-coop.html">
+                            <div class="container flex flex-col h-full">
+                                <div class="flex-grow"></div>
+                                <div class="p-0">
+                                    <img class="work-logo square" src="img/logos/coop-cropped.png" alt="Coop logo">
+                                    <h2 class="sans-serif-body-1 py-6">Funeral care redesign</h2>
+                                    <div class="flex flex-wrap gap-2">
+                                        <div class="label-tag light sans-serif-body-3">B2C</div>
+                                        <div class="label-tag light sans-serif-body-3">Product design</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <!------------>
+                    <!-- Card 8 -->
+                    <!------------>
+                    <div class="work-card order-8 sm:order-6 fade-in" style="background-image: url('img/work-masonry-adidas.jpg');">
+                      <a href="work-adidas.html">
+                            <div class="container flex flex-col h-full">
+                                <div class="flex-grow"></div>
+                                <div class="p-0">
+                                    <img class="work-logo square" src="img/logos/adidas-cropped.png" alt="Adidas logo">
+                                    <h2 class="sans-serif-body-1 py-6">Engaged experiences</h2>
+                                    <div class="flex flex-wrap gap-2">
+                                        <div class="label-tag light sans-serif-body-3">Concept design</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <!------------>
+                    <!-- Card 3 -->
+                    <!------------>
+                    <div class="work-card order-3 sm:order-7 fade-in" style="background-image: url('img/work-masonry-magnet.jpg');">
+                      <a href="work-magnet.html">
+                            <div class="container flex flex-col h-full">
+                                <div class="flex-grow"></div>
+                                <div class="p-0">
+                                    <img class="work-logo" src="img/logos/magnet-cropped.png" alt="Magnet Kitchens logo">
+                                    <h2 class="sans-serif-body-1 py-6">Trade site replatform</h2>
+                                    <div class="flex flex-wrap gap-2">
+                                        <div class="label-tag light sans-serif-body-3">Product design</div>
+                                        <div class="label-tag light sans-serif-body-3">B2B</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <!------------>
+                    <!-- Card 6 -->
+                    <!------------>
+                    <div class="work-card large order-6 sm:order-8 fade-in relative overflow-hidden">
+
+                        <!-- Video Background -->
+                        <video
+                            class="absolute inset-0 w-full h-full object-cover"
+                            autoplay
+                            loop
+                            muted
+                            playsinline
+                            poster="img/work-masonry-tnf.jpg">
+                            <source src="img/work-masonry-tnf.mp4" type="video/mp4">
+                            <!-- Fallback Image -->
+                            <img src="img/work-masonry-tnf.jpg" alt="The North Face Project">
+                        </video>
+
+                        <!-- Overlay -->
+                        <div class="absolute inset-0 bg-black opacity-40"></div>
+
+                        <!-- Content -->
+                        <a href="work-tnf.html" class="relative z-10">
+                            <div class="container flex flex-col h-full">
+                                <div class="flex-grow"></div>
+                                <div class="p-0">
+                                    <img class="work-logo square" src="img/logos/tnf-cropped.png" alt="The North Face logo">
+                                    <h2 class="sans-serif-body-1 py-6">CX optimisation</h2>
+                                    <div class="flex flex-wrap gap-2">
+                                        <div class="label-tag light sans-serif-body-3">UX/UI design</div>
+                                        <div class="label-tag light sans-serif-body-3">MVT design</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+
+
+                    <!------------>
+                    <!-- Card 9 -->
+                    <!------------>
+                    <div class="work-card order-2 sm:order-4 fade-in" style="background-image: url('img/work-masonry-brakes.jpg');">
+                      <a href="work-brakes.html">
+                            <div class="container flex flex-col h-full">
+                                <div class="flex-grow"></div>
+                                <div class="p-0">
+                                    <img class="work-logo" src="img/logos/brakes-cropped.png" alt="Brakes logo">
+                                    <h2 class="sans-serif-body-1 py-6">Trade site replatform</h2>
+                                    <div class="flex flex-wrap gap-2">
+                                        <div class="label-tag light sans-serif-body-3">UX/UI design</div>
+                                        <div class="label-tag light sans-serif-body-3">B2B</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+
+
+                </div>
+            </div>
+            <!------------------>
+
+
+            <!-- LOGOS START -->
+            <div id="logos" class="grid grid-cols-3 sm:grid-cols-5 gap-4 p-4 place-items-center hover-zoom">
+                <img src="img/logos/adidas.png" alt="Adidas Logo" class="fade-in">
+                <img src="img/logos/annsummers.png" alt="Ann Summers Logo" class="fade-in">
+                <img src="img/logos/aql.png" alt="AQL Logo" class="fade-in">
+                <img src="img/logos/arco.png" alt="Arco Logo" class="fade-in">
+                <img src="img/logos/asos.png" alt="ASOS Logo" class="fade-in">
+                <img src="img/logos/boden.png" alt="Boden Logo" class="fade-in">
+                <img src="img/logos/brakes.png" alt="Brakes Logo" class="fade-in">
+                <img src="img/logos/coop.png" alt="Co-op Logo" class="fade-in">
+                <img src="img/logos/ecp.png" alt="ECP Logo" class="fade-in">
+                <img src="img/logos/eurostar.png" alt="Eurostar Logo" class="fade-in">
+                <img src="img/logos/fv.png" alt="FV Logo" class="fade-in">
+                <img src="img/logos/magnet.png" alt="Magnet Logo" class="fade-in">
+                <img src="img/logos/mpp.png" alt="Meal Prep Pro Logo" class="fade-in">
+                <img src="img/logos/ordo.png" alt="Ordo Logo" class="fade-in">
+                <img src="img/logos/prezzo.png" alt="Prezzo Logo" class="fade-in">
+                <img src="img/logos/specsavers.png" alt="Specsavers Logo" class="fade-in">
+                <img src="img/logos/timberland.png" alt="Timberland Logo" class="fade-in">
+                <img src="img/logos/tnf.png" alt="The North Face Logo" class="fade-in">
+                <img src="img/logos/vans.png" alt="Vans Logo" class="fade-in">
+                <img src="img/logos/wilko.png" alt="Wilko Logo" class="fade-in">
+            </div>
+
+            <!-- LOGOS END -->
+
+
+            <!-- CONTENT END -->
+
+
+            <!-- PRE FOOTER START -->
+            <section class="pre-footer relative bg-dark-green text-dirty-grey py-16 px-6">
+                <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center gap-12 relative">
+
+                    <!-- Left Background Shapes -->
+                    <div class="absolute top-0 left-0 w-32 h-32 bg-left bg-no-repeat bg-contain"></div>
+
+                    <!-- Text Content -->
+                    <div class="relative w-full sm:w-1/2">
+                      <h2 class="text-3xl font-semibold">Got a project in mind?</h2>
+                      <p class="mt-4 text-lg">
+                        Drop us a line, and Lucy and I will get back to you (she’ll be supervising).
+                      </p>
+
+                      <!-- Call to Action -->
+                      <a href="#" class="inline-flex items-center gap-2 mt-6 text-lg font-medium text-doodle-gold transition-transform hover:underline">
+                        Send us a message
+                        <span class="transition-transform transform hover:translate-x-1"><i class="arrow fa-solid fa-arrow-right"></i></span>
+                      </a>
+                    </div>
+
+                    <!-- Image Section -->
+                    <div class="relative w-full sm:w-1/2">
+                      <!-- Right Background Shapes -->
+                      <div class="absolute bottom-[-1.5rem] right-0 w-36 h-36 bg-right bg-no-repeat bg-contain"></div>
+                      <div class="lucy-bg"></div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- PRE FOOTER END -->
+
+
+
+
+        </div>
+
+        <!-- BARBA CONTENT END -->
+</div>
+
+
+        <!-- FOOTER START -->
+<footer class="bg-forest-black text-off-white py-12 md:py-36">
+    <div class="container mx-auto px-6 text-center md:text-left fade-in">
+        <!-- Top Row: Logo & Navigation -->
+        <div class="flex flex-col md:flex-row md:justify-between md:items-center">
+            <img src="img/golden-bear-logo.png" alt="Golden Bear Studios" class="md:h-[85px] h-20 sm:mb-12 mb-0 md:mb-0 object-contain">
+            <nav aria-label="Footer" class="flex xl:space-x-12 space-x-8 serif-heading-4 md:justify-start justify-center hidden sm:block">
+                <a href="#" class="hover:text-doodle-gold">Home</a>
+                <a href="#" class="hover:text-doodle-gold">About</a>
+                <a href="#" class="hover:text-doodle-gold">Work</a>
+                <!--<a href="#" class="hover:text-doodle-gold">Bear & Brush</a>-->
+                <a href="contact.html" class="hover:text-doodle-gold">Contact</a>
+            </nav>
+        </div>
+
+        <!-- BOTTOM FOOTER -->
+        <div class="border-t border-light my-12"></div>
+        <div class="flex flex-col md:flex-row md:justify-between md:items-center text-center">
+            <p class="sans-serif-body-3 text-dirty-grey">© <span id="year"></span> Golden Bear Studios. All rights reserved.</p>
+            <div class="flex space-x-4 text-xl mt-4 md:mt-0 justify-center social-icons">
+                <a aria-label="My LinkedIn profile" href="https://www.linkedin.com/in/katebrookhart/" class="hover:text-doodle-gold"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a aria-label="My Instagram profile" href="https://www.instagram.com/katebrookhart/" class="hover:text-doodle-gold"><i class="fa-brands fa-instagram"></i></a>
+                <a aria-label="My dribbble profile" href="https://dribbble.com/katebrookhart" class="hover:text-doodle-gold"><i class="fa-brands fa-dribbble"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+<!-- FOOTER END -->
+        <!-- SCRIPTS -->
+
+<!-- Gsap -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script> -->
+<script src="js/gsap.min.js"></script>
+
+<!-- Scroll trigger -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>
+
+<!-- Barba.js -->
+<!-- <script src="https://unpkg.com/@barba/core"></script> -->
+<script src="js/barba.core.js"></script>
+
+<!--  <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script> -->
+<script src="js/barba.umd.js"></script>
+
+
+<!-- CUSTOM ICONS-->
+<script src="https://kit.fontawesome.com/e28f322942.js" crossorigin="anonymous"></script>
+<script src="js/main.js" defer></script>
+<!-- SCRIPTS -->
+
+    </body>
+</html>

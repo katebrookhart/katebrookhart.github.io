@@ -1,4 +1,9 @@
 /*! tailwindcss v4.0.14 | MIT License | https://tailwindcss.com */
+.homepagehero {
+    background-image: url('../img/golden-bear-hero-ls.png');
+    transform: translateY(0);
+}
+
 @layer theme, base, components, utilities;
 @layer theme {
   :root, :host {

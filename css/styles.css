@@ -1,6 +1,11 @@
 /* Custom Styles for Golden Bear Studios */
 @import "tailwindcss";
 
+.homepagehero {
+    background-image: url('../img/golden-bear-hero-ls.png');
+    transform: translateY(0);
+}
+
 /* Global Styles */
 body {
     font-family: 'Geist', sans-serif;
