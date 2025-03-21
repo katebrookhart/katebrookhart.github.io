@@ -3,5 +3,8 @@
     "@tailwindcss/cli": "^4.0.14",
     "nunjucks": "^3.2.4",
     "tailwindcss": "^4.0.14"
+  },
+  "devDependencies": {
+    "html-validate": "^9.5.2"
   }
 }
