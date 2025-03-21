@@ -1,10 +1,28 @@
 /* Custom Styles for Golden Bear Studios */
 @import "tailwindcss";
 
-.homepagehero {
-    background-image: url('../img/golden-bear-hero-ls.png');
-    transform: translateY(0);
-}
+.hero {             transform: translateY(0); }
+.homepage_hero {    background-image: url('../img/golden-bear-hero-ls.png'); }
+.about_hero {       background-image: url('../img/about-golden-bear.jpg'); }
+.adidas_hero {      background-image: url('../img/placeholder-cs-hero.jpg'); }
+.aqualung_hero {    background-image: url('../img/placeholder-cs-hero.jpg'); }
+.asos_1_hero {      background-image: url('../img/placeholder-cs-hero.jpg'); }
+.asos_2_hero {      background-image: url('../img/placeholder-cs-hero.jpg'); }
+.brakes_hero {      background-image: url('../img/placeholder-cs-hero.jpg'); }
+.coop_hero  {       background-image: url('../img/placeholder-cs-hero.jpg'); }
+.magnet_hero {      background-image: url('../img/placeholder-cs-hero.jpg'); }
+.template_hero {    background-image: url('../img/placeholder-cs-hero.jpg'); }
+.tnf_hero {         background-image: url('../img/hero-tnf.jpg'); }
+
+
+.work_card_mpp {    background-image: url('../img/work-masonry-mpp.jpg'); }
+.work_card_asos {   background-image: url('../img/work-masonry-asos-2.jpg'); }
+.work_card_coop {   background-image: url('../img/work-masonry-coop.jpg'); }
+.work_card_adidas { background-image: url('../img/work-masonry-adidas.jpg'); }
+.work_card_magnet { background-image: url('../img/work-masonry-magnet.jpg'); }
+.work_card_brakes { background-image: url('../img/work-masonry-brakes.jpg'); }
+
+.about_header { bottom: calc(25vh); }
 
 /* Global Styles */
 body {

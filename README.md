@@ -4,9 +4,21 @@ The static site for Golden Bear Studios, compiled using the [nunjucks]() build s
 
 To build:
 
+Install all of the build requirementsL
+```npm install```
+
+Compile the tailwind css:
+```npx tailwindcss -i css/styles.css -o css/styles2.css```
+
+Build the site:
+```node build.js```
+
+Validate the HTML:
+```html-validate docs/*.html```
+
+Push to github:
 ```
-npm install
-node build.js
-npx tailwindcss -i css/styles.css -o css/styles2.css
-html-validate docs/*.html
+git add -A
+git commit -m "Update description here"
+git push
 ```
