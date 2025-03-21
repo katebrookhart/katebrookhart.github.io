@@ -236,4 +236,3 @@ function adjustHeroMargin() {
 // Run on page load and window resize
 window.addEventListener("load", adjustHeroMargin);
 window.addEventListener("resize", adjustHeroMargin);
-

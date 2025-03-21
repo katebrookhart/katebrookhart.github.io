@@ -1,7 +1,8 @@
 const fs = require('fs');
 const path = require('path');
-const { spawnSync } = require('child_process'); // Import child_process
+const { spawnSync } = require('child_process');
 const nunjucks = require('nunjucks');
+const UglifyJS = require('uglify-js');
 
 // Configure Nunjucks to use the current directory
 nunjucks.configure('.', { autoescape: false });
@@ -20,9 +21,9 @@ function compileTailwind() {
     console.log('Compiling Tailwind CSS...');
     const result = spawnSync('npx', [
         'tailwindcss',
-        '-i', 'css/styles.css', // Input file
-        '-o', 'css/styles2.css', // Output file
-        '--minify' // Minify the output CSS
+        '-i', 'css/styles.css',
+        '-o', 'css/styles2.css',
+        '--minify'
     ], { stdio: 'inherit' });
 
     if (result.error) {
@@ -51,8 +52,10 @@ pages.forEach(page => {
     context.content = nunjucks.renderString(body, context); // Allow includes inside pages
 
     const output = nunjucks.render('templates/base.html', context);
-    fs.writeFileSync(`${distDir}/${page.replace('.njk', '.html')}`, output);
-    console.log(`Generated: ${distDir}/${page.replace('.njk', '.html')}`);
+    const outputPath = `${distDir}/${page.replace('.njk', '.html')}`;
+
+    fs.writeFileSync(outputPath, output);
+    console.log(`Generated: ${outputPath}`);
 });
 
 // Function to copy directories
@@ -72,10 +75,40 @@ function copyDirectory(src, dest) {
     });
 }
 
-// Copy asset directories (including compiled CSS)
+// Copy asset directories
 assetDirs.forEach(dir => {
     copyDirectory(dir, path.join(distDir, dir));
     console.log(`Copied: ${dir} -> ${distDir}/${dir}`);
 });
+
+// Minify JavaScript using UglifyJS
+function minifyJavaScript() {
+    console.log('Minifying JavaScript...');
+    const jsDir = path.join(distDir, 'js');
+    if (!fs.existsSync(jsDir)) return;
+
+    fs.readdirSync(jsDir).forEach(file => {
+        if (file.endsWith('.js')) {
+            const filePath = path.join(jsDir, file);
+            const jsContent = fs.readFileSync(filePath, 'utf8');
+
+            try {
+                const minified = UglifyJS.minify(jsContent);
+                if (minified.error) {
+                    console.error(`Error minifying ${file}:`, minified.error);
+                    return;
+                }
+
+                fs.writeFileSync(filePath, minified.code, 'utf8');
+                console.log(`Minified: ${filePath}`);
+            } catch (error) {
+                console.error(`Exception during minification of ${file}:`, error);
+            }
+        }
+    });
+}
+
+// Run minification tasks after assets are copied
+minifyJavaScript();
 
 console.log('Build complete!');

@@ -5,6 +5,9 @@
     "tailwindcss": "^4.0.14"
   },
   "devDependencies": {
-    "html-validate": "^9.5.2"
+    "@minify-html/node": "^0.15.0",
+    "html-validate": "^9.5.2",
+    "terser": "^5.39.0",
+    "uglify-js": "^3.19.3"
   }
 }
