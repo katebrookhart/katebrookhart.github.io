@@ -3,70 +3,60 @@ bodyclass: mx-auto bg-off-white text-forest-black
 ---
 <div class="loader w-full bg-green-grey fixed items-center">GOLDEN BEAR STUDIOS</div>
 
-    <!-- BARBA CONTENT START -->
+{% include "snippets/header.html" %}
 
-    <div data-barba="container" class="barba-container">
-        <div data-barba="wrapper" id="barba-wrapper">
-
-            {% include "snippets/header.html" %}
-
-            <!-- HEADLINE -->
-            <div class="container px-8 mx-auto sm-py-24 py-12 grid grid-cols-12">
-                <h1 class="serif-heading-1 col-span-10 fade-in text-forest-black">Get in touch.</h1>
-            </div>
+<!-- HEADLINE -->
+<div class="container px-8 mx-auto sm-py-24 py-12 grid grid-cols-12">
+    <h1 class="serif-heading-1 col-span-10 fade-in text-forest-black">Get in touch.</h1>
+</div>
 
 
-            <section>
-              <div class="container px-8 mx-auto sm-pb-24 pb-12 grid grid-cols-12 gap-8">
+<section>
+  <div class="container px-8 mx-auto sm-pb-24 pb-12 grid grid-cols-12 gap-8">
 
-                <!-- Image: Spans 7 columns -->
-                <div class="md:col-span-7 col-span-12">
-                  <img src="img/contact.png" alt="Golden Doodle contact" class="w-full h-auto object-cover rounded-xl">
-                </div>
-
-                <!-- Form: Spans 5 columns -->
-                <form
-                  action="https://formspree.io/f/xnnpjyea"
-                  method="POST"
-                  class="md:col-span-5 col-span-12"
-                >
-                  <div>
-                    <label for="email" class="block mt-6 mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
-                    <input
-                      type="email"
-                      id="email"
-                      class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
-                      placeholder="name@flowbite.com"
-                      required
-                    >
-                  </div>
-                  <div>
-                    <label for="subject" class="block mt-6 mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Subject</label>
-                    <input
-                      type="text"
-                      id="subject"
-                      class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
-                      placeholder="Let us know how we can help you"
-                      required
-                    >
-                  </div>
-                  <div class="sm:col-span-2">
-                    <label for="message" class="block mt-6 mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
-                    <textarea
-                      id="message"
-                      rows="6"
-                      class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
-                      placeholder="Leave a comment..."
-                    ></textarea>
-                  </div>
-                  <button type="submit" class="custom-button mt-8">Send message</button>
-                </form>
-
-
-              </div>
-            </section>
-
-        </div>
-
-        <!-- BARBA CONTENT END -->
+    <!-- Image: Spans 7 columns -->
+    <div class="md:col-span-7 col-span-12">
+      <img src="img/contact.png" alt="Golden Doodle contact" class="w-full h-auto object-cover rounded-xl">
     </div>
+
+    <!-- Form: Spans 5 columns -->
+    <form
+      action="https://formspree.io/f/xnnpjyea"
+      method="POST"
+      class="md:col-span-5 col-span-12"
+    >
+      <div>
+        <label for="email" class="block mt-6 mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Your email</label>
+        <input
+          type="email"
+          id="email"
+          class="shadow-sm bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-primary-500 focus:border-primary-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+          placeholder="name@flowbite.com"
+          required
+        >
+      </div>
+      <div>
+        <label for="subject" class="block mt-6 mb-2 text-sm font-medium text-gray-900 dark:text-gray-300">Subject</label>
+        <input
+          type="text"
+          id="subject"
+          class="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 shadow-sm focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500 dark:shadow-sm-light"
+          placeholder="Let us know how we can help you"
+          required
+        >
+      </div>
+      <div class="sm:col-span-2">
+        <label for="message" class="block mt-6 mb-2 text-sm font-medium text-gray-900 dark:text-gray-400">Your message</label>
+        <textarea
+          id="message"
+          rows="6"
+          class="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm border border-gray-300 focus:ring-primary-500 focus:border-primary-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-primary-500 dark:focus:border-primary-500"
+          placeholder="Leave a comment..."
+        ></textarea>
+      </div>
+      <button type="submit" class="custom-button mt-8">Send message</button>
+    </form>
+
+
+  </div>
+</section>

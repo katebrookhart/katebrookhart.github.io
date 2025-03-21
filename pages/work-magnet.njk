@@ -3,265 +3,254 @@ bodyclass: mx-auto bg-off-white text-forest-black case-study-page
 ---
 <div class="loader w-full bg-green-grey fixed items-center">GOLDEN BEAR STUDIOS</div>
 
-<!-- BARBA CONTENT START -->
+{% include "snippets/header.html" %}
 
-<div data-barba="container" class="barba-container">
-    <div data-barba="wrapper" id="barba-wrapper">
+<!-- HERO SECTION START -->
+<section id="big-hero" class="work-hero relative h-screen flex items-end xl:pb-24 pb-16">
 
-        {% include "snippets/header.html" %}
-
-        <!-- HERO SECTION START -->
-        <section id="big-hero" class="work-hero relative h-screen flex items-end xl:pb-24 pb-16">
-
-            <!-- Background Image (Now Static) -->
-            <div class="parallax-bg absolute inset-0 bg-cover bg-center h-screen"
-                 style="background-image: url('img/placeholder-cs-hero.jpg');">
-            </div>
-
-            <!-- Transparent Overlay -->
-            <div class="image-overlay"></div>
-
-            <div class="image-overlay-container container w-full md:mx-auto relative grid grid-cols-12 gap-4 gap-y-8 text-left mx-8 sm:px-8 xl:pl-32 sm:pt-24">
-                <img class="hero-logo col-span-8 md:col-span-12 fade-in" src="img/logos/magnet-cropped.png">
-                <h1 class="sans-serif-heading-1-light text-off-white col-span-8 md:col-span-12 fade-in">
-                    Trade site replatform
-                </h1>
-                <div class="flex flex-wrap col-span-8 md:col-span-12 fade-in gap-2">
-                    <div class="label-tag white sans-serif-body-3">Product design</div>
-                    <div class="label-tag white sans-serif-body-3">B2B</div>
-                </div>
-            </div>
-
-        </section>
-        <!-- HERO SECTION END -->
-
-        <!-- CONTENT START -->
-
-        <!-- Intro section start -->
-        <section class="mx-8 m-8">
-            <div class="container w-full mx-auto">
-
-                <!-- Left + right container -->
-                <div class="grid grid-cols-12">
-
-                    <!-- Left column -->
-                    <div class="xl:col-start-2 col-span-12 lg:col-span-5 xl:col-span-4 lg:mr-16 xl:mr-24">
-                        <div class="grid grid-cols-12">
-
-                            <!-- Table -->
-                            <div class="col-span-12 md:col-span-6 lg:col-span-12 work-info-table">
-                                    <div class="work-row">
-                                      <div class="work-label border-b border-b-gray-300">CLIENT</div>
-                                      <div class="work-value border-b border-b-gray-300">
-                                        <a href="https://www.magnettrade.co.uk/" target="_blank" rel="noopener">Magnet Kitchens <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                      </div>
-                                    </div>
-                                    <div class="work-row">
-                                      <div class="work-label border-b border-b-gray-300">DATE</div>
-                                      <div class="work-value border-b border-b-gray-300">2022</div>
-                                    </div>
-                                    <div class="work-row">
-                                      <div class="work-label border-b border-b-gray-300">ROLE</div>
-                                      <div class="work-value border-b border-b-gray-300">Head of Design Services</div>
-                                    </div>
-                                    <div class="work-row">
-                                      <div class="work-label">AGENCY</div>
-                                      <div class="work-value">
-                                        <a href="https://www.biglight.co.uk" target="_blank" rel="noopener">Biglight <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                      </div>
-                                </div>
-                            </div>
-
-                            <!-- Metrics -->
-                            <div class="col-span-12 md:col-span-6 lg:col-span-12 mt-8 md:mt-0 lg:mt-8 pl-0 md:pl-16 lg:pl-0 ">
-                                <div class="metric-box p-6">
-                                  <div class="flex items-center mb-4">
-                                    <div class="w-12 h-12 flex justify-center items-center">
-                                      <div class="text-2xl">📈</div>
-                                    </div>
-                                    <div class="ml-4">
-                                      <div class="sans-serif-body-1 font-bold">Increased engagement</div>
-                                      <div class="sans-serif-body-3 text-gray-500">High traffic to key features</div>
-                                    </div>
-                                  </div>
-                                  <div class="flex items-center mb-4">
-                                    <div class="w-12 h-12 flex justify-center items-center">
-                                      <div class="text-2xl">🎨</div>
-                                    </div>
-                                    <div class="ml-4">
-                                      <div class="sans-serif-body-1 font-bold">Brand aligned</div>
-                                      <div class="sans-serif-body-3 text-gray-500">Distinct yet cohesive with consumer site</div>
-                                    </div>
-                                  </div>
-                                  <div class="flex items-center mb-4">
-                                    <div class="w-12 h-12 flex justify-center items-center">
-                                      <div class="text-2xl">⚡</div>
-                                    </div>
-                                    <div class="ml-4">
-                                      <div class="sans-serif-body-1 font-bold">Enhanced navigation</div>
-                                      <div class="sans-serif-body-3 text-gray-500">Quicker access to information</div>
-                                    </div>
-                                  </div>
-                                </div>
-                            </div>
-                            <!-- Metrics end -->
-
-                        </div>
-                    </div>
-                    <!-- Left column end -->
-
-                    <!-- Right column -->
-                    <div class="col-span-12 lg:col-span-7 xl:col-span-6 lg:mt-4 mt-16">
-                        <div class="serif-heading-2 font-bold mb-8">
-                        A digital transformation for trade professionals
-                        </div>
-                        <div class="serif-heading-5 leading-normal mb-8">
-                        Redesigning the Magnet Trade website to improve usability, align with the brand, and better serve trade customers.
-                        </div>
-                        <p class="sans-serif-body-2 text-classic-grey">
-                        Magnet Trade, the B2B division of Magnet Kitchens, undertook a full replatforming of its website to modernise its digital presence. While the consumer-facing Magnet Kitchens website had been recently updated, the trade site lacked the same level of polish, usability, and engagement. The browsing experience did not reflect the needs of trade customers, making it difficult for them to efficiently navigate product ranges, access support, and complete transactions.
-                        <br><br>
-                        The objective of this project was to redesign the Magnet Trade website with an updated look and feel that was aligned with the Magnet brand but still distinct enough to resonate with trade professionals. The site needed to be intuitive, fast, and practical, ensuring that busy tradespeople could quickly find what they needed while reinforcing Magnet’s position as a trusted partner for the trade industry.
-                        </p>
-                    </div>
-                    <!-- Right column end -->
-
-                </div>
-                <!-- Left + right container end -->
-
-            </div>
-        </section>
-        <!-- Intro section end -->
-
-
-        <!-- Text + image section start -->
-        <section class="mx-8 m-8">
-
-            <!-- Image 1 -->
-            <div class="w-full mt-16 sm:my-16">
-                <img src="img/placeholder-cs-ls.jpg" alt="" class="zoom-effect w-full h-full object-cover border border-gray-200">
-            </div>
-
-            <!-- Text 1 -->
-            <div class="container w-full mx-auto grid grid-cols-12">
-                <div class="sm:col-start-3 sm:col-span-8 col-span-12 space-y-6 text-classic-grey">
-
-                    <p class="sans-serif-body-2 fade-in">
-                        <strong>Constraints &amp; Challenges</strong>
-
-                        The biggest challenge was ensuring that the new design struck the right balance between maintaining brand consistency with the consumer-facing Magnet Kitchens site and creating an experience that felt tailored to the trade audience. The design needed to appeal to professional installers and builders, who required a functional and efficient platform, rather than the more aspirational, lifestyle-driven content of the consumer site.
-                        <br><br>
-                        Another key challenge was usability. Many trade users accessed the site on-site or on mobile devices, so the design had to prioritise speed and ease of use. The project also had to account for the needs of multiple stakeholders, including Commercial, Marketing, and Development teams, each with their own objectives and constraints. The site needed to be scalable, allowing for future iterations and enhancements without disrupting the user experience.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Image 2 -->
-            <div class="w-full mt-16 sm:my-16">
-                <img src="img/placeholder-cs-ls.jpg" alt="" class="zoom-effect w-full h-full object-cover border border-gray-200">
-            </div>
-
-            <!-- Text 2 -->
-            <div class="container w-full mx-auto grid grid-cols-12">
-                <div class="sm:col-start-3 sm:col-span-8 col-span-12 space-y-6 text-classic-grey">
-                    <p class="sans-serif-body-2 fade-in">
-                        <strong>My Role &amp; Approach</strong>
-
-                        As Lead Product Designer, I was responsible for shaping the UX and UI design of the new Magnet Trade website. My role covered the full design process, from research and conceptualisation through to prototyping and final execution.
-                        <br><br>
-                        The project began with a research and discovery phase, where I reviewed existing data, conducted competitor benchmarking, and worked with stakeholders to identify key pain points and opportunities. With a clear understanding of user needs, I defined the UX strategy and created wireframes to test and validate the new navigation structure and key user journeys.
-                        <br><br>
-                        In parallel, I led the development of the new visual design, ensuring that it aligned with Magnet’s brand identity while introducing a more practical, trade-focused aesthetic. I collaborated closely with developers throughout the implementation phase, ensuring that the final design was both visually compelling and technically feasible.
-
-
-                    </p>
-                    <p class="sans-serif-body-2 fade-in">
-                        <strong>The Solution</strong>
-
-                        The redesigned Magnet Trade website introduced a more intuitive and engaging experience tailored to the needs of trade customers. The visual identity was refreshed to strike a balance between professional and approachable, ensuring it felt distinct from the consumer site while maintaining a strong connection to the Magnet brand.
-                        <br><br>
-                        The user experience was significantly improved, with a streamlined navigation system that made it easier for trade users to find products, services, and account tools. The site was designed with a mobile-first approach, recognising that many users would be accessing it on-site or between jobs. Product presentation was enhanced, with clearer categorisation, improved imagery, and better access to specifications and pricing, making it easier for trade customers to browse and compare options.
-                        <br><br>
-                        Practical tools such as account management features and trade-specific services were made more prominent, ensuring that professionals could quickly access support, pricing, and design services. The checkout experience was optimised to reduce friction, making it as efficient as possible for trade customers to place orders and manage their accounts.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Image 3 & 4 -->
-            <div class="w-full mt-16 sm:my-16 grid grid-cols-1 md:grid-cols-2 gap-8">
-                <img src="img/placeholder-cs-sq.jpg" alt="" class="zoom-effect w-full h-full object-cover border border-gray-200">
-                <img src="img/placeholder-cs-sq.jpg" alt="" class="zoom-effect w-full h-full object-cover border border-gray-200">
-            </div>
-
-            <!-- Text 3 -->
-            <div class="container w-full mx-auto grid grid-cols-12">
-                <div class="sm:col-start-3 sm:col-span-8 col-span-12 space-y-6 text-classic-grey">
-                    <p class="sans-serif-body-2 fade-in">
-                        <strong>Results &amp; Impact</strong>
-
-
-                        The redesigned Magnet Trade website successfully improved usability and engagement among trade customers. The more intuitive navigation and optimised user experience led to an increase in time spent on key product and service pages. The updated product presentation helped drive stronger engagement with kitchen ranges and trade services, while the streamlined checkout and account management tools made it easier for users to complete transactions.
-                        <br><br>
-                        Although exact revenue impact data was not available, the improved design and user experience contributed to increased conversion potential. Based on industry benchmarks and observed engagement patterns, the redesigned site had the potential to drive a five to ten percent uplift in conversion rates. Over the course of a year, this could translate into a significant increase in trade sales, reinforcing Magnet’s position as a leader in the trade kitchen market.
-                    </p>
-                    <p class="sans-serif-body-2 fade-in">
-                        <strong>Learnings &amp; Next Steps</strong>
-
-                        This project highlighted the importance of understanding the specific needs of a B2B audience and designing an experience that aligns with both user expectations and business objectives. The success of the redesign demonstrated that a practical, well-structured, and visually engaging site could enhance the digital experience without sacrificing efficiency.
-                        <br><br>
-                        Looking ahead, future iterations could explore deeper personalisation, allowing trade users to receive tailored recommendations based on their previous activity. Further enhancements to account management tools could help improve repeat business by making it even easier for trade customers to reorder products and manage their purchases. Additional integration with Magnet’s consumer digital experiences could also create a more seamless omnichannel experience, strengthening the overall brand ecosystem.
-
-                    </p>
-                </div>
-            </div>
-
-            <!-- Disclaimer text -->
-            <div class="w-full mt-0 sm:my-16 grid grid-cols-1 md:grid-cols-2 gap-8 hidden">
-                    <p class="w-full sans-serif-body-4 text-classic-grey italic font-extralight">
-                        *Figures based on forecasted projection
-                    </p>
-            </div>
-
-
-        </section>
-        <!-- Text + image section end -->
-
-        <!-- CONTENT END -->
-
-
-
-        <!-- CASE STUDY NAVIGATOR START -->
-        <div class="w-full px-8 my-16 flex justify-between items-center">
-            <!-- Left: Previous Case Study (on mobile, only show the arrow) -->
-            <a href="#" class="flex items-center text-gray-800 no-underline hover:text-gray-600 sm:hidden">
-                <i class="fa-solid fa-arrow-left"></i>
-            </a>
-            <a href="#" class="hidden sm:flex items-center text-gray-800 no-underline hover:text-gray-600">
-                <i class="fa-solid fa-arrow-left mr-2"></i>
-                <span>Previous case study</span>
-            </a>
-
-            <!-- Center: View All (on mobile, use 4-square grid icon) -->
-            <a href="work.html" class="flex items-center text-gray-800 no-underline hover:text-gray-600 sm:hidden">
-                <i class="fa-solid fa-grip"></i>
-            </a>
-            <a href="work.html" class="hidden sm:flex text-gray-800 no-underline hover:text-gray-600">
-                <span>View all</span>
-            </a>
-
-            <!-- Right: Next Case Study (on mobile, only show the arrow) -->
-            <a href="#" class="flex items-center text-gray-800 no-underline hover:text-gray-600 sm:hidden">
-                <i class="fa-solid fa-arrow-right"></i>
-            </a>
-            <a href="#" class="hidden sm:flex items-center text-gray-800 no-underline hover:text-gray-600">
-                <span>Next case study</span>
-                <i class="fa-solid fa-arrow-right ml-2"></i>
-            </a>
-        </div>
-        <!-- CASE STUDY NAVIGATOR END -->
-
-
+    <!-- Background Image (Now Static) -->
+    <div class="parallax-bg absolute inset-0 bg-cover bg-center h-screen"
+         style="background-image: url('img/placeholder-cs-hero.jpg');">
     </div>
 
-    <!-- BARBA CONTENT END -->
+    <!-- Transparent Overlay -->
+    <div class="image-overlay"></div>
+
+    <div class="image-overlay-container container w-full md:mx-auto relative grid grid-cols-12 gap-4 gap-y-8 text-left mx-8 sm:px-8 xl:pl-32 sm:pt-24">
+        <img class="hero-logo col-span-8 md:col-span-12 fade-in" src="img/logos/magnet-cropped.png">
+        <h1 class="sans-serif-heading-1-light text-off-white col-span-8 md:col-span-12 fade-in">
+            Trade site replatform
+        </h1>
+        <div class="flex flex-wrap col-span-8 md:col-span-12 fade-in gap-2">
+            <div class="label-tag white sans-serif-body-3">Product design</div>
+            <div class="label-tag white sans-serif-body-3">B2B</div>
+        </div>
+    </div>
+
+</section>
+<!-- HERO SECTION END -->
+
+<!-- CONTENT START -->
+
+<!-- Intro section start -->
+<section class="mx-8 m-8">
+    <div class="container w-full mx-auto">
+
+        <!-- Left + right container -->
+        <div class="grid grid-cols-12">
+
+            <!-- Left column -->
+            <div class="xl:col-start-2 col-span-12 lg:col-span-5 xl:col-span-4 lg:mr-16 xl:mr-24">
+                <div class="grid grid-cols-12">
+
+                    <!-- Table -->
+                    <div class="col-span-12 md:col-span-6 lg:col-span-12 work-info-table">
+                            <div class="work-row">
+                              <div class="work-label border-b border-b-gray-300">CLIENT</div>
+                              <div class="work-value border-b border-b-gray-300">
+                                <a href="https://www.magnettrade.co.uk/" target="_blank" rel="noopener">Magnet Kitchens <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                              </div>
+                            </div>
+                            <div class="work-row">
+                              <div class="work-label border-b border-b-gray-300">DATE</div>
+                              <div class="work-value border-b border-b-gray-300">2022</div>
+                            </div>
+                            <div class="work-row">
+                              <div class="work-label border-b border-b-gray-300">ROLE</div>
+                              <div class="work-value border-b border-b-gray-300">Head of Design Services</div>
+                            </div>
+                            <div class="work-row">
+                              <div class="work-label">AGENCY</div>
+                              <div class="work-value">
+                                <a href="https://www.biglight.co.uk" target="_blank" rel="noopener">Biglight <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                              </div>
+                        </div>
+                    </div>
+
+                    <!-- Metrics -->
+                    <div class="col-span-12 md:col-span-6 lg:col-span-12 mt-8 md:mt-0 lg:mt-8 pl-0 md:pl-16 lg:pl-0 ">
+                        <div class="metric-box p-6">
+                          <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 flex justify-center items-center">
+                              <div class="text-2xl">📈</div>
+                            </div>
+                            <div class="ml-4">
+                              <div class="sans-serif-body-1 font-bold">Increased engagement</div>
+                              <div class="sans-serif-body-3 text-gray-500">High traffic to key features</div>
+                            </div>
+                          </div>
+                          <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 flex justify-center items-center">
+                              <div class="text-2xl">🎨</div>
+                            </div>
+                            <div class="ml-4">
+                              <div class="sans-serif-body-1 font-bold">Brand aligned</div>
+                              <div class="sans-serif-body-3 text-gray-500">Distinct yet cohesive with consumer site</div>
+                            </div>
+                          </div>
+                          <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 flex justify-center items-center">
+                              <div class="text-2xl">⚡</div>
+                            </div>
+                            <div class="ml-4">
+                              <div class="sans-serif-body-1 font-bold">Enhanced navigation</div>
+                              <div class="sans-serif-body-3 text-gray-500">Quicker access to information</div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <!-- Metrics end -->
+
+                </div>
+            </div>
+            <!-- Left column end -->
+
+            <!-- Right column -->
+            <div class="col-span-12 lg:col-span-7 xl:col-span-6 lg:mt-4 mt-16">
+                <div class="serif-heading-2 font-bold mb-8">
+                A digital transformation for trade professionals
+                </div>
+                <div class="serif-heading-5 leading-normal mb-8">
+                Redesigning the Magnet Trade website to improve usability, align with the brand, and better serve trade customers.
+                </div>
+                <p class="sans-serif-body-2 text-classic-grey">
+                Magnet Trade, the B2B division of Magnet Kitchens, undertook a full replatforming of its website to modernise its digital presence. While the consumer-facing Magnet Kitchens website had been recently updated, the trade site lacked the same level of polish, usability, and engagement. The browsing experience did not reflect the needs of trade customers, making it difficult for them to efficiently navigate product ranges, access support, and complete transactions.
+                <br><br>
+                The objective of this project was to redesign the Magnet Trade website with an updated look and feel that was aligned with the Magnet brand but still distinct enough to resonate with trade professionals. The site needed to be intuitive, fast, and practical, ensuring that busy tradespeople could quickly find what they needed while reinforcing Magnet’s position as a trusted partner for the trade industry.
+                </p>
+            </div>
+            <!-- Right column end -->
+
+        </div>
+        <!-- Left + right container end -->
+
+    </div>
+</section>
+<!-- Intro section end -->
+
+
+<!-- Text + image section start -->
+<section class="mx-8 m-8">
+
+    <!-- Image 1 -->
+    <div class="w-full mt-16 sm:my-16">
+        <img src="img/placeholder-cs-ls.jpg" alt="" class="zoom-effect w-full h-full object-cover border border-gray-200">
+    </div>
+
+    <!-- Text 1 -->
+    <div class="container w-full mx-auto grid grid-cols-12">
+        <div class="sm:col-start-3 sm:col-span-8 col-span-12 space-y-6 text-classic-grey">
+
+            <p class="sans-serif-body-2 fade-in">
+                <strong>Constraints &amp; Challenges</strong>
+
+                The biggest challenge was ensuring that the new design struck the right balance between maintaining brand consistency with the consumer-facing Magnet Kitchens site and creating an experience that felt tailored to the trade audience. The design needed to appeal to professional installers and builders, who required a functional and efficient platform, rather than the more aspirational, lifestyle-driven content of the consumer site.
+                <br><br>
+                Another key challenge was usability. Many trade users accessed the site on-site or on mobile devices, so the design had to prioritise speed and ease of use. The project also had to account for the needs of multiple stakeholders, including Commercial, Marketing, and Development teams, each with their own objectives and constraints. The site needed to be scalable, allowing for future iterations and enhancements without disrupting the user experience.
+            </p>
+        </div>
+    </div>
+
+    <!-- Image 2 -->
+    <div class="w-full mt-16 sm:my-16">
+        <img src="img/placeholder-cs-ls.jpg" alt="" class="zoom-effect w-full h-full object-cover border border-gray-200">
+    </div>
+
+    <!-- Text 2 -->
+    <div class="container w-full mx-auto grid grid-cols-12">
+        <div class="sm:col-start-3 sm:col-span-8 col-span-12 space-y-6 text-classic-grey">
+            <p class="sans-serif-body-2 fade-in">
+                <strong>My Role &amp; Approach</strong>
+
+                As Lead Product Designer, I was responsible for shaping the UX and UI design of the new Magnet Trade website. My role covered the full design process, from research and conceptualisation through to prototyping and final execution.
+                <br><br>
+                The project began with a research and discovery phase, where I reviewed existing data, conducted competitor benchmarking, and worked with stakeholders to identify key pain points and opportunities. With a clear understanding of user needs, I defined the UX strategy and created wireframes to test and validate the new navigation structure and key user journeys.
+                <br><br>
+                In parallel, I led the development of the new visual design, ensuring that it aligned with Magnet’s brand identity while introducing a more practical, trade-focused aesthetic. I collaborated closely with developers throughout the implementation phase, ensuring that the final design was both visually compelling and technically feasible.
+
+
+            </p>
+            <p class="sans-serif-body-2 fade-in">
+                <strong>The Solution</strong>
+
+                The redesigned Magnet Trade website introduced a more intuitive and engaging experience tailored to the needs of trade customers. The visual identity was refreshed to strike a balance between professional and approachable, ensuring it felt distinct from the consumer site while maintaining a strong connection to the Magnet brand.
+                <br><br>
+                The user experience was significantly improved, with a streamlined navigation system that made it easier for trade users to find products, services, and account tools. The site was designed with a mobile-first approach, recognising that many users would be accessing it on-site or between jobs. Product presentation was enhanced, with clearer categorisation, improved imagery, and better access to specifications and pricing, making it easier for trade customers to browse and compare options.
+                <br><br>
+                Practical tools such as account management features and trade-specific services were made more prominent, ensuring that professionals could quickly access support, pricing, and design services. The checkout experience was optimised to reduce friction, making it as efficient as possible for trade customers to place orders and manage their accounts.
+            </p>
+        </div>
+    </div>
+
+    <!-- Image 3 & 4 -->
+    <div class="w-full mt-16 sm:my-16 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <img src="img/placeholder-cs-sq.jpg" alt="" class="zoom-effect w-full h-full object-cover border border-gray-200">
+        <img src="img/placeholder-cs-sq.jpg" alt="" class="zoom-effect w-full h-full object-cover border border-gray-200">
+    </div>
+
+    <!-- Text 3 -->
+    <div class="container w-full mx-auto grid grid-cols-12">
+        <div class="sm:col-start-3 sm:col-span-8 col-span-12 space-y-6 text-classic-grey">
+            <p class="sans-serif-body-2 fade-in">
+                <strong>Results &amp; Impact</strong>
+
+
+                The redesigned Magnet Trade website successfully improved usability and engagement among trade customers. The more intuitive navigation and optimised user experience led to an increase in time spent on key product and service pages. The updated product presentation helped drive stronger engagement with kitchen ranges and trade services, while the streamlined checkout and account management tools made it easier for users to complete transactions.
+                <br><br>
+                Although exact revenue impact data was not available, the improved design and user experience contributed to increased conversion potential. Based on industry benchmarks and observed engagement patterns, the redesigned site had the potential to drive a five to ten percent uplift in conversion rates. Over the course of a year, this could translate into a significant increase in trade sales, reinforcing Magnet’s position as a leader in the trade kitchen market.
+            </p>
+            <p class="sans-serif-body-2 fade-in">
+                <strong>Learnings &amp; Next Steps</strong>
+
+                This project highlighted the importance of understanding the specific needs of a B2B audience and designing an experience that aligns with both user expectations and business objectives. The success of the redesign demonstrated that a practical, well-structured, and visually engaging site could enhance the digital experience without sacrificing efficiency.
+                <br><br>
+                Looking ahead, future iterations could explore deeper personalisation, allowing trade users to receive tailored recommendations based on their previous activity. Further enhancements to account management tools could help improve repeat business by making it even easier for trade customers to reorder products and manage their purchases. Additional integration with Magnet’s consumer digital experiences could also create a more seamless omnichannel experience, strengthening the overall brand ecosystem.
+
+            </p>
+        </div>
+    </div>
+
+    <!-- Disclaimer text -->
+    <div class="w-full mt-0 sm:my-16 grid grid-cols-1 md:grid-cols-2 gap-8 hidden">
+            <p class="w-full sans-serif-body-4 text-classic-grey italic font-extralight">
+                *Figures based on forecasted projection
+            </p>
+    </div>
+
+
+</section>
+<!-- Text + image section end -->
+
+<!-- CONTENT END -->
+
+
+
+<!-- CASE STUDY NAVIGATOR START -->
+<div class="w-full px-8 my-16 flex justify-between items-center">
+    <!-- Left: Previous Case Study (on mobile, only show the arrow) -->
+    <a href="#" class="flex items-center text-gray-800 no-underline hover:text-gray-600 sm:hidden">
+        <i class="fa-solid fa-arrow-left"></i>
+    </a>
+    <a href="#" class="hidden sm:flex items-center text-gray-800 no-underline hover:text-gray-600">
+        <i class="fa-solid fa-arrow-left mr-2"></i>
+        <span>Previous case study</span>
+    </a>
+
+    <!-- Center: View All (on mobile, use 4-square grid icon) -->
+    <a href="work.html" class="flex items-center text-gray-800 no-underline hover:text-gray-600 sm:hidden">
+        <i class="fa-solid fa-grip"></i>
+    </a>
+    <a href="work.html" class="hidden sm:flex text-gray-800 no-underline hover:text-gray-600">
+        <span>View all</span>
+    </a>
+
+    <!-- Right: Next Case Study (on mobile, only show the arrow) -->
+    <a href="#" class="flex items-center text-gray-800 no-underline hover:text-gray-600 sm:hidden">
+        <i class="fa-solid fa-arrow-right"></i>
+    </a>
+    <a href="#" class="hidden sm:flex items-center text-gray-800 no-underline hover:text-gray-600">
+        <span>Next case study</span>
+        <i class="fa-solid fa-arrow-right ml-2"></i>
+    </a>
 </div>
+<!-- CASE STUDY NAVIGATOR END -->

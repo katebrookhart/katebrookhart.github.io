@@ -3,39 +3,15 @@ bodyclass: mx-auto bg-green-grey text-forest-black
 ---
 <div class="loader w-full bg-green-grey fixed items-center">GOLDEN BEAR STUDIOS</div>
 
+{% include "snippets/header.html" %}
 
-<!-- BARBA CONTENT START -->
-
-<div data-barba="container" class="barba-container">
-    <div data-barba="wrapper" id="barba-wrapper">
-
-       {% include "snippets/header.html" %}
-
-        <!-- HERO SECTION START -->
-        <section class="w-full mx-auto 2xl:px-32 pb-12">
-            <div class="relative bg-cover h-[50vh] sm:h-[60vh] sm:h-[70vh] xl:rounded-lg bg-[60%_center] sm:bg-center" style="background-image: url('img/about-golden-bear.jpg'); transform: translateY(0);" data-speed="-0.2">
-                <div class="container grid grid-cols-12 min-h-[150vh] px-12 pt-6 pb-32">
-                    <div class="col-span-6 hidden lg:flex lg:flex-col justify-end relative">
-                        <!-- Ensures the text starts at the bottom-left corner of the container -->
-                        <div class="sticky" style="bottom: calc(25vh);">
-                            <h1 class="serif-heading-1 text-doodle-gold mb-8 fade-in">
-                                It all started with a Goldendoodle...
-                            </h1>
-                            <h2 class="serif-heading-5 text-dirty-grey fade-in">
-                                ...with the face of a teddy and the bark of a bear...
-                            </h2>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- HERO SECTION END -->
-
-        <!-- CONTENT START -->
-        <section class="mx-8 md:mx-0 mb-24">
-            <div class="container mx-auto grid grid-cols-12 xl:px-8">
-                <div class="col-span-12 lg:hidden pb-8">
+<!-- HERO SECTION START -->
+<section class="w-full mx-auto 2xl:px-32 pb-12">
+    <div class="relative bg-cover h-[50vh] sm:h-[60vh] sm:h-[70vh] xl:rounded-lg bg-[60%_center] sm:bg-center" style="background-image: url('img/about-golden-bear.jpg'); transform: translateY(0);" data-speed="-0.2">
+        <div class="container grid grid-cols-12 min-h-[150vh] px-12 pt-6 pb-32">
+            <div class="col-span-6 hidden lg:flex lg:flex-col justify-end relative">
+                <!-- Ensures the text starts at the bottom-left corner of the container -->
+                <div class="sticky" style="bottom: calc(25vh);">
                     <h1 class="serif-heading-1 text-doodle-gold mb-8 fade-in">
                         It all started with a Goldendoodle...
                     </h1>
@@ -43,65 +19,77 @@ bodyclass: mx-auto bg-green-grey text-forest-black
                         ...with the face of a teddy and the bark of a bear...
                     </h2>
                 </div>
-                <div class="lg:col-start-9 lg:col-span-4 col-span-12">
-                    <p class="sans-serif-body-2 text-dirty-grey py-4 fade-in">Golden Bear Studios is named after Lucy, my Mini Goldendoodle, who, like all good dogs, has been my light and grounding force (all whilst looking consistently adorable).</p>
-                    <p class="sans-serif-body-2 text-dirty-grey py-4 fade-in">After studying Fine Art at university, I threw myself into the digital design industry. But years in the corporate world eventually took their toll, leaving me creatively drained and questioning my priorities. The higher I climbed, the further I felt from what mattered most - balance, creativity, and time with loved ones. Something had to give.</p>
-                    <p class="sans-serif-body-2 text-dirty-grey py-4 fade-in">Golden Bear Studios is my way back to what I love: creating work that’s thoughtful, hands-on, and true to my values. Lucy’s unfiltered joy keeps me honest, and I aim to bring that same authenticity to every project, crafting designs that are as genuine and heartfelt as my early days in the studio, now sharpened by both an artist’s eye and a designer’s approach.</p>
-
-                    <div class="fade-in pt-8">
-                        <a class="custom-button" href="work.html">
-                          View case studies
-                          <i class="arrow fa-solid fa-arrow-right"></i>
-                        </a>
-                    </div>
-
-
-
-                </div>
             </div>
-        </section>
+        </div>
+    </div>
+</section>
 
+<!-- HERO SECTION END -->
 
-        <!-- CONTENT END -->
+<!-- CONTENT START -->
+<section class="mx-8 md:mx-0 mb-24">
+    <div class="container mx-auto grid grid-cols-12 xl:px-8">
+        <div class="col-span-12 lg:hidden pb-8">
+            <h1 class="serif-heading-1 text-doodle-gold mb-8 fade-in">
+                It all started with a Goldendoodle...
+            </h1>
+            <h2 class="serif-heading-5 text-dirty-grey fade-in">
+                ...with the face of a teddy and the bark of a bear...
+            </h2>
+        </div>
+        <div class="lg:col-start-9 lg:col-span-4 col-span-12">
+            <p class="sans-serif-body-2 text-dirty-grey py-4 fade-in">Golden Bear Studios is named after Lucy, my Mini Goldendoodle, who, like all good dogs, has been my light and grounding force (all whilst looking consistently adorable).</p>
+            <p class="sans-serif-body-2 text-dirty-grey py-4 fade-in">After studying Fine Art at university, I threw myself into the digital design industry. But years in the corporate world eventually took their toll, leaving me creatively drained and questioning my priorities. The higher I climbed, the further I felt from what mattered most - balance, creativity, and time with loved ones. Something had to give.</p>
+            <p class="sans-serif-body-2 text-dirty-grey py-4 fade-in">Golden Bear Studios is my way back to what I love: creating work that’s thoughtful, hands-on, and true to my values. Lucy’s unfiltered joy keeps me honest, and I aim to bring that same authenticity to every project, crafting designs that are as genuine and heartfelt as my early days in the studio, now sharpened by both an artist’s eye and a designer’s approach.</p>
 
-
-        <!-- PRE FOOTER START -->
-        <section class="pre-footer relative bg-dark-green text-dirty-grey py-16 px-6">
-            <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center gap-12 relative">
-
-                <!-- Left Background Shapes -->
-                <div class="absolute top-[-115px] sm:top-0 left-0 w-32 h-32 bg-left bg-no-repeat bg-contain"></div>
-
-                <!-- Text Content -->
-                <div class="relative w-full sm:w-1/2">
-                  <h2 class="text-3xl font-semibold">Got a project in mind?</h2>
-                  <p class="mt-4 text-lg">
-                    Drop us a line, and Lucy and I will get back to you (she’ll be supervising).
-                  </p>
-
-                  <!-- Call to Action -->
-                  <a href="#" class="inline-flex items-center gap-2 mt-6 text-lg font-medium text-doodle-gold transition-transform hover:underline">
-                    Send us a message
-                    <span class="transition-transform transform hover:translate-x-1"><i class="arrow fa-solid fa-arrow-right"></i></span>
-                  </a>
-                </div>
-
-                <!-- Image Section -->
-                <div class="relative w-full sm:w-1/2">
-                  <!-- Right Background Shapes -->
-                  <div class="absolute bottom-[-1.5rem] right-0 w-36 h-36 bg-right bg-no-repeat bg-contain"></div>
-                  <div class="lucy-bg"></div>
-                </div>
-
+            <div class="fade-in pt-8">
+                <a class="custom-button" href="work.html">
+                  View case studies
+                  <i class="arrow fa-solid fa-arrow-right"></i>
+                </a>
             </div>
-        </section>
-
-        <!-- PRE FOOTER END -->
 
 
 
+        </div>
+    </div>
+</section>
+
+
+<!-- CONTENT END -->
+
+
+<!-- PRE FOOTER START -->
+<section class="pre-footer relative bg-dark-green text-dirty-grey py-16 px-6">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center gap-12 relative">
+
+        <!-- Left Background Shapes -->
+        <div class="absolute top-[-115px] sm:top-0 left-0 w-32 h-32 bg-left bg-no-repeat bg-contain"></div>
+
+        <!-- Text Content -->
+        <div class="relative w-full sm:w-1/2">
+          <h2 class="text-3xl font-semibold">Got a project in mind?</h2>
+          <p class="mt-4 text-lg">
+            Drop us a line, and Lucy and I will get back to you (she’ll be supervising).
+          </p>
+
+          <!-- Call to Action -->
+          <a href="#" class="inline-flex items-center gap-2 mt-6 text-lg font-medium text-doodle-gold transition-transform hover:underline">
+            Send us a message
+            <span class="transition-transform transform hover:translate-x-1"><i class="arrow fa-solid fa-arrow-right"></i></span>
+          </a>
+        </div>
+
+        <!-- Image Section -->
+        <div class="relative w-full sm:w-1/2">
+          <!-- Right Background Shapes -->
+          <div class="absolute bottom-[-1.5rem] right-0 w-36 h-36 bg-right bg-no-repeat bg-contain"></div>
+          <div class="lucy-bg"></div>
+        </div>
 
     </div>
+</section>
 
-    <!-- BARBA CONTENT END -->
-</div>
+<!-- PRE FOOTER END -->
+
+

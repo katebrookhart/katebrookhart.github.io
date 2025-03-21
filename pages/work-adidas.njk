@@ -3,230 +3,221 @@ bodyclass: mx-auto bg-off-white text-forest-black case-study-page
 ---
 <div class="loader w-full bg-green-grey fixed items-center">GOLDEN BEAR STUDIOS</div>
 
-<!-- BARBA CONTENT START -->
 
-<div data-barba="container" class="barba-container">
-    <div data-barba="wrapper" id="barba-wrapper">
+{% include "snippets/header.html" %}
 
-        {% include "snippets/header.html" %}
+<!-- HERO SECTION START -->
+<section id="big-hero" class="work-hero relative h-screen flex items-end xl:pb-24 pb-16">
 
-        <!-- HERO SECTION START -->
-        <section id="big-hero" class="work-hero relative h-screen flex items-end xl:pb-24 pb-16">
-
-            <!-- Background Image (Now Static) -->
-            <div class="parallax-bg absolute inset-0 bg-cover bg-center h-screen"
-                 style="background-image: url('img/placeholder-cs-hero.jpg');">
-            </div>
-
-            <!-- Transparent Overlay -->
-            <div class="image-overlay"></div>
-
-            <div class="image-overlay-container container w-full md:mx-auto relative grid grid-cols-12 gap-4 gap-y-8 text-left mx-8 sm:px-8 xl:pl-32 sm:pt-24">
-                <img class="hero-logo col-span-8 md:col-span-12 fade-in" src="img/logos/tnf-cropped.png">
-                <h1 class="sans-serif-heading-1-light text-off-white col-span-8 md:col-span-12 fade-in">
-                    Engaged experiences
-                </h1>
-                <div class="flex flex-wrap col-span-8 md:col-span-12 fade-in gap-2">
-                    <div class="label-tag white sans-serif-body-3">Concept design</div>
-                </div>
-            </div>
-
-        </section>
-        <!-- HERO SECTION END -->
-
-        <!-- CONTENT START -->
-
-        <!-- Intro section start -->
-        <section class="mx-8 m-8">
-            <div class="container w-full mx-auto">
-
-                <!-- Left + right container -->
-                <div class="grid grid-cols-12">
-
-                    <!-- Left column -->
-                    <div class="xl:col-start-2 col-span-12 lg:col-span-5 xl:col-span-4 lg:mr-16 xl:mr-24">
-                        <div class="grid grid-cols-12">
-
-                            <!-- Table -->
-                            <div class="col-span-12 md:col-span-6 lg:col-span-12 work-info-table">
-                                    <div class="work-row">
-                                      <div class="work-label border-b border-b-gray-300">CLIENT</div>
-                                      <div class="work-value border-b border-b-gray-300">
-                                        <a href="https://www.adidas.co.uk/" target="_blank" rel="noopener">adidas <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                      </div>
-                                    </div>
-                                    <div class="work-row">
-                                      <div class="work-label border-b border-b-gray-300">DATE</div>
-                                      <div class="work-value border-b border-b-gray-300">2017</div>
-                                    </div>
-                                    <div class="work-row">
-                                      <div class="work-label border-b border-b-gray-300">ROLE</div>
-                                      <div class="work-value border-b border-b-gray-300">UI Designer</div>
-                                    </div>
-                                    <div class="work-row">
-                                      <div class="work-label">AGENCY</div>
-                                      <div class="work-value">
-                                        <a href="https://www.biglight.co.uk" target="_blank" rel="noopener">Biglight <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                      </div>
-                                </div>
-                            </div>
-
-                            <!-- Metrics -->
-                            <div class="col-span-12 md:col-span-6 lg:col-span-12 mt-8 md:mt-0 lg:mt-8 pl-0 md:pl-16 lg:pl-0 ">
-                                <div class="metric-box p-6">
-                                  <div class="flex items-center mb-4">
-                                    <div class="w-12 h-12 flex justify-center items-center">
-                                      <div class="text-2xl">☝️</div>
-                                    </div>
-                                    <div class="ml-4">
-                                        <div class="sans-serif-body-2 font-[500]">Increased engagement</div>
-                                        <div class="sans-serif-body-5 text-gray-500 font-[200]">Boosted user interaction</div>
-                                    </div>
-                                  </div>
-                                  <div class="flex items-center mb-4">
-                                    <div class="w-12 h-12 flex justify-center items-center">
-                                      <div class="text-2xl">👟</div>
-                                    </div>
-                                    <div class="ml-4">
-                                       <div class="sans-serif-body-2 font-[500]">Streamlined shopping</div>
-                                      <div class="sans-serif-body-5 text-gray-500 font-[200]">Quicker, more intuitive paths</div>
-                                    </div>
-                                  </div>
-                                  <div class="flex items-center mb-4">
-                                    <div class="w-12 h-12 flex justify-center items-center">
-                                      <div class="text-2xl">📈</div>
-                                    </div>
-                                    <div class="ml-4">
-                                      <div class="sans-serif-body-2 font-[500]">Future-proof design</div>
-                                      <div class="sans-serif-body-5 text-gray-500 font-[200]">System that supports continuous innovation</div>
-                                    </div>
-                                  </div>
-                                </div>
-                            </div>
-                            <!-- Metrics end -->
-
-                        </div>
-                    </div>
-                    <!-- Left column end -->
-
-                    <!-- Right column -->
-                    <div class="col-span-12 lg:col-span-7 xl:col-span-6 lg:mt-4 mt-16">
-                        <div class="serif-heading-2 font-bold mb-8">
-                        Bridging the gap between product and content for a seamless shopping experience
-                        </div>
-                        <p class="sans-serif-body-2 text-classic-grey">
-                        Adidas is a global leader in sportswear and digital innovation. While the brand already had strong content and high online conversion rates, their product-related content and e-commerce experience existed in isolation from each other. Product pages were not always directly linked to the content that promoted them, and content pages lacked intuitive pathways for customers to shop the featured products.
-                        <br><br>
-                        Adidas needed to create a seamless experience that bridged the gap between product information and brand content. The goal was to combine the two in a way that felt cohesive and organic, enhancing the user journey without disrupting it. The brand wanted to offer a fully branded experience, allowing customers to move fluidly from discovering content to completing a purchase.
-                        </p>
-                    </div>
-                    <!-- Right column end -->
-
-                </div>
-                <!-- Left + right container end -->
-
-            </div>
-        </section>
-        <!-- Intro section end -->
-
-
-        <!-- Text + image section start -->
-        <section class="mx-8 m-8">
-
-            <!-- Image 1 -->
-            <div class="w-full mt-16 sm:my-16">
-                <img src="img/placeholder-cs-ls.jpg" alt="" class="zoom-effect w-full h-full object-cover border border-gray-200">
-            </div>
-
-            <!-- Text 1 -->
-            <div class="container w-full mx-auto grid grid-cols-12">
-                <div class="sm:col-start-3 sm:col-span-8 col-span-12 space-y-6 text-classic-grey">
-
-                    <p class="sans-serif-body-2 fade-in">
-                        <strong>What we did</strong>
-
-                        Our team worked closely with Adidas to understand their customers’ needs and motivations across various digital touchpoints. Research revealed that Adidas’ product ‘franchises’ (like Adidas Originals) had strong engagement in isolation but lacked the mechanics to guide users seamlessly through content to the shopping experience.
-                        <br><br>
-                        To address this, we proposed the creation of an innovative Product Listing Page (PLP) that integrated brand content and provided users with the option to toggle between ‘story mode’ and a traditional grid layout. Additionally, we re-imagined the image gallery on product detail pages and introduced interactive, shoppable video content. This would allow customers to interact with content while simultaneously viewing or purchasing products.
-                        <br><br>
-                        The solution was conceptualised into a prototype, which is currently being integrated into Adidas’ 2019 ideation and development roadmap. The design centred on creating a unified experience where brand storytelling and e-commerce capabilities worked hand in hand, guiding customers seamlessly from discovery to purchase.
-
-                    </p>
-                </div>
-            </div>
-
-            <!-- Image 2 -->
-            <div class="w-full mt-16 sm:my-16">
-                <img src="img/placeholder-cs-ls.jpg" alt="" class="zoom-effect w-full h-full object-cover border border-gray-200">
-            </div>
-
-            <!-- Text 2 -->
-            <div class="container w-full mx-auto grid grid-cols-12">
-                <div class="sm:col-start-3 sm:col-span-8 col-span-12 space-y-6 text-classic-grey">
-
-                    <p class="sans-serif-body-2 fade-in">
-                        <strong>Key deliverables</strong>
-
-                        We seamlessly integrated product details with brand storytelling, ensuring that content was directly accessible and shoppable from product pages. This allowed users to engage with both the content and the products they were interested in without needing to navigate away from the page. We also introduced interactive ‘shoppable’ video content and toggle features, enabling users to switch between ‘story mode’ and a traditional grid layout for a more engaging experience. Lastly, we re-imagined the product listing pages and image galleries to create a smoother, more cohesive shopping experience across both desktop and mobile devices.
-
-                    </p>
-
-                </div>
-            </div>
-
-            <!-- Image 3 & 4 -->
-            <div class="w-full mt-16 sm:my-16 grid grid-cols-1 md:grid-cols-2 gap-8">
-                <img src="img/placeholder-cs-sq.jpg" alt="" class="zoom-effect w-full h-full object-cover border border-gray-200">
-                <img src="img/placeholder-cs-sq.jpg" alt="" class="zoom-effect w-full h-full object-cover border border-gray-200">
-            </div>
-
-
-
-            <!-- Disclaimer text -->
-            <div class="w-full mt-0 sm:my-16 grid grid-cols-1 md:grid-cols-2 gap-8 hidden">
-                    <p class="w-full sans-serif-body-4 text-classic-grey italic font-extralight">
-                        *Figures based on forecasted projection
-                    </p>
-            </div>
-
-
-        </section>
-        <!-- Text + image section end -->
-
-        <!-- CONTENT END -->
-
-        <!-- CASE STUDY NAVIGATOR START -->
-        <div class="w-full px-8 my-16 flex justify-between items-center">
-            <!-- Left: Previous Case Study (on mobile, only show the arrow) -->
-            <a href="#" class="flex items-center text-gray-800 no-underline hover:text-gray-600 sm:hidden">
-                <i class="fa-solid fa-arrow-left"></i>
-            </a>
-            <a href="#" class="hidden sm:flex items-center text-gray-800 no-underline hover:text-gray-600">
-                <i class="fa-solid fa-arrow-left mr-2"></i>
-                <span>Previous case study</span>
-            </a>
-
-            <!-- Center: View All (on mobile, use 4-square grid icon) -->
-            <a href="work.html" class="flex items-center text-gray-800 no-underline hover:text-gray-600 sm:hidden">
-                <i class="fa-solid fa-grip"></i>
-            </a>
-            <a href="work.html" class="hidden sm:flex text-gray-800 no-underline hover:text-gray-600">
-                <span>View all</span>
-            </a>
-
-            <!-- Right: Next Case Study (on mobile, only show the arrow) -->
-            <a href="#" class="flex items-center text-gray-800 no-underline hover:text-gray-600 sm:hidden">
-                <i class="fa-solid fa-arrow-right"></i>
-            </a>
-            <a href="#" class="hidden sm:flex items-center text-gray-800 no-underline hover:text-gray-600">
-                <span>Next case study</span>
-                <i class="fa-solid fa-arrow-right ml-2"></i>
-            </a>
-        </div>
-        <!-- CASE STUDY NAVIGATOR END -->
-
-
+    <!-- Background Image (Now Static) -->
+    <div class="parallax-bg absolute inset-0 bg-cover bg-center h-screen"
+         style="background-image: url('img/placeholder-cs-hero.jpg');">
     </div>
 
-    <!-- BARBA CONTENT END -->
+    <!-- Transparent Overlay -->
+    <div class="image-overlay"></div>
+
+    <div class="image-overlay-container container w-full md:mx-auto relative grid grid-cols-12 gap-4 gap-y-8 text-left mx-8 sm:px-8 xl:pl-32 sm:pt-24">
+        <img class="hero-logo col-span-8 md:col-span-12 fade-in" src="img/logos/tnf-cropped.png">
+        <h1 class="sans-serif-heading-1-light text-off-white col-span-8 md:col-span-12 fade-in">
+            Engaged experiences
+        </h1>
+        <div class="flex flex-wrap col-span-8 md:col-span-12 fade-in gap-2">
+            <div class="label-tag white sans-serif-body-3">Concept design</div>
+        </div>
+    </div>
+
+</section>
+<!-- HERO SECTION END -->
+
+<!-- CONTENT START -->
+
+<!-- Intro section start -->
+<section class="mx-8 m-8">
+    <div class="container w-full mx-auto">
+
+        <!-- Left + right container -->
+        <div class="grid grid-cols-12">
+
+            <!-- Left column -->
+            <div class="xl:col-start-2 col-span-12 lg:col-span-5 xl:col-span-4 lg:mr-16 xl:mr-24">
+                <div class="grid grid-cols-12">
+
+                    <!-- Table -->
+                    <div class="col-span-12 md:col-span-6 lg:col-span-12 work-info-table">
+                            <div class="work-row">
+                              <div class="work-label border-b border-b-gray-300">CLIENT</div>
+                              <div class="work-value border-b border-b-gray-300">
+                                <a href="https://www.adidas.co.uk/" target="_blank" rel="noopener">adidas <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                              </div>
+                            </div>
+                            <div class="work-row">
+                              <div class="work-label border-b border-b-gray-300">DATE</div>
+                              <div class="work-value border-b border-b-gray-300">2017</div>
+                            </div>
+                            <div class="work-row">
+                              <div class="work-label border-b border-b-gray-300">ROLE</div>
+                              <div class="work-value border-b border-b-gray-300">UI Designer</div>
+                            </div>
+                            <div class="work-row">
+                              <div class="work-label">AGENCY</div>
+                              <div class="work-value">
+                                <a href="https://www.biglight.co.uk" target="_blank" rel="noopener">Biglight <i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                              </div>
+                        </div>
+                    </div>
+
+                    <!-- Metrics -->
+                    <div class="col-span-12 md:col-span-6 lg:col-span-12 mt-8 md:mt-0 lg:mt-8 pl-0 md:pl-16 lg:pl-0 ">
+                        <div class="metric-box p-6">
+                          <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 flex justify-center items-center">
+                              <div class="text-2xl">☝️</div>
+                            </div>
+                            <div class="ml-4">
+                                <div class="sans-serif-body-2 font-[500]">Increased engagement</div>
+                                <div class="sans-serif-body-5 text-gray-500 font-[200]">Boosted user interaction</div>
+                            </div>
+                          </div>
+                          <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 flex justify-center items-center">
+                              <div class="text-2xl">👟</div>
+                            </div>
+                            <div class="ml-4">
+                               <div class="sans-serif-body-2 font-[500]">Streamlined shopping</div>
+                              <div class="sans-serif-body-5 text-gray-500 font-[200]">Quicker, more intuitive paths</div>
+                            </div>
+                          </div>
+                          <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 flex justify-center items-center">
+                              <div class="text-2xl">📈</div>
+                            </div>
+                            <div class="ml-4">
+                              <div class="sans-serif-body-2 font-[500]">Future-proof design</div>
+                              <div class="sans-serif-body-5 text-gray-500 font-[200]">System that supports continuous innovation</div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <!-- Metrics end -->
+
+                </div>
+            </div>
+            <!-- Left column end -->
+
+            <!-- Right column -->
+            <div class="col-span-12 lg:col-span-7 xl:col-span-6 lg:mt-4 mt-16">
+                <div class="serif-heading-2 font-bold mb-8">
+                Bridging the gap between product and content for a seamless shopping experience
+                </div>
+                <p class="sans-serif-body-2 text-classic-grey">
+                Adidas is a global leader in sportswear and digital innovation. While the brand already had strong content and high online conversion rates, their product-related content and e-commerce experience existed in isolation from each other. Product pages were not always directly linked to the content that promoted them, and content pages lacked intuitive pathways for customers to shop the featured products.
+                <br><br>
+                Adidas needed to create a seamless experience that bridged the gap between product information and brand content. The goal was to combine the two in a way that felt cohesive and organic, enhancing the user journey without disrupting it. The brand wanted to offer a fully branded experience, allowing customers to move fluidly from discovering content to completing a purchase.
+                </p>
+            </div>
+            <!-- Right column end -->
+
+        </div>
+        <!-- Left + right container end -->
+
+    </div>
+</section>
+<!-- Intro section end -->
+
+
+<!-- Text + image section start -->
+<section class="mx-8 m-8">
+
+    <!-- Image 1 -->
+    <div class="w-full mt-16 sm:my-16">
+        <img src="img/placeholder-cs-ls.jpg" alt="" class="zoom-effect w-full h-full object-cover border border-gray-200">
+    </div>
+
+    <!-- Text 1 -->
+    <div class="container w-full mx-auto grid grid-cols-12">
+        <div class="sm:col-start-3 sm:col-span-8 col-span-12 space-y-6 text-classic-grey">
+
+            <p class="sans-serif-body-2 fade-in">
+                <strong>What we did</strong>
+
+                Our team worked closely with Adidas to understand their customers’ needs and motivations across various digital touchpoints. Research revealed that Adidas’ product ‘franchises’ (like Adidas Originals) had strong engagement in isolation but lacked the mechanics to guide users seamlessly through content to the shopping experience.
+                <br><br>
+                To address this, we proposed the creation of an innovative Product Listing Page (PLP) that integrated brand content and provided users with the option to toggle between ‘story mode’ and a traditional grid layout. Additionally, we re-imagined the image gallery on product detail pages and introduced interactive, shoppable video content. This would allow customers to interact with content while simultaneously viewing or purchasing products.
+                <br><br>
+                The solution was conceptualised into a prototype, which is currently being integrated into Adidas’ 2019 ideation and development roadmap. The design centred on creating a unified experience where brand storytelling and e-commerce capabilities worked hand in hand, guiding customers seamlessly from discovery to purchase.
+
+            </p>
+        </div>
+    </div>
+
+    <!-- Image 2 -->
+    <div class="w-full mt-16 sm:my-16">
+        <img src="img/placeholder-cs-ls.jpg" alt="" class="zoom-effect w-full h-full object-cover border border-gray-200">
+    </div>
+
+    <!-- Text 2 -->
+    <div class="container w-full mx-auto grid grid-cols-12">
+        <div class="sm:col-start-3 sm:col-span-8 col-span-12 space-y-6 text-classic-grey">
+
+            <p class="sans-serif-body-2 fade-in">
+                <strong>Key deliverables</strong>
+
+                We seamlessly integrated product details with brand storytelling, ensuring that content was directly accessible and shoppable from product pages. This allowed users to engage with both the content and the products they were interested in without needing to navigate away from the page. We also introduced interactive ‘shoppable’ video content and toggle features, enabling users to switch between ‘story mode’ and a traditional grid layout for a more engaging experience. Lastly, we re-imagined the product listing pages and image galleries to create a smoother, more cohesive shopping experience across both desktop and mobile devices.
+
+            </p>
+
+        </div>
+    </div>
+
+    <!-- Image 3 & 4 -->
+    <div class="w-full mt-16 sm:my-16 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <img src="img/placeholder-cs-sq.jpg" alt="" class="zoom-effect w-full h-full object-cover border border-gray-200">
+        <img src="img/placeholder-cs-sq.jpg" alt="" class="zoom-effect w-full h-full object-cover border border-gray-200">
+    </div>
+
+
+
+    <!-- Disclaimer text -->
+    <div class="w-full mt-0 sm:my-16 grid grid-cols-1 md:grid-cols-2 gap-8 hidden">
+            <p class="w-full sans-serif-body-4 text-classic-grey italic font-extralight">
+                *Figures based on forecasted projection
+            </p>
+    </div>
+
+
+</section>
+<!-- Text + image section end -->
+
+<!-- CONTENT END -->
+
+<!-- CASE STUDY NAVIGATOR START -->
+<div class="w-full px-8 my-16 flex justify-between items-center">
+    <!-- Left: Previous Case Study (on mobile, only show the arrow) -->
+    <a href="#" class="flex items-center text-gray-800 no-underline hover:text-gray-600 sm:hidden">
+        <i class="fa-solid fa-arrow-left"></i>
+    </a>
+    <a href="#" class="hidden sm:flex items-center text-gray-800 no-underline hover:text-gray-600">
+        <i class="fa-solid fa-arrow-left mr-2"></i>
+        <span>Previous case study</span>
+    </a>
+
+    <!-- Center: View All (on mobile, use 4-square grid icon) -->
+    <a href="work.html" class="flex items-center text-gray-800 no-underline hover:text-gray-600 sm:hidden">
+        <i class="fa-solid fa-grip"></i>
+    </a>
+    <a href="work.html" class="hidden sm:flex text-gray-800 no-underline hover:text-gray-600">
+        <span>View all</span>
+    </a>
+
+    <!-- Right: Next Case Study (on mobile, only show the arrow) -->
+    <a href="#" class="flex items-center text-gray-800 no-underline hover:text-gray-600 sm:hidden">
+        <i class="fa-solid fa-arrow-right"></i>
+    </a>
+    <a href="#" class="hidden sm:flex items-center text-gray-800 no-underline hover:text-gray-600">
+        <span>Next case study</span>
+        <i class="fa-solid fa-arrow-right ml-2"></i>
+    </a>
 </div>
+<!-- CASE STUDY NAVIGATOR END -->
+

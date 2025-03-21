@@ -3,236 +3,225 @@ bodyclass: mx-auto bg-off-white text-forest-black case-study-page
 ---
 <div class="loader w-full bg-green-grey fixed items-center">GOLDEN BEAR STUDIOS</div>
 
-<!-- BARBA CONTENT START -->
+{% include "snippets/header.html" %}
 
-<div data-barba="container" class="barba-container">
-    <div data-barba="wrapper" id="barba-wrapper">
+<!-- HERO SECTION START -->
+<section id="big-hero" class="work-hero relative h-screen flex items-end xl:pb-24 pb-16">
 
-        {% include "snippets/header.html" %}
-
-        <!-- HERO SECTION START -->
-        <section id="big-hero" class="work-hero relative h-screen flex items-end xl:pb-24 pb-16">
-
-            <!-- Background Image (Now Static) -->
-            <div class="parallax-bg absolute inset-0 bg-cover bg-center h-screen"
-                 style="background-image: url('img/placeholder-cs-hero.jpg');">
-            </div>
-
-            <!-- Transparent Overlay -->
-            <div class="image-overlay"></div>
-
-            <div class="image-overlay-container container w-full md:mx-auto relative grid grid-cols-12 gap-4 gap-y-8 text-left mx-8 sm:px-8 xl:pl-32 sm:pt-24">
-                <img class="hero-logo col-span-8 md:col-span-12 fade-in" src="img/logos/asos-cropped.png">
-                <h1 class="sans-serif-heading-1-light text-off-white col-span-8 md:col-span-12 fade-in">
-                    Style experience concept
-                </h1>
-                <div class="flex flex-wrap col-span-8 md:col-span-12 fade-in gap-2">
-                    <div class="label-tag white sans-serif-body-3">Concept design</div>
-                    <div class="label-tag white sans-serif-body-3">Strategy</div>
-                </div>
-            </div>
-
-        </section>
-        <!-- HERO SECTION END -->
-
-        <!-- CONTENT START -->
-
-        <!-- Intro section start -->
-        <section class="mx-8 m-8">
-            <div class="container w-full mx-auto">
-
-                <!-- Left + right container -->
-                <div class="grid grid-cols-12">
-
-                    <!-- Left column -->
-                    <div class="xl:col-start-2 col-span-12 lg:col-span-5 xl:col-span-4 lg:mr-16 xl:mr-24">
-                        <div class="grid grid-cols-12">
-
-                            <!-- Table -->
-                            <div class="col-span-12 md:col-span-6 lg:col-span-12 work-info-table">
-                                    <div class="work-row">
-                                      <div class="work-label border-b border-b-gray-300">CLIENT</div>
-                                      <div class="work-value border-b border-b-gray-300">
-                                        <a href="https://www.asos.com" target="_blank" rel="noopener">ASOS<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                                      </div>
-                                    </div>
-                                    <div class="work-row">
-                                      <div class="work-label border-b border-b-gray-300">DATE</div>
-                                      <div class="work-value border-b border-b-gray-300">2023-2024</div>
-                                    </div>
-                                    <div class="work-row">
-                                      <div class="work-label">ROLE</div>
-                                      <div class="work-value">Head of Product Design</div>
-                                    </div>
-
-                            </div>
-
-                            <!-- Metrics -->
-                            <div class="col-span-12 md:col-span-6 lg:col-span-12 mt-8 md:mt-0 lg:mt-8 pl-0 md:pl-16 lg:pl-0 ">
-                                <div class="metric-box p-6">
-                                  <div class="flex items-center mb-4">
-                                    <div class="w-12 h-12 flex justify-center items-center">
-                                      <div class="text-2xl">🧮</div>
-                                    </div>
-                                    <div class="ml-4">
-                                      <div class="sans-serif-body-2 font-[500]">UI framework adoption</div>
-                                      <div class="sans-serif-body-5 text-gray-500 font-[200]">Consistency through iteration</div>
-                                    </div>
-                                  </div>
-                                  <div class="flex items-center mb-4">
-                                    <div class="w-12 h-12 flex justify-center items-center">
-                                      <div class="text-2xl">🫰</div>
-                                    </div>
-                                    <div class="ml-4">
-                                      <div class="sans-serif-body-2 font-[500]">Business buy-in</div>
-                                      <div class="sans-serif-body-5 text-gray-500 font-[200]">Through north-star vision</div>
-                                    </div>
-                                  </div>
-                                  <div class="flex items-center mb-4">
-                                    <div class="w-12 h-12 flex justify-center items-center">
-                                      <div class="text-2xl">💫</div>
-                                    </div>
-                                    <div class="ml-4">
-                                      <div class="sans-serif-body-2 font-[500]">Strategic alignment</div>
-                                      <div class="sans-serif-body-5 text-gray-500 font-[200]">Supported new business direction</div>
-                                    </div>
-                                  </div>
-                                </div>
-                            </div>
-                            <!-- Metrics end -->
-
-                        </div>
-                    </div>
-                    <!-- Left column end -->
-
-                    <!-- Right column -->
-                    <div class="col-span-12 lg:col-span-7 xl:col-span-6 lg:mt-4 mt-16">
-                        <div class="serif-heading-2 font-bold mb-8">
-                        Establishing a vision for the future of ASOS’ digital experience
-                        </div>
-                        <div class="serif-heading-5 leading-normal mb-8 hidden">
-
-                        </div>
-                        <p class="sans-serif-body-2 text-classic-grey">
-                        ASOS Horizons was a conceptual project aimed at reshaping the digital experience on ASOS’ app and site, aligning with the company’s "Back to Fashion" strategy. The project sought to modernise the user interface and enhance customer interactions by focusing on creating a digital platform that better showcased products and reflected the ASOS brand personality. While the project is ongoing as of 2024, it has successfully set the foundation for future innovations and a more cohesive, user-focused design language across the platform.
-
-                        </p>
-                    </div>
-                    <!-- Right column end -->
-
-                </div>
-                <!-- Left + right container end -->
-
-            </div>
-        </section>
-        <!-- Intro section end -->
-
-
-        <!-- Text + image section start -->
-        <section class="mx-8 m-8">
-
-            <!-- Image 1 -->
-            <div class="w-full mt-16 sm:my-16">
-                <img src="img/placeholder-cs-ls.jpg" alt="" class="zoom-effect w-full h-full object-cover border border-gray-200">
-            </div>
-
-            <!-- Text 1 -->
-            <div class="container w-full mx-auto grid grid-cols-12">
-                <div class="sm:col-start-3 sm:col-span-8 col-span-12 space-y-6 text-classic-grey">
-
-                    <p class="sans-serif-body-2 fade-in">
-                        <strong>Constraints &amp; Challenges</strong>
-                        ASOS had not updated its digital platform in several years, focusing mainly on conversion-driven optimisation rather than a holistic approach to the customer experience. With the launch of the "Back to Fashion" strategy, there was a clear opportunity to overhaul the digital experience—not just for functionality, but to better align with ASOS’ brand, offer an inspiring journey for users, and showcase products in a more effective way. The challenge was to develop a unified, strategic vision that could be embraced across the business and set the direction for future digital improvements, all while maintaining a seamless and engaging customer experience.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Image 2 -->
-            <div class="w-full mt-16 sm:my-16">
-                <img src="img/placeholder-cs-ls.jpg" alt="" class="zoom-effect w-full h-full object-cover border border-gray-200">
-            </div>
-
-            <!-- Text 2 -->
-            <div class="container w-full mx-auto grid grid-cols-12">
-                <div class="sm:col-start-3 sm:col-span-8 col-span-12 space-y-6 text-classic-grey">
-                    <p class="sans-serif-body-2 mb-16 fade-in">
-                        <strong>Approach</strong>
-
-                        To establish this vision, we took a research-led, collaborative approach, ensuring both customer and business needs were represented. We conducted extensive qualitative research, including face-to-face customer interviews, competitor analysis, and stakeholder workshops with key teams such as Studios, Product, and Tech.
-                        <br><br>
-                        From this, we identified core insights: customers valued strong aesthetics but prioritised usability, product clarity, and flexibility in their shopping journey. These insights led to the development of five foundational design principles—Minimalist, Product-First, Contextual, Inclusive, and Recognisable—which would serve as a blueprint for ASOS' future digital design direction.
-                    </p>
-                    <p class="sans-serif-body-2 fade-in">
-                        <strong>The Solution</strong>
-                        We created a refreshed UI framework that aligned with these principles, ensuring ASOS’ digital experience was modern, flexible, and product-focused. The design system built from this framework provided consistency and scalability across the platform, supporting both immediate feature updates and long-term innovation.
-                        <br><br>
-                        Our work was divided into pre-defined customer journey areas—Engage, Explore, Evaluate, Buy, and Receive—allowing us to design and validate improvements iteratively. Working in four-week sprints, we tested and refined key UI elements, ensuring alignment with both customer expectations and ASOS' evolving business needs.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Image 3 & 4 -->
-            <div class="w-full mt-16 sm:my-16 grid grid-cols-1 md:grid-cols-2 gap-8">
-                <img src="img/placeholder-cs-sq.jpg" alt="" class="zoom-effect w-full h-full object-cover border border-gray-200">
-                <img src="img/placeholder-cs-sq.jpg" alt="" class="zoom-effect w-full h-full object-cover border border-gray-200">
-            </div>
-
-            <!-- Text 3 -->
-            <div class="container w-full mx-auto grid grid-cols-12">
-                <div class="sm:col-start-3 sm:col-span-8 col-span-12 space-y-6 text-classic-grey">
-                    <p class="sans-serif-body-2 fade-in">
-                        <strong>Results &amp; Impact</strong>
-
-                        As of late 2024, the Horizons vision and design principles had been adopted within ASOS, forming the foundation for ongoing digital improvements. The design system built upon these principles was actively shaping new initiatives, ensuring a more cohesive and customer-centric experience. By securing buy-in from cross-functional teams, the project established a shared direction for ASOS' digital future—one that balances inspiration, usability, and brand identity.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Disclaimer text -->
-            <div class="w-full mt-0 sm:my-16 grid grid-cols-1 md:grid-cols-2 gap-8">
-                    <p class="w-full sans-serif-body-4 text-classic-grey italic font-extralight">
-                        *Figures based on forecasted projection
-                    </p>
-            </div>
-
-
-        </section>
-        <!-- Text + image section end -->
-
-        <!-- CONTENT END -->
-
-        <!-- CASE STUDY NAVIGATOR START -->
-        <div class="w-full px-8 my-16 flex justify-between items-center">
-            <!-- Left: Previous Case Study (on mobile, only show the arrow) -->
-            <a href="#" class="flex items-center text-gray-800 no-underline hover:text-gray-600 sm:hidden">
-                <i class="fa-solid fa-arrow-left"></i>
-            </a>
-            <a href="#" class="hidden sm:flex items-center text-gray-800 no-underline hover:text-gray-600">
-                <i class="fa-solid fa-arrow-left mr-2"></i>
-                <span>Previous case study</span>
-            </a>
-
-            <!-- Center: View All (on mobile, use 4-square grid icon) -->
-            <a href="work.html" class="flex items-center text-gray-800 no-underline hover:text-gray-600 sm:hidden">
-                <i class="fa-solid fa-grip"></i>
-            </a>
-            <a href="work.html" class="hidden sm:flex text-gray-800 no-underline hover:text-gray-600">
-                <span>View all</span>
-            </a>
-
-            <!-- Right: Next Case Study (on mobile, only show the arrow) -->
-            <a href="#" class="flex items-center text-gray-800 no-underline hover:text-gray-600 sm:hidden">
-                <i class="fa-solid fa-arrow-right"></i>
-            </a>
-            <a href="#" class="hidden sm:flex items-center text-gray-800 no-underline hover:text-gray-600">
-                <span>Next case study</span>
-                <i class="fa-solid fa-arrow-right ml-2"></i>
-            </a>
-        </div>
-        <!-- CASE STUDY NAVIGATOR END -->
-
-
+    <!-- Background Image (Now Static) -->
+    <div class="parallax-bg absolute inset-0 bg-cover bg-center h-screen"
+         style="background-image: url('img/placeholder-cs-hero.jpg');">
     </div>
 
-    <!-- BARBA CONTENT END -->
+    <!-- Transparent Overlay -->
+    <div class="image-overlay"></div>
+
+    <div class="image-overlay-container container w-full md:mx-auto relative grid grid-cols-12 gap-4 gap-y-8 text-left mx-8 sm:px-8 xl:pl-32 sm:pt-24">
+        <img class="hero-logo col-span-8 md:col-span-12 fade-in" src="img/logos/asos-cropped.png">
+        <h1 class="sans-serif-heading-1-light text-off-white col-span-8 md:col-span-12 fade-in">
+            Style experience concept
+        </h1>
+        <div class="flex flex-wrap col-span-8 md:col-span-12 fade-in gap-2">
+            <div class="label-tag white sans-serif-body-3">Concept design</div>
+            <div class="label-tag white sans-serif-body-3">Strategy</div>
+        </div>
+    </div>
+
+</section>
+<!-- HERO SECTION END -->
+
+<!-- CONTENT START -->
+
+<!-- Intro section start -->
+<section class="mx-8 m-8">
+    <div class="container w-full mx-auto">
+
+        <!-- Left + right container -->
+        <div class="grid grid-cols-12">
+
+            <!-- Left column -->
+            <div class="xl:col-start-2 col-span-12 lg:col-span-5 xl:col-span-4 lg:mr-16 xl:mr-24">
+                <div class="grid grid-cols-12">
+
+                    <!-- Table -->
+                    <div class="col-span-12 md:col-span-6 lg:col-span-12 work-info-table">
+                            <div class="work-row">
+                              <div class="work-label border-b border-b-gray-300">CLIENT</div>
+                              <div class="work-value border-b border-b-gray-300">
+                                <a href="https://www.asos.com" target="_blank" rel="noopener">ASOS<i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                              </div>
+                            </div>
+                            <div class="work-row">
+                              <div class="work-label border-b border-b-gray-300">DATE</div>
+                              <div class="work-value border-b border-b-gray-300">2023-2024</div>
+                            </div>
+                            <div class="work-row">
+                              <div class="work-label">ROLE</div>
+                              <div class="work-value">Head of Product Design</div>
+                            </div>
+
+                    </div>
+
+                    <!-- Metrics -->
+                    <div class="col-span-12 md:col-span-6 lg:col-span-12 mt-8 md:mt-0 lg:mt-8 pl-0 md:pl-16 lg:pl-0 ">
+                        <div class="metric-box p-6">
+                          <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 flex justify-center items-center">
+                              <div class="text-2xl">🧮</div>
+                            </div>
+                            <div class="ml-4">
+                              <div class="sans-serif-body-2 font-[500]">UI framework adoption</div>
+                              <div class="sans-serif-body-5 text-gray-500 font-[200]">Consistency through iteration</div>
+                            </div>
+                          </div>
+                          <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 flex justify-center items-center">
+                              <div class="text-2xl">🫰</div>
+                            </div>
+                            <div class="ml-4">
+                              <div class="sans-serif-body-2 font-[500]">Business buy-in</div>
+                              <div class="sans-serif-body-5 text-gray-500 font-[200]">Through north-star vision</div>
+                            </div>
+                          </div>
+                          <div class="flex items-center mb-4">
+                            <div class="w-12 h-12 flex justify-center items-center">
+                              <div class="text-2xl">💫</div>
+                            </div>
+                            <div class="ml-4">
+                              <div class="sans-serif-body-2 font-[500]">Strategic alignment</div>
+                              <div class="sans-serif-body-5 text-gray-500 font-[200]">Supported new business direction</div>
+                            </div>
+                          </div>
+                        </div>
+                    </div>
+                    <!-- Metrics end -->
+
+                </div>
+            </div>
+            <!-- Left column end -->
+
+            <!-- Right column -->
+            <div class="col-span-12 lg:col-span-7 xl:col-span-6 lg:mt-4 mt-16">
+                <div class="serif-heading-2 font-bold mb-8">
+                Establishing a vision for the future of ASOS’ digital experience
+                </div>
+                <div class="serif-heading-5 leading-normal mb-8 hidden">
+
+                </div>
+                <p class="sans-serif-body-2 text-classic-grey">
+                ASOS Horizons was a conceptual project aimed at reshaping the digital experience on ASOS’ app and site, aligning with the company’s "Back to Fashion" strategy. The project sought to modernise the user interface and enhance customer interactions by focusing on creating a digital platform that better showcased products and reflected the ASOS brand personality. While the project is ongoing as of 2024, it has successfully set the foundation for future innovations and a more cohesive, user-focused design language across the platform.
+
+                </p>
+            </div>
+            <!-- Right column end -->
+
+        </div>
+        <!-- Left + right container end -->
+
+    </div>
+</section>
+<!-- Intro section end -->
+
+
+<!-- Text + image section start -->
+<section class="mx-8 m-8">
+
+    <!-- Image 1 -->
+    <div class="w-full mt-16 sm:my-16">
+        <img src="img/placeholder-cs-ls.jpg" alt="" class="zoom-effect w-full h-full object-cover border border-gray-200">
+    </div>
+
+    <!-- Text 1 -->
+    <div class="container w-full mx-auto grid grid-cols-12">
+        <div class="sm:col-start-3 sm:col-span-8 col-span-12 space-y-6 text-classic-grey">
+
+            <p class="sans-serif-body-2 fade-in">
+                <strong>Constraints &amp; Challenges</strong>
+                ASOS had not updated its digital platform in several years, focusing mainly on conversion-driven optimisation rather than a holistic approach to the customer experience. With the launch of the "Back to Fashion" strategy, there was a clear opportunity to overhaul the digital experience—not just for functionality, but to better align with ASOS’ brand, offer an inspiring journey for users, and showcase products in a more effective way. The challenge was to develop a unified, strategic vision that could be embraced across the business and set the direction for future digital improvements, all while maintaining a seamless and engaging customer experience.
+            </p>
+        </div>
+    </div>
+
+    <!-- Image 2 -->
+    <div class="w-full mt-16 sm:my-16">
+        <img src="img/placeholder-cs-ls.jpg" alt="" class="zoom-effect w-full h-full object-cover border border-gray-200">
+    </div>
+
+    <!-- Text 2 -->
+    <div class="container w-full mx-auto grid grid-cols-12">
+        <div class="sm:col-start-3 sm:col-span-8 col-span-12 space-y-6 text-classic-grey">
+            <p class="sans-serif-body-2 mb-16 fade-in">
+                <strong>Approach</strong>
+
+                To establish this vision, we took a research-led, collaborative approach, ensuring both customer and business needs were represented. We conducted extensive qualitative research, including face-to-face customer interviews, competitor analysis, and stakeholder workshops with key teams such as Studios, Product, and Tech.
+                <br><br>
+                From this, we identified core insights: customers valued strong aesthetics but prioritised usability, product clarity, and flexibility in their shopping journey. These insights led to the development of five foundational design principles—Minimalist, Product-First, Contextual, Inclusive, and Recognisable—which would serve as a blueprint for ASOS' future digital design direction.
+            </p>
+            <p class="sans-serif-body-2 fade-in">
+                <strong>The Solution</strong>
+                We created a refreshed UI framework that aligned with these principles, ensuring ASOS’ digital experience was modern, flexible, and product-focused. The design system built from this framework provided consistency and scalability across the platform, supporting both immediate feature updates and long-term innovation.
+                <br><br>
+                Our work was divided into pre-defined customer journey areas—Engage, Explore, Evaluate, Buy, and Receive—allowing us to design and validate improvements iteratively. Working in four-week sprints, we tested and refined key UI elements, ensuring alignment with both customer expectations and ASOS' evolving business needs.
+            </p>
+        </div>
+    </div>
+
+    <!-- Image 3 & 4 -->
+    <div class="w-full mt-16 sm:my-16 grid grid-cols-1 md:grid-cols-2 gap-8">
+        <img src="img/placeholder-cs-sq.jpg" alt="" class="zoom-effect w-full h-full object-cover border border-gray-200">
+        <img src="img/placeholder-cs-sq.jpg" alt="" class="zoom-effect w-full h-full object-cover border border-gray-200">
+    </div>
+
+    <!-- Text 3 -->
+    <div class="container w-full mx-auto grid grid-cols-12">
+        <div class="sm:col-start-3 sm:col-span-8 col-span-12 space-y-6 text-classic-grey">
+            <p class="sans-serif-body-2 fade-in">
+                <strong>Results &amp; Impact</strong>
+
+                As of late 2024, the Horizons vision and design principles had been adopted within ASOS, forming the foundation for ongoing digital improvements. The design system built upon these principles was actively shaping new initiatives, ensuring a more cohesive and customer-centric experience. By securing buy-in from cross-functional teams, the project established a shared direction for ASOS' digital future—one that balances inspiration, usability, and brand identity.
+            </p>
+        </div>
+    </div>
+
+    <!-- Disclaimer text -->
+    <div class="w-full mt-0 sm:my-16 grid grid-cols-1 md:grid-cols-2 gap-8">
+            <p class="w-full sans-serif-body-4 text-classic-grey italic font-extralight">
+                *Figures based on forecasted projection
+            </p>
+    </div>
+
+
+</section>
+<!-- Text + image section end -->
+
+<!-- CONTENT END -->
+
+<!-- CASE STUDY NAVIGATOR START -->
+<div class="w-full px-8 my-16 flex justify-between items-center">
+    <!-- Left: Previous Case Study (on mobile, only show the arrow) -->
+    <a href="#" class="flex items-center text-gray-800 no-underline hover:text-gray-600 sm:hidden">
+        <i class="fa-solid fa-arrow-left"></i>
+    </a>
+    <a href="#" class="hidden sm:flex items-center text-gray-800 no-underline hover:text-gray-600">
+        <i class="fa-solid fa-arrow-left mr-2"></i>
+        <span>Previous case study</span>
+    </a>
+
+    <!-- Center: View All (on mobile, use 4-square grid icon) -->
+    <a href="work.html" class="flex items-center text-gray-800 no-underline hover:text-gray-600 sm:hidden">
+        <i class="fa-solid fa-grip"></i>
+    </a>
+    <a href="work.html" class="hidden sm:flex text-gray-800 no-underline hover:text-gray-600">
+        <span>View all</span>
+    </a>
+
+    <!-- Right: Next Case Study (on mobile, only show the arrow) -->
+    <a href="#" class="flex items-center text-gray-800 no-underline hover:text-gray-600 sm:hidden">
+        <i class="fa-solid fa-arrow-right"></i>
+    </a>
+    <a href="#" class="hidden sm:flex items-center text-gray-800 no-underline hover:text-gray-600">
+        <span>Next case study</span>
+        <i class="fa-solid fa-arrow-right ml-2"></i>
+    </a>
 </div>
+<!-- CASE STUDY NAVIGATOR END -->
