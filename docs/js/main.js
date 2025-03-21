@@ -100,6 +100,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
 // HEADER & MOBILE MENU
 document.addEventListener("DOMContentLoaded", function () {
+    const currentYear = new Date().getFullYear(); // Get the current year
+    const yearElements = document.querySelectorAll(".year"); // Select all elements with the 'year' class
+
+    // Set the text content of each element to the current year
+    yearElements.forEach(function (element) {
+        element.textContent = currentYear;
+    });
+
     // Scroll effect for header
     const header = document.getElementById("main-header");
     const logo = document.getElementById("header-logo");
