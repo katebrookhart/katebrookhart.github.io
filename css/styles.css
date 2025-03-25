@@ -958,29 +958,29 @@ body.mobile-menu-open {
   margin-bottom: 20px; /* Adds a small gap below images */
 }
 
-.case-study-page h2 {
+.case-study-page .case-study-content h2 {
     margin-bottom: 24px;
     font-size: 24px;
     display: block;
     font-weight: 500;
     color: var(--almost-black);
 }
-.case-study-page li, .case-study-page p {
+.case-study-page .case-study-content li, .case-study-page .case-study-content p {
     font-family: Geist;
     font-size: 18px;
     font-weight: 200;
     line-height: 28px;
     color: var(--classic-grey);
 }
-.case-study-page strong {
+.case-study-page .case-study-content strong {
     color: var(--almost-black);
 }
-.case-study-page li a, .case-study-page p a {
+.case-study-page .case-study-content li a, .case-study-page .case-study-content p a {
     text-decoration: underline;
 }
 
 @media (max-width: 639px) {
-    .case-study-page .sans-serif-heading-1-light {
+    .case-study-page .case-study-content .sans-serif-heading-1-light {
         font-size: 28px;
         line-height: 32px;
     }
