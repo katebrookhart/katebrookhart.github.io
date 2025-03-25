@@ -83,19 +83,29 @@
 <!-- HERO SECTION START -->
 <div id="big-hero" class="work-hero relative h-screen flex items-end xl:pb-24 pb-16">
 
-    <!-- Background Image (Now Static) -->
-    <div class="parallax-bg absolute inset-0 bg-cover bg-center h-screen asos_1_hero">
-    </div>
+    <!-- Video Background -->
+    <video
+        class="absolute inset-0 w-full h-full object-cover"
+        autoplay
+        loop
+        muted
+        playsinline
+        poster="img/asos-hero-1.jpg">
+        <source src="img/asos-hero-1.mp4" type="video/mp4">
+        <!-- Fallback Image -->
+        <img src="img/asos-hero-1.jpg" alt="ASOS Curated Shopping">
+    </video>
+
 
     <!-- Transparent Overlay -->
     <div class="image-overlay"></div>
 
-    <div class="image-overlay-container container w-full md:mx-auto relative grid grid-cols-12 gap-4 gap-y-8 text-left mx-8 sm:px-8 xl:pl-32 sm:pt-24">
-        <img class="hero-logo col-span-8 md:col-span-12 fade-in" alt="ASOS Logo" src="img/logos/asos-cropped.png">
-        <h1 class="sans-serif-heading-1-light text-off-white col-span-8 md:col-span-12 fade-in">
+    <div class="image-overlay-container container w-full md:mx-auto relative grid grid-cols-12 gap-4 lg:gap-y-8 text-left mx-8 sm:px-8 xl:pl-32 sm:pt-24">
+        <img class="hero-logo col-span-12" alt="ASOS Logo" src="img/logos/asos-cropped.png">
+        <h1 class="sans-serif-heading-1-light text-off-white col-span-12 fade-in mb-2">
             Curated shopping
         </h1>
-        <div class="flex flex-wrap col-span-8 md:col-span-12 fade-in gap-2">
+        <div class="flex flex-wrap col-span-12 fade-in gap-2">
             <div class="label-tag white sans-serif-body-3">Concept design</div>
             <div class="label-tag white sans-serif-body-3">Product design</div>
         </div>
@@ -114,7 +124,7 @@
         <div class="grid grid-cols-12">
 
             <!-- Left column -->
-            <div class="xl:col-start-2 col-span-12 lg:col-span-5 xl:col-span-4 lg:mr-16 xl:mr-24">
+            <div class="xl:col-start-2 col-span-12 lg:col-span-5 xl:col-span-4 lg:mr-16 xl:mr-24 xl:mt-8 lg:mt-16">
                 <div class="grid grid-cols-12">
 
                     <!-- Table -->
@@ -177,15 +187,14 @@
             <!-- Right column -->
             <div class="col-span-12 lg:col-span-7 xl:col-span-6 lg:mt-4 mt-16">
                 <div class="serif-heading-2 font-bold mb-8">
-                Elevating inspiration across the e-commerce journey.
+                Elevating the ASOS shopping experience
                 </div>
-                <div class="serif-heading-5 leading-normal mb-8">
-                Redefining how customers browse and engage with fashion at ASOS.
-                </div>
-                <p class="sans-serif-body-2 text-classic-grey">
-                The Curated Categories initiative was born from a gap in ASOS’s digital shopping experience, identified through a comprehensive audit conducted in collaboration with consultancies, <a href="https://www.ey.com/" target="_blank" rel="noopener">EY</a> and <a href="https://www.biglight.co.uk" target="_blank" rel="noopener">Biglight</a>. This audit included extensive research, guerrilla testing, and concept testing. The browsing experience at the time consisted primarily of static product lists that did little to spark inspiration or help customers make confident purchasing decisions. Our goal was to elevate the way customers engage with fashion by introducing an immersive, editorial-style browsing experience that was both inspiring and commercially successful.
-
-
+                
+                <p>
+                    The "Curated Categories" initiative was born from a gap in ASOS’s digital shopping experience, identified through a comprehensive audit conducted in collaboration with <a href="https://www.ey.com/" target="_blank" rel="noopener">EY</a> and <a href="https://www.biglight.co.uk" target="_blank" rel="noopener">Biglight</a>. Extensive research, guerrilla testing, and concept testing revealed that the browsing experience relied heavily on static product lists, offering little inspiration or guidance in decision-making. Our goal was to create a more engaging, editorial-style experience that would feel immersive while still driving commercial impact.
+                </p>
+                <p class="mt-8">
+                    To achieve this, we considered how customers naturally browse for fashion. A shopper might start by scrolling through social media, visiting the ASOS homepage, or exploring category navigation in search of inspiration for an upcoming holiday. If an ASOS story or campaign catches their eye, clicking through should feel like a seamless continuation of that experience - leading them to a curated category page that mirrors the look, feel, and messaging of what first drew them in. Once there, immersive visuals, video, and interactive elements guide them through trends and styles in an intuitive, engaging way. This was just one of the perspectives we used to shape Curated Categories, ensuring it resonated both creatively and commercially.
                 </p>
             </div>
             <!-- Right column end -->
@@ -201,105 +210,169 @@
 <!-- Text + image section start -->
 <div class="mx-8 m-8">
 
-    <!-- Image 1 -->
-    <div class="w-full mt-16 sm:my-16">
-        <img src="img/placeholder-cs-ls.jpg" alt="" class="zoom-effect w-full h-full object-cover border border-gray-200">
+
+
+<!-- Image 1 start -->
+<div class="w-full mt-16 sm:my-16 relative overflow-hidden">
+    
+    <!-- Draggable Container (only visible on small screens) -->
+    <div id="draggable-container" class="relative w-full h-[70vh] overflow-x-auto touch-pan-x sm:hidden">
+        <div id="draggable-wrapper" class="relative w-[400%] h-full">
+            <img 
+                src="img/asos-cs-1-small.jpg" 
+                alt="" 
+                class="h-full w-full object-contain object-left border rounded-2xl border-gray-200" />
+        </div>
     </div>
+
+    <!-- Instructional Text Below the Image (Only visible on small screens) -->
+    <div id="instructional-text" class="text-center mt-4 text-gray-600 font-semibold text-sm sm:hidden mb-16">
+        ← Drag to view more of the image →
+    </div>
+
+    <!-- Normal Image (only visible on screens larger than 640px) -->
+    <div class="w-full mt-16 sm:my-16 sm:block hidden">
+        <img src="img/asos-cs-1.jpg" alt="" class="zoom-effect w-full h-full object-cover border rounded-2xl border-gray-200">
+    </div>
+
+</div>
+<!-- Image 1 end -->
+
+
+
+
+
+
+
 
     <!-- Text 1 -->
     <div class="container w-full mx-auto grid grid-cols-12">
         <div class="sm:col-start-3 sm:col-span-8 col-span-12 space-y-6 text-classic-grey">
 
-            <p class="sans-serif-body-2 fade-in">
-                <strong>Constraints &amp; Challenges</strong>
-                <br>
-                Bridging Inspiration &amp; Commerce – The experience needed to balance engaging content with a seamless shopping journey to drive conversion.<br>
-                Scalability &amp; Feasibility – Solutions had to be flexible enough to support different categories, product types, and future iterations while remaining feasible for tech implementation.<br>
-                Stakeholder Alignment – Buy-in from multiple teams (Commercial, Studios, Tech, and Product) was essential, each with different priorities.
+            <h2 class="fade-in">Constraints &amp; challenges</h2>
+
+            <p class="fade-in">To bring this concept to life, we had to tackle several key challenges:</p>
+
+            <ul class="fade-in list-disc pl-5 space-y-2">
+                <li><strong>Bridging inspiration &amp; commerce</strong> - The experience needed to be more than just aesthetically pleasing; it had to drive conversions by seamlessly integrating engaging content with a frictionless shopping experience.</li>
+                <li><strong>Scalability &amp; feasibility</strong> - Any solution had to be flexible enough to support multiple categories, product types, and future iterations, while remaining technically feasible within ASOS’s existing platform.</li>
+                <li><strong>Stakeholder alignment</strong> - Collaboration across multiple teams, including Commercial, Studios, Tech, and Product, was critical. Each had different priorities, and gaining buy-in required careful negotiation and alignment.</li>
+            </ul>
+
+            <h2 class="fade-in mt-16">Role &amp; approach</h2>
+
+            <p class="fade-in">
+                I led the vision and execution of Curated Categories, working across research, strategy, and design to ensure its success.
+                We began by consolidating insights from customer feedback, competitor benchmarking, and internal discussions to define the problem space;
+                A two-day workshop with Tech and Product teams helped align past and current initiatives, laying the groundwork for a structured feature roadmap.
             </p>
+            <p class="fade-in mt-8">
+                With a clear direction in place, I designed the proof-of-concept and interactive prototype that would eventually secure buy-in and funding for the initiative. 
+                Through iterative concept reviews and cross-functional workshops, we refined the vision, ensuring that the final experience was both inspirational and commercially viable. 
+                In hindsight, deeper involvement from the Commercial team in the early stages could have helped streamline decision-making later in the process.
+            </p>
+
         </div>
     </div>
 
     <!-- Image 2 -->
-    <div class="w-full mt-16 sm:my-16">
-        <img src="img/placeholder-cs-ls.jpg" alt="" class="zoom-effect w-full h-full object-cover border border-gray-200">
+    <div class="w-full mt-16 fade-in">
+
+        <video
+            class="zoom-effect w-full h-full object-cover crop-on-small rounded-2xl border border-gray-200"
+            autoplay
+            loop
+            muted
+            playsinline
+            controls
+            poster="img/asos-cs-2.jpg">
+            <source src="img/asos-cs-2.mp4" type="video/mp4">
+            <!-- Fallback Image -->
+            <img src="img/asos-cs-2.jpg" alt="ASOS Curated Shopping">
+        </video>
     </div>
 
     <!-- Text 2 -->
-    <div class="container w-full mx-auto grid grid-cols-12">
+    <div class="container w-full mx-auto grid grid-cols-12 mt-16">
         <div class="sm:col-start-3 sm:col-span-8 col-span-12 space-y-6 text-classic-grey">
-            <p class="sans-serif-body-2 fade-in">
-                <strong>My Role &amp; Approach</strong>
+            
+            <h2 class="fade-in">Solutions</h2>
 
-                As Head of Product Design, I led the vision and execution of Curated Categories. Key elements of my role included:
-                <br><br>
-                Conducting research and aligning insights from customer feedback, competitor benchmarking, and internal stakeholders.<br>
-                Spearheading the definition and prioritisation of the project, streamlining concept development for approval and resource allocation.<br>
-                Running a two-day workshop with Tech and Product teams to ideate, consolidate past and current initiatives, and define a feature roadmap.<br>
-                Designing the proof-of-concept and prototype that secured buy-in and funding for the project.<br>
-                Orchestrating collaborative efforts, including iterative concept reviews and workshops, leading to a visual prototype that garnered investment and prioritisation from cross-functional teams.<br>
-                In hindsight, more collaboration with the Commercial team during the concept phase would have facilitated smoother progression in later stages, particularly in securing alignment across teams.
-            </p>
-            <p class="sans-serif-body-2 fade-in">
-                <strong>The Solution</strong>
-                <br>
-                Phase one of Curated Categories introduced a more engaging and visually immersive browsing experience, blending commerce with editorial-style content. Notable features included:
-                <br><br>
-                Full-Bleed Video &amp; Content – Immersive visuals and campaign-driven storytelling.<br>
-                Product Refinement &amp; Cross-Category Discovery – Helping customers find relevant items more easily.<br>
-                Interactive Shoppable Hotspots – Enabling customers to explore and shop featured looks seamlessly.<br>
-                Pinned &amp; Hero Products – Highlighting key products to drive engagement.<br>
-                ‘Coming Soon’ Product Features – Creating anticipation and aligning with ASOS Drops.<br>
-                Enhanced Product Tile Design – Showcasing products dynamically with swipeable images and catwalk videos.<br>
-                Integrated ‘Buy the Look’ Feature – A visually immersive way to shop complete outfits.<br>
-            </p>
+            <p class="fade-in">The first phase of Curated Categories introduced an editorial-style browsing experience that blended commerce with storytelling. The new design introduced:</p>
+
+            <ul class="fade-in list-disc pl-5 space-y-2">
+                <li><strong>Full-bleed video &amp; content</strong> - Immersive visuals and campaign-driven storytelling helped bring collections to life.</li>
+                <li><strong>Interactive shoppable hotspots</strong> - Customers could explore featured looks and shop them seamlessly.</li>
+                <li><strong>Pinned &amp; hero products</strong> - Key items were elevated for maximum impact.</li>
+                <li><strong>‘Coming soon’ features</strong> - Products yet to launch were surfaced to generate anticipation, aligning with ASOS Drops.</li>
+                <li><strong>Enhanced product tile design</strong> - Dynamic elements like swipeable images and catwalk videos showcased products in a more engaging way.</li>
+                <li><strong>Integrated ‘buy the look’ feature</strong> - Encouraging complete outfit purchases through a more immersive shopping experience.</li>
+            </ul>
+
+            <h2 class="fade-in mt-16">Results &amp; impact</h2>
+
+            <p class="fade-in">The prototype successfully secured investment and prioritisation within ASOS, establishing a new standard for digital product presentation. Early testing results showed:</p>
+
+            <ul class="fade-in list-disc pl-5 space-y-2">
+                <li><strong>Objective testing:</strong> Adjustments to PLP label placement did not negatively impact key KPIs, ensuring that the changes maintained usability.</li>
+                <li><strong>Swipeable image gallery (iOS):</strong> Approximately 45% of users engaged with the feature, reducing PDP clicks but increasing the number of products saved for later. While this didn’t immediately boost add-to-bag rates, it suggested a shift in user behaviour towards more considered shopping.</li>
+                <li><strong>Positive user behaviour:</strong> Though conversion rates remained stable, the increased engagement with interactive features and qualitative feedback indicated a more compelling experience.</li>
+            </ul>
+
+            <p class="fade-in">Beyond these metrics, the initiative led to:</p>
+
+            <ul class="fade-in list-disc pl-5 space-y-2">
+                <li>Increased time spent on category pages with no negative impact on conversion rates or revenue per visitor.</li>
+                <li>Higher interaction with features like shoppable hotspots.</li>
+                <li>A noticeable shift in product discovery behaviour, with more users saving items for later consideration.</li>
+            </ul>
+
         </div>
     </div>
 
     <!-- Image 3 & 4 -->
-    <div class="w-full mt-16 sm:my-16 grid grid-cols-1 md:grid-cols-2 gap-8">
-        <img src="img/placeholder-cs-sq.jpg" alt="" class="zoom-effect w-full h-full object-cover border border-gray-200">
-        <img src="img/placeholder-cs-sq.jpg" alt="" class="zoom-effect w-full h-full object-cover border border-gray-200">
+    <div class="w-full mt-16 sm:my-16">
+        <img src="img/asos-cs-3.jpg" alt="" class="zoom-effect w-full h-full object-cover border rounded-2xl border-gray-200">
     </div>
 
     <!-- Text 3 -->
     <div class="container w-full mx-auto grid grid-cols-12">
         <div class="sm:col-start-3 sm:col-span-8 col-span-12 space-y-6 text-classic-grey">
-            <p class="sans-serif-body-2 fade-in">
-                <strong>Results &amp; Impact</strong>
-                <br><br>
+            
 
-                The prototype designs secured buy-in across the business, leading to dedicated teams and budget for execution. The initiative set a new benchmark for digital product presentation at ASOS. Early results from testing showed:
-                <br><br>
-                Objective Testing: Updates to the placement of PLP labels off product images didn’t negatively impact key KPIs, confirming no detrimental effects to the overall user experience.<br>
-                Swipeable Image Gallery (iOS): Around 45% of users interacted with the feature, resulting in a reduction in clicks through to the PDP, but an increase in products saved for later. While this didn’t directly boost the add-to-bag rate, it indicated a shift in user behaviour towards more deliberate product discovery.<br>
-                Positive User Behaviour: Despite no significant impact on conversion rates, the visual and interactive changes helped create a more engaging experience, evidenced by positive qualitative feedback and small gains across KPIs.<br><br>
-                The project also contributed to:
-                <br><br>
-                Increased time spent on category pages.<br>
-                Higher engagement with interactive features like shoppable hotspots.<br>
-                A positive shift in product discovery behaviour, including an increase in saved items for later<br>
+            
+
+            <h2 class="fade-in">Learnings &amp; next steps</h2>
+
+            <p class="fade-in">
+                This project underscored the importance of balancing inspiration with seamless e-commerce functionality. 
+                While some features, such as the swipeable gallery, didn’t lead to immediate conversions, they signalled an evolution in how customers engaged with products - one that could drive long-term value.
             </p>
-            <p class="sans-serif-body-2 fade-in">
-                <strong>Learnings &amp; Next Steps</strong>
-                <br><br>
-                This project highlighted the importance of combining inspiration with a seamless e-commerce journey. Although some features, such as the swipeable gallery, didn’t immediately impact purchases, they successfully shifted customer discovery behaviours, which could lead to higher conversion over time. Moving forward:<br><br>
 
-                The feature was rolled out to 100% of iOS customers in August 2023, with plans to increase interaction through app-based visibility.<br>
-                Continued monitoring of feature engagement and user behaviour is ongoing, with a focus on optimising the customer journey post-save for later (SFL).<br>
-                Further exploration into optimising the transition from saved items to actual purchases to drive higher add-to-bag and buying conversion.<br>
-                Future iterations of Curated Categories will build upon this foundation, exploring more AI-driven personalisation and deeper integration with ASOS’s For You feed to further tailor the shopping experience.
+            <p class="fade-in">Following the initial rollout:</p>
 
+            <ul class="fade-in list-disc pl-5 space-y-2">
+                <li>The feature was deployed to 100% of iOS customers in August 2023, with plans to enhance interaction through app-based visibility.</li>
+                <li>Ongoing monitoring is in place to optimise the post-save-for-later journey, aiming to convert more saved items into purchases.</li>
+                <li>Future iterations will explore AI-driven personalisation and deeper integration with ASOS’s <strong>For You</strong> feed, further refining the curated shopping experience.</li>
+            </ul>
+
+            <p class="fade-in">
+                Curated Categories set a new precedent for how ASOS blends content and commerce, and this project marked an important step in redefining the brand’s digital shopping journey.
             </p>
+
+
+            <!-- Disclaimer text -->
+            <div class="w-full mt-0 sm:my-16 grid grid-cols-1 md:grid-cols-2 gap-8 fade-in">
+                    <p class="w-full sans-serif-body-4 text-classic-grey italic font-extralight">
+                        *Figures based on forecasted projection
+                    </p>
+            </div>
+
         </div>
     </div>
 
-    <!-- Disclaimer text -->
-    <div class="w-full mt-0 sm:my-16 grid grid-cols-1 md:grid-cols-2 gap-8">
-            <p class="w-full sans-serif-body-4 text-classic-grey italic font-extralight">
-                *Figures based on forecasted projection
-            </p>
-    </div>
+    
 
 
 </div>
@@ -310,7 +383,7 @@
 
 
 <!-- CASE STUDY NAVIGATOR START -->
-<div class="w-full px-8 my-16 flex justify-between items-center">
+<div class="w-full px-8 my-16 mt-[120px] flex justify-between items-center">
     <!-- Left: Previous Case Study (on mobile, only show the arrow) -->
     <a href="#" aria-label="Previous case study"  class="flex items-center text-gray-800 no-underline hover:text-gray-600 sm:hidden">
         <i class="fa-solid fa-arrow-left"></i>
@@ -346,20 +419,20 @@
     <div class="container mx-auto px-6 text-center md:text-left fade-in">
         <!-- Top Row: Logo & Navigation -->
         <div class="flex flex-col md:flex-row md:justify-between md:items-center">
-            <img src="img/golden-bear-logo.png" alt="Golden Bear Studios" class="md:h-[85px] h-20 sm:mb-12 mb-0 md:mb-0 object-contain">
+            <a href="index.html" class="hidden sm:block"><img src="img/golden-bear-logo.png" alt="Golden Bear Studios" class="md:h-[85px] h-20 sm:mb-12 mb-0 md:mb-0 object-contain"></a>
             <nav aria-label="Footer" class="flex xl:space-x-12 space-x-8 serif-heading-4 md:justify-start justify-center hidden sm:block">
-                <a href="#" class="hover:text-doodle-gold">Home</a>
-                <a href="#" class="hover:text-doodle-gold">About</a>
-                <a href="#" class="hover:text-doodle-gold">Work</a>
+                <a href="index.html" class="hover:text-doodle-gold">Home</a>
+                <a href="about.html" class="hover:text-doodle-gold">About</a>
+                <a href="work.html" class="hover:text-doodle-gold">Work</a>
                 <!--<a href="#" class="hover:text-doodle-gold">Bear & Brush</a>-->
                 <a href="contact.html" class="hover:text-doodle-gold">Contact</a>
             </nav>
         </div>
 
         <!-- BOTTOM FOOTER -->
-        <div class="border-t border-light my-12"></div>
+        <div class="border-t border-light my-12 hidden sm:block"></div>
         <div class="flex flex-col md:flex-row md:justify-between md:items-center text-center">
-            <p class="sans-serif-body-3 text-dirty-grey">© <span class="year"></span> Golden Bear Studios. All rights reserved.</p>
+            <p class="sans-serif-body-3 text-dirty-grey"><a href="index.html">© <span class="year"></span> Golden Bear Studios</a>. All rights reserved.</p>
             <div class="flex space-x-4 text-xl mt-4 md:mt-0 justify-center social-icons">
                 <a aria-label="My LinkedIn profile" href="https://www.linkedin.com/in/katebrookhart/" class="hover:text-doodle-gold"><i class="fa-brands fa-linkedin-in"></i></a>
                 <a aria-label="My Instagram profile" href="https://www.instagram.com/katebrookhart/" class="hover:text-doodle-gold"><i class="fa-brands fa-instagram"></i></a>
@@ -371,9 +444,12 @@
 <!-- FOOTER END -->
         <!-- SCRIPTS -->
 
-<!-- Gsap -->
+<!-- GSAP -->
 <!-- <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script> -->
 <script src="js/gsap.min.js"></script>
+<!-- GSAP Draggable Plugin -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Draggable.min.js"></script>
+
 
 <!-- Scroll trigger -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>

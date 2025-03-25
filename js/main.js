@@ -31,11 +31,11 @@ function initScrollAnimations() {
   gsap.to(".case-study-page img.zoom-effect", {
     scrollTrigger: {
       trigger: ".case-study-page",
-      start: "top bottom", // Start when the top of the case-study-page hits the bottom of the viewport
-      end: "bottom top",   // End when the bottom of the case-study-page hits the top of the viewport
+      start: "top bottom",
+      end: "bottom top",
       scrub: true,
     },
-    y: -60, // Reduced the vertical movement to prevent overlap
+    y: -60,
     ease: "none",
   });
 
@@ -45,17 +45,19 @@ function initScrollAnimations() {
   images.forEach((image, index) => {
     gsap.from(image, {
       scrollTrigger: {
-        trigger: image, // Apply to each image individually
-        start: "top 80%", // Start zooming in when 80% of the image is in view
+        trigger: image,
+        start: "top 100%", // Start animation earlier
         end: "bottom top",
-        scrub: true,
+        scrub: 0.5, // Reduce scrub for faster animation
       },
-      scale: 0.9, // Starts slightly smaller and zooms in
-      opacity: 0,
-      ease: "power3.out", // Smooth ease
+      scale: 0.95, // Less aggressive zoom for a more natural effect
+      opacity: 0.80,
+      duration: 0.6, // Speed up the fade-in effect
+      ease: "power2.out",
     });
   });
 }
+
 
 
 // PARALLAX

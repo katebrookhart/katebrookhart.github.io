@@ -100,12 +100,12 @@
     <!-- Transparent Overlay -->
     <div class="image-overlay"></div>
 
-    <div class="image-overlay-container container w-full md:mx-auto relative grid grid-cols-12 gap-4 gap-y-8 text-left mx-8 sm:px-8 xl:pl-32 sm:pt-24">
+    <div class="image-overlay-container container w-full md:mx-auto relative grid grid-cols-12 gap-4 lg:gap-y-8 text-left mx-8 sm:px-8 xl:pl-32 sm:pt-24">
         <img class="hero-logo col-span-8 md:col-span-12 fade-in" alt="Meal Prep Pro Logo" src="img/logos/mpp-cropped.png">
-        <h1 class="sans-serif-heading-1-light text-off-white col-span-8 md:col-span-12 fade-in">
+        <h1 class="sans-serif-heading-1-light text-off-white col-span-12 md:col-span-12 fade-in mb-2">
             AI Meal Planner
         </h1>
-        <div class="flex flex-wrap col-span-8 md:col-span-12 fade-in gap-2">
+        <div class="flex flex-wrap col-span-12 md:col-span-12 fade-in gap-2">
             <div class="label-tag white sans-serif-body-3">UX/UI design</div>
             <div class="label-tag white sans-serif-body-3">Animation</div>
         </div>
@@ -223,7 +223,7 @@
     <div class="w-full mt-16 sm:my-16 fade-in">
 
         <video
-            class="zoom-effect w-full h-full object-cover"
+            class="zoom-effect w-full h-full object-cover crop-on-small rounded-2xl"
             autoplay
             loop
             muted
@@ -234,8 +234,6 @@
             <!-- Fallback Image -->
             <img src="img/mpp-cs-1.jpg" alt="MealPrepPro AI Planner">
         </video>
-
-        <!-- <img src="img/placeholder-cs-ls.jpg" alt="" class="zoom-effect w-full h-full object-cover border border-gray-200"> -->
     </div>
 
     <!-- Text 1 -->
@@ -248,8 +246,8 @@
                 MealPrepPro’s core value proposition lies in its ability to generate tailored meal plans based on a wide range of user preferences. However, two key challenges were identified:
             </p>
             <ol class="list-decimal list-inside sans-serif-body-2 text-classic-grey mb-4 fade-in">
-               <li class="mb-2"> <span class="font-[600]">Invisible intelligence</span> – The customisation process was happening behind the scenes, leaving users unaware of how their plan was being generated.</li>
-                <li><span class="font-[600]">Drop-off in the review screen</span> – some users were struggling to understand why meals appeared to repeat across multiple days and what actions they needed to take to refine their plan.</li>
+               <li class="mb-2"> <span class="font-[600]">Invisible intelligence</span> - The customisation process was happening behind the scenes, leaving users unaware of how their plan was being generated.</li>
+                <li><span class="font-[600]">Drop-off in the review screen</span> - some users were struggling to understand why meals appeared to repeat across multiple days and what actions they needed to take to refine their plan.</li>
             </ol>
 
             <p class="sans-serif-body-2 text-classic-grey fade-in">
@@ -273,7 +271,7 @@
     <div class="w-full mt-16 sm:my-16 fade-in">
 
         <video
-            class="zoom-effect w-full h-full object-cover"
+            class="zoom-effect w-full h-full object-cover crop-on-small rounded-2xl"
             autoplay
             loop
             muted
@@ -312,8 +310,8 @@
 
     <!-- Image 3 & 4 -->
     <div class="w-full mt-16 sm:my-16 grid grid-cols-1 md:grid-cols-2 gap-8">
-        <img src="img/mpp-cs-3.jpg" alt="" class="zoom-effect w-full h-full object-cover border border-gray-200">
-        <img src="img/mpp-cs-4.jpg" alt="" class="zoom-effect w-full h-full object-cover border border-gray-200">
+        <img src="img/mpp-cs-3.jpg" alt="" class="zoom-effect w-full h-full object-cover border border-gray-200 rounded-2xl">
+        <img src="img/mpp-cs-4.jpg" alt="" class="zoom-effect w-full h-full object-cover border border-gray-200 rounded-2xl">
     </div>
 
     <!-- Text 3 -->
@@ -349,7 +347,7 @@
 <!-- Text + image section end -->
 
 <!-- CASE STUDY NAVIGATOR START -->
-<div class="w-full px-8 my-16 flex justify-between items-center">
+<div class="w-full px-8 my-16 mt-[120px] flex justify-between items-center">
     <!-- Left: Previous Case Study (on mobile, only show the arrow) -->
     <a href="#" aria-label="Previous case study"  class="flex items-center text-gray-800 no-underline hover:text-gray-600 sm:hidden">
         <i class="fa-solid fa-arrow-left"></i>
@@ -383,20 +381,20 @@
     <div class="container mx-auto px-6 text-center md:text-left fade-in">
         <!-- Top Row: Logo & Navigation -->
         <div class="flex flex-col md:flex-row md:justify-between md:items-center">
-            <img src="img/golden-bear-logo.png" alt="Golden Bear Studios" class="md:h-[85px] h-20 sm:mb-12 mb-0 md:mb-0 object-contain">
+            <a href="index.html" class="hidden sm:block"><img src="img/golden-bear-logo.png" alt="Golden Bear Studios" class="md:h-[85px] h-20 sm:mb-12 mb-0 md:mb-0 object-contain"></a>
             <nav aria-label="Footer" class="flex xl:space-x-12 space-x-8 serif-heading-4 md:justify-start justify-center hidden sm:block">
-                <a href="#" class="hover:text-doodle-gold">Home</a>
-                <a href="#" class="hover:text-doodle-gold">About</a>
-                <a href="#" class="hover:text-doodle-gold">Work</a>
+                <a href="index.html" class="hover:text-doodle-gold">Home</a>
+                <a href="about.html" class="hover:text-doodle-gold">About</a>
+                <a href="work.html" class="hover:text-doodle-gold">Work</a>
                 <!--<a href="#" class="hover:text-doodle-gold">Bear & Brush</a>-->
                 <a href="contact.html" class="hover:text-doodle-gold">Contact</a>
             </nav>
         </div>
 
         <!-- BOTTOM FOOTER -->
-        <div class="border-t border-light my-12"></div>
+        <div class="border-t border-light my-12 hidden sm:block"></div>
         <div class="flex flex-col md:flex-row md:justify-between md:items-center text-center">
-            <p class="sans-serif-body-3 text-dirty-grey">© <span class="year"></span> Golden Bear Studios. All rights reserved.</p>
+            <p class="sans-serif-body-3 text-dirty-grey"><a href="index.html">© <span class="year"></span> Golden Bear Studios</a>. All rights reserved.</p>
             <div class="flex space-x-4 text-xl mt-4 md:mt-0 justify-center social-icons">
                 <a aria-label="My LinkedIn profile" href="https://www.linkedin.com/in/katebrookhart/" class="hover:text-doodle-gold"><i class="fa-brands fa-linkedin-in"></i></a>
                 <a aria-label="My Instagram profile" href="https://www.instagram.com/katebrookhart/" class="hover:text-doodle-gold"><i class="fa-brands fa-instagram"></i></a>
@@ -408,9 +406,12 @@
 <!-- FOOTER END -->
         <!-- SCRIPTS -->
 
-<!-- Gsap -->
+<!-- GSAP -->
 <!-- <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script> -->
 <script src="js/gsap.min.js"></script>
+<!-- GSAP Draggable Plugin -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Draggable.min.js"></script>
+
 
 <!-- Scroll trigger -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"></script>

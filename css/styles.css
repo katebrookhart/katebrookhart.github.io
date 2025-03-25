@@ -10,7 +10,7 @@
 .asos_2_hero {      background-image: url('../img/placeholder-cs-hero.jpg'); }
 .brakes_hero {      background-image: url('../img/placeholder-cs-hero.jpg'); }
 .coop_hero  {       background-image: url('../img/placeholder-cs-hero.jpg'); }
-.magnet_hero {      background-image: url('../img/placeholder-cs-hero.jpg'); }
+.magnet_hero {      background-image: url('../img/magnet-hero.jpg'); }
 .template_hero {    background-image: url('../img/placeholder-cs-hero.jpg'); }
 .tnf_hero {         background-image: url('../img/hero-tnf.jpg'); }
 
@@ -45,7 +45,8 @@ body {
     --almost-black: #3A3732;
     --dark-green: #0D1912;
     --light-grey: #EEEFE9;
-    --green-grey: #F2F4ED;
+/*    --green-grey: #F2F4ED;*/
+    --green-grey: #FEFDFB;
     --off-white: #F8F8F8;
     --classic-grey: #808080;
 }
@@ -183,9 +184,9 @@ body {
 
 .serif-heading-4 {
     font-family: "Cormorant Garamond", serif;
-    font-weight: 300;
-    font-size: 16px;
-    line-height: 20px;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
 }
 
 .serif-heading-5 {
@@ -452,17 +453,17 @@ nav.nav-white a {
 /* Footer */
 footer {
     text-align: center;
-    padding: 1rem;
-    border-top: 1px solid #444;
+/*    padding: 1rem;*/
+    border-top: 1px solid var(--doodle-gold);
     font-size: 0.9rem;
     opacity: 1;
 }
 
 /* Footer Logo */
 footer img {
-    height: 20px; /* Set the desired height */
-    width: auto;  /* Let the width adjust automatically to maintain aspect ratio */
-    object-fit: contain; /* Ensures the aspect ratio is preserved */
+/*    height: 20px; */
+    width: auto;  
+    object-fit: contain; 
 }
 
 .clip-wave {
@@ -498,22 +499,20 @@ footer img {
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-/* When the header is sticky */
-#main-header.sticky {
-    position: sticky;
-    top: 0;
-    opacity: 1;
-}
 
 /* When the header is sticky, add shrinking styles */
 #main-header.sticky {
     position: sticky;
     top: 0;
     opacity: 1;
-    padding: 10px 0; /* Shrink padding when sticky */
+    padding: 0; /* Shrink padding when sticky */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Optional shadow effect */
     background: rgba(255, 255, 255, 0.95);
 /*    backdrop-filter: blur(5px);*/
+}
+#main-header.sticky #inner-nav-container {
+    padding-top: 0;
+    padding-bottom: 0;
 }
 
 /* Optional: Logo resizing when sticky */
@@ -522,7 +521,7 @@ footer img {
 }
 
 #main-header.sticky #header-logo {
-    transform: scale(0.8); /* Logo shrinks when sticky */
+    transform: scale(0.6); /* Logo shrinks when sticky */
 }
 
 
@@ -558,11 +557,11 @@ footer img {
 	font-size: 32px;
 	color: var(--doodle-gold);
 }
-.case-study-page #mobile-menu-toggle i {
+.case-study-page #main-header #mobile-menu-toggle i, .case-study-page #main-header nav a {
     color: var(--off-white);
 }
 
-.case-study-page .shrink #mobile-menu-toggle i {
+.case-study-page #main-header.sticky #mobile-menu-toggle i, .case-study-page #main-header.sticky nav a {
     color: var(--doodle-gold);
 }
 
@@ -683,6 +682,46 @@ body.mobile-menu-open {
   background-image: url('../img/chevron.png');
 }
 
+.gbs-story-bg {
+  background-image: url('../img/gbs-story-about.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 350px; /* Adjust as needed */
+  border-radius: 10rem 1rem 1rem 10rem;
+}
+    @media (max-width: 767px) {
+        .gbs-story-bg {
+            height: 210px;
+        }
+    }
+
+.pre-footer-heading {
+    font-family: 'Geist';
+    font-weight: 400;
+    font-size: 38px;
+    line-height: 49px;
+}
+    @media (max-width: 767px) {
+        .pre-footer-heading {
+            font-size: 24px;
+            line-height: 26px
+        }
+    }
+.pre-footer-cta {
+    font-family: "Cormorant Garamond", serif;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 30px;
+    color: var(--doodle-gold);
+}
+    @media (max-width: 767px) {
+        .pre-footer-cta {
+            font-size: 16px;
+            line-height: 18px;
+        }
+    }
+
 /* ---------- */
 
 
@@ -789,15 +828,15 @@ body.mobile-menu-open {
     z-index: 3;
 }
 .hero-logo {
-    max-height: 50px;
+    max-height: 40px;
     max-width: 165px;
     -webkit-filter: invert(100%) brightness(150%);
     filter: invert(100%) brightness(150%);
 }
 @media (max-width: 639px) {
     .hero-logo {
-        max-height: 40px;
-        max-width: 150px;
+        max-height: 30px;
+        max-width: 120px;
     }
 }
 
@@ -808,7 +847,7 @@ body.mobile-menu-open {
     left: 0;
     width: 100%;
     height: 20vh; /* Gradient height */
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
     z-index: 2; /* Ensures it sits above the background */
     pointer-events: none; /* Prevents interference with interactions */
 }
@@ -819,7 +858,7 @@ body.mobile-menu-open {
 
 .work-hero::after {
     bottom: 0;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0)); /* Reverse gradient */
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0)); /* Reverse gradient */
 }
 
 
@@ -911,14 +950,75 @@ body.mobile-menu-open {
   margin-bottom: 20px; /* Adds a small gap below images */
 }
 
-.case-study-page strong {
+.case-study-page h2 {
+    margin-bottom: 24px;
+    font-size: 24px;
     display: block;
-    margin-bottom: 12px;
-    font-size: 20px;
+    font-weight: 500;
     color: var(--almost-black);
+}
+.case-study-page li, .case-study-page p {
+    font-family: Geist;
+    font-size: 18px;
+    font-weight: 200;
+    line-height: 28px;
+    color: var(--classic-grey);
+}
+.case-study-page strong {
+    color: var(--almost-black);
+}
+.case-study-page li a, .case-study-page p a {
+    text-decoration: underline;
+}
+
+@media (max-width: 639px) {
+    .case-study-page .sans-serif-heading-1-light {
+        font-size: 28px;
+        line-height: 32px;
+    }
 }
 
 
+#home-work-icons img {
+    width: 65px;
+    height: auto;
+}
 
 
+@media (max-width: 639px) {
+    .crop-on-small {
+        height: 75vh;
+    }
+}
 
+
+/* Ensure the image container takes 70% of the screen height */
+#draggable-container {
+  height: 70vh; /* 70% of the screen height */
+  overflow-x: auto; /* Enable horizontal scroll */
+  overflow-y: hidden; /* Prevent vertical scrolling */
+  position: relative; /* To position any elements inside it */
+  touch-action: none; /* Prevent any default touch actions */
+}
+
+/* Make sure the image inside the wrapper is properly sized */
+#draggable-wrapper {
+  width: 400%; /* Image's total width (to allow scrolling) */
+  height: 100%;
+}
+
+/* Ensure the image fits the container and doesn't stretch out */
+#draggable-wrapper img {
+  height: 100%; /* Image height fills the container */
+  width: 100%; /* Image width fills the container */
+}
+
+/* Instructional Text (Only visible on small screens) */
+#instructional-text {
+  text-align: center;
+  margin-top: 16px;
+  color: #4B5563; /* Gray color */
+  font-weight: 600;
+  font-size: 14px;
+  display: block; /* Make sure it's visible */
+}
