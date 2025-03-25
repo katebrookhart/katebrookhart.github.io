@@ -466,6 +466,10 @@ footer img {
     object-fit: contain; 
 }
 
+footer a {
+    text-decoration: none;
+}
+
 .clip-wave {
     clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
     height: 100px; /* Adjust the height to match the effect */
@@ -579,7 +583,7 @@ body.mobile-menu-open {
     top: 0;
     left: 0;
     width: 100%;
-    height: 100vh; /* Full screen height */
+    height: 100dvh; /* Full screen height */
     background-color: var(--forest-black);
     color: var(--doodle-gold);
     z-index: -1;
@@ -591,7 +595,6 @@ body.mobile-menu-open {
 
 #mobile-menu.open {
     visibility: visible;
-
     opacity: 1;
     display: flex;
     z-index: 1;
@@ -998,7 +1001,8 @@ body.mobile-menu-open {
   overflow-x: auto; /* Enable horizontal scroll */
   overflow-y: hidden; /* Prevent vertical scrolling */
   position: relative; /* To position any elements inside it */
-  touch-action: none; /* Prevent any default touch actions */
+  -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+  scroll-snap-type: x mandatory; /* Optional: Makes scrolling snap into place */
 }
 
 /* Make sure the image inside the wrapper is properly sized */
