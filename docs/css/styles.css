@@ -1005,22 +1005,18 @@ body.mobile-menu-open {
 
 /* Ensure the image container takes 70% of the screen height */
 #draggable-container {
-  height: auto;
+  height: 70vh; /* Fixed height to 70% of the viewport height */
   overflow-x: auto; /* Enable horizontal scroll */
   overflow-y: hidden; /* Prevent vertical scrolling */
   position: relative; /* To position any elements inside it */
   -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
   scroll-snap-type: x mandatory; /* Optional: Makes scrolling snap into place */
-
-
 }
 
 /* Make sure the image inside the wrapper is properly sized */
 #draggable-wrapper {
   width: 400%; /* Image's total width (to allow scrolling) */
   height: auto;
-
-  touch-action: pan-y; /* Allow vertical scrolling but limit horizontal drag */
   display: flex;
   flex-wrap: nowrap;
 }
@@ -1030,6 +1026,7 @@ body.mobile-menu-open {
   height: 100%; /* Image height fills the container */
   width: 100%; /* Image width fills the container */
 }
+
 
 /* Instructional Text (Only visible on small screens) */
 #instructional-text {
