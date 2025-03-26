@@ -935,6 +935,21 @@ body.mobile-menu-open {
     border: 1px solid var(--almost-black);
     box-shadow: 4px 4px 0px var(--almost-black);
 }
+.metric-box.metric-quant .sans-serif-body-1 {
+    font-size: 20px;
+    line-height: 22px;
+    font-weight: 300;
+}
+.metric-box.metric-quant .sans-serif-body-3 {
+    color: var(--classic-grey);
+    font-weight: 200;
+    line-height: 18px;
+    margin-top: 8px;
+}
+ .metric-icon {
+    width: 48px;
+    text-align: center;
+ }
 
 /* Effects for case study page */
 
