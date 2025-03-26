@@ -26,7 +26,6 @@
 
 /* Global Styles */
 html, body {
-    background-color: var(--off-white);
     padding-top: env(safe-area-inset-top); /* Ensures content doesn't get cut off */
 }
 
