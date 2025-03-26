@@ -25,6 +25,11 @@
 .about_header { bottom: calc(25vh); }
 
 /* Global Styles */
+html {
+    background-color: var(--almost-black);
+    padding-top: env(safe-area-inset-top); /* Ensures content doesn't get cut off */
+}
+
 body {
     font-family: 'Geist', sans-serif;
     background-color: black;
@@ -33,7 +38,6 @@ body {
     padding: 0;
     overflow-x: hidden;
 
-    padding-top: env(safe-area-inset-top); /* Ensures content doesn't get cut off */
 }
 
 /* Colour Variables */
