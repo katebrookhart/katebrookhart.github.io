@@ -224,17 +224,18 @@ document.addEventListener("DOMContentLoaded", function () {
 // Function to handle touch dragging
 const enableHorizontalScrollOnMobile = () => {
   const draggableContainer = document.getElementById('draggable-container');
-  
-  // Variables to track the drag state
+
   let isDragging = false;
   let startX, scrollLeft;
 
-  // Prevent default scrolling only when dragging horizontally
   draggableContainer.addEventListener('touchstart', (e) => {
-    // If the initial touch is on the image (horizontal scroll), allow it to drag horizontally
+    // Disable default touch events only on horizontal drag
     isDragging = true;
     startX = e.touches[0].pageX;
     scrollLeft = draggableContainer.scrollLeft;
+
+    // Allow page vertical scroll when starting touch on image
+    e.preventDefault(); 
   });
 
   draggableContainer.addEventListener('touchmove', (e) => {
@@ -242,8 +243,8 @@ const enableHorizontalScrollOnMobile = () => {
 
     const moveX = e.touches[0].pageX - startX;
     draggableContainer.scrollLeft = scrollLeft - moveX; // Move the scroll position horizontally
-    
-    // Prevent vertical scrolling only while dragging horizontally
+
+    // Prevent vertical scrolling while dragging horizontally
     e.preventDefault();
   });
 
