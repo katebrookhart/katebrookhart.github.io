@@ -505,7 +505,7 @@ footer a {
     top: 0;
     left: 0;
     width: 100%;
-    position: relative; /* Initially relative */
+    /*position: relative; /* Initially relative */
     transition: opacity 0.3s ease, transform 0.3s ease;
 }
 

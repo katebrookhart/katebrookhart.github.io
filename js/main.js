@@ -162,6 +162,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // When scrolling up
         } else if (currentScrollY <= headerHeight && hasSlid && currentScrollY > 0) {
             header.classList.add("sticky"); // Keep it sticky
+            header.classList.remove("relative");
 
             gsap.to(header, {
                 duration: 0.3,
@@ -185,6 +186,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 ease: "power1.out",
                 onComplete: function () {
                     header.classList.remove("sticky"); // Remove sticky class after fade
+                    header.classList.add("relative");
                 }
             });
 
