@@ -221,52 +221,56 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-// Function to handle touch dragging
 const enableHorizontalScrollOnMobile = () => {
   const draggableContainer = document.getElementById('draggable-container');
-
   let isDragging = false;
-  let startX, scrollLeft;
+  let startX;
+  let scrollLeft;
 
+  // Add touchstart event to begin dragging
   draggableContainer.addEventListener('touchstart', (e) => {
-    // Disable default touch events only on horizontal drag
+    // Start dragging on touch
     isDragging = true;
-    startX = e.touches[0].pageX;
-    scrollLeft = draggableContainer.scrollLeft;
+    startX = e.touches[0].pageX; // Store the initial touch position
+    scrollLeft = draggableContainer.scrollLeft; // Get the current scroll position
 
-    // Allow page vertical scroll when starting touch on image
-    e.preventDefault(); 
+    // Prevent default action to avoid interference with vertical scroll
+    e.preventDefault();
   });
 
+  // Add touchmove event to move the image horizontally
   draggableContainer.addEventListener('touchmove', (e) => {
     if (!isDragging) return;
 
+    // Calculate the distance moved horizontally
     const moveX = e.touches[0].pageX - startX;
-    draggableContainer.scrollLeft = scrollLeft - moveX; // Move the scroll position horizontally
+    draggableContainer.scrollLeft = scrollLeft - moveX; // Adjust horizontal scroll position
 
     // Prevent vertical scrolling while dragging horizontally
     e.preventDefault();
   });
 
+  // Add touchend event to stop dragging
   draggableContainer.addEventListener('touchend', () => {
     isDragging = false;
   });
 
+  // Reset dragging state if the touch is canceled
   draggableContainer.addEventListener('touchcancel', () => {
     isDragging = false;
   });
 };
 
-// Ensure the script only runs on small screens (optional)
+// Initialize the function when the page loads or when resizing
 const init = () => {
-  if (window.innerWidth <= 639) {  // Adjusted to the 639px width breakpoint
+  if (window.innerWidth <= 639) { // Only run on mobile (screen width <= 639px)
     enableHorizontalScrollOnMobile();
   }
 };
 
-// Initialize the script on page load and window resize
-window.addEventListener('load', init); // Initialize when the page loads
-window.addEventListener('resize', init); // Re-initialize on window resize
+// Initialize on page load and on resize
+window.addEventListener('load', init);
+window.addEventListener('resize', init);
 
 
 
