@@ -221,56 +221,48 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-const enableHorizontalScrollOnMobile = () => {
+document.addEventListener('DOMContentLoaded', function () {
+  const slider = document.getElementById('scroll-slider');
   const draggableContainer = document.getElementById('draggable-container');
-  let isDragging = false;
-  let startX;
-  let scrollLeft;
+  const draggableWrapper = document.getElementById('draggable-wrapper');
+  
+  // Set the max scroll value based on the container's scroll width
+  slider.max = draggableContainer.scrollWidth - draggableContainer.clientWidth;
 
-  // Add touchstart event to begin dragging
-  draggableContainer.addEventListener('touchstart', (e) => {
-    // Start dragging on touch
-    isDragging = true;
-    startX = e.touches[0].pageX; // Store the initial touch position
-    scrollLeft = draggableContainer.scrollLeft; // Get the current scroll position
-
-    // Prevent default action to avoid interference with vertical scroll
-    e.preventDefault();
+  // Listen for slider input changes
+  slider.addEventListener('input', function () {
+    draggableContainer.scrollLeft = slider.value; // Adjust scroll position based on slider value
   });
 
-  // Add touchmove event to move the image horizontally
-  draggableContainer.addEventListener('touchmove', (e) => {
-    if (!isDragging) return;
+  // Prevent horizontal scrolling but allow vertical scrolling
+  draggableContainer.addEventListener('touchstart', function (e) {
+    // Only prevent horizontal scroll if the user starts interacting horizontally
+    if (e.touches.length > 1) {
+      return; // Allow multi-touch or other gestures
+    }
 
-    // Calculate the distance moved horizontally
-    const moveX = e.touches[0].pageX - startX;
-    draggableContainer.scrollLeft = scrollLeft - moveX; // Adjust horizontal scroll position
-
-    // Prevent vertical scrolling while dragging horizontally
-    e.preventDefault();
+    // Disable horizontal scrolling
+    const touch = e.touches[0];
+    initialTouchX = touch.pageX;
   });
 
-  // Add touchend event to stop dragging
-  draggableContainer.addEventListener('touchend', () => {
-    isDragging = false;
+  draggableContainer.addEventListener('touchmove', function (e) {
+    const touch = e.touches[0];
+    const diffX = touch.pageX - initialTouchX;
+
+    if (Math.abs(diffX) > 5) {
+      e.preventDefault(); // Prevent horizontal scrolling
+    } else {
+      return; // Allow vertical scroll
+    }
   });
 
-  // Reset dragging state if the touch is canceled
-  draggableContainer.addEventListener('touchcancel', () => {
-    isDragging = false;
+  // Allow vertical scroll on page (not on the image itself)
+  draggableContainer.addEventListener('touchend', function (e) {
+    // Reset initial touch when the user stops interacting
+    initialTouchX = null;
   });
-};
-
-// Initialize the function when the page loads or when resizing
-const init = () => {
-  if (window.innerWidth <= 639) { // Only run on mobile (screen width <= 639px)
-    enableHorizontalScrollOnMobile();
-  }
-};
-
-// Initialize on page load and on resize
-window.addEventListener('load', init);
-window.addEventListener('resize', init);
+});
 
 
 

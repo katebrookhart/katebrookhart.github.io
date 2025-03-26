@@ -214,32 +214,35 @@
 
 
 <!-- Image 1 start -->
-<div class="w-full mt-16 sm:my-16 relative overflow-hidden">
+<div class="w-full relative overflow-hidden">
     
     <!-- Draggable Container (only visible on small screens) -->
-    <div id="draggable-container" class="relative w-full h-[70vh] overflow-x-auto touch-pan-x sm:hidden">
-        <div id="draggable-wrapper" class="relative w-[400%] h-full">
-            <img 
-                src="img/asos-cs-1-small.jpg" 
-                alt="" 
-                class="h-full w-full object-contain object-left border rounded-2xl border-gray-200" />
+    <div class="draggable-container-wrapper sm:hidden">
+        <div id="draggable-container" class="relative w-full h-[70vh] rounded-2xl">
+            <div id="draggable-wrapper" class="relative w-[400%] h-full">
+                <img 
+                    src="img/asos-cs-1-small.jpg" 
+                    alt="" 
+                    class="h-full w-full object-contain object-left" />
+            </div>
         </div>
     </div>
 
+    <!-- Horizontal Scroll Slider -->
+    <input type="range" id="scroll-slider" class="w-full mt-2 sm:hidden block" min="0" max="100" value="0" step="1">
+
     <!-- Instructional Text Below the Image (Only visible on small screens) -->
-    <div id="instructional-text" class="text-center mt-4 text-gray-600 font-semibold text-sm sm:hidden block mb-16">
-        ← Drag to view more of the image →
+    <div id="instructional-text" class="text-center text-gray-600 font-semibold text-sm sm:hidden block">
+        Drag the slider to view more
     </div>
 
     <!-- Normal Image (only visible on screens larger than 640px) -->
-    <div class="w-full mt-16 sm:my-16 sm:block hidden">
+    <div class="w-full mt-16 mb-8 sm:block hidden">
         <img src="img/asos-cs-1.jpg" alt="" class="zoom-effect w-full h-full object-cover border rounded-2xl border-gray-200">
     </div>
 
 </div>
 <!-- Image 1 end -->
-
-
 
 
 
@@ -263,12 +266,12 @@
             <h2 class="fade-in mt-16">Role &amp; approach</h2>
 
             <p class="fade-in">
-                I led the vision and execution of Curated Categories, working across research, strategy, and design to ensure its success.
-                We began by consolidating insights from customer feedback, competitor benchmarking, and internal discussions to define the problem space;
+                Leading the vision and execution of Curated Categories involved hands-on research, strategy, and design.
+                Me and the team began by consolidating insights from customer feedback, competitor benchmarking, and internal discussions to define the problem space;
                 A two-day workshop with Tech and Product teams helped align past and current initiatives, laying the groundwork for a structured feature roadmap.
             </p>
             <p class="fade-in mt-8">
-                With a clear direction in place, I designed the proof-of-concept and interactive prototype that would eventually secure buy-in and funding for the initiative. 
+                With a clear direction in place, a proof-of-concept and interactive prototype was designed that would eventually secure buy-in and funding for the initiative. 
                 Through iterative concept reviews and cross-functional workshops, we refined the vision, ensuring that the final experience was both inspirational and commercially viable. 
                 In hindsight, deeper involvement from the Commercial team in the early stages could have helped streamline decision-making later in the process.
             </p>
@@ -331,8 +334,8 @@
         </div>
     </div>
 
-    <!-- Image 3 & 4 -->
-    <div class="w-full mt-16 sm:my-16">
+    <!-- Image 3 -->
+    <div class="w-full mt-32 sm:mb-16">
         <img src="img/asos-cs-3.jpg" alt="" class="zoom-effect w-full h-full object-cover border rounded-2xl border-gray-200">
     </div>
 
@@ -353,7 +356,7 @@
             <p class="fade-in">Following the initial rollout:</p>
 
             <ul class="fade-in list-disc pl-5 space-y-2">
-                <li>The feature was deployed to 100% of iOS customers in August 2023, with plans to enhance interaction through app-based visibility.</li>
+                <li>Many features have been deployed to 100% of iOS customers, with plans to enhance interaction through app-based visibility.</li>
                 <li>Ongoing monitoring is in place to optimise the post-save-for-later journey, aiming to convert more saved items into purchases.</li>
                 <li>Future iterations will explore AI-driven personalisation and deeper integration with ASOS’s <strong>For You</strong> feed, further refining the curated shopping experience.</li>
             </ul>
@@ -452,7 +455,7 @@
 <!-- <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js"></script> -->
 <script src="js/gsap.min.js"></script>
 <!-- GSAP Draggable Plugin -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Draggable.min.js"></script>
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/Draggable.min.js"></script>-->
 
 
 <!-- Scroll trigger -->

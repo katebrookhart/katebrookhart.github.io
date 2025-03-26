@@ -972,7 +972,7 @@ body.mobile-menu-open {
     font-family: Geist;
     font-size: 18px;
     font-weight: 200;
-    line-height: 28px;
+    line-height: 26px;
     color: var(--classic-grey);
 }
 .case-study-page .case-study-content strong {
@@ -1003,34 +1003,72 @@ body.mobile-menu-open {
 }
 
 
-/* Draggable Container Setup */
+/* Ensure no horizontal scrolling directly on the image */
 #draggable-container {
-  width: 100%; /* Make sure the container fills the width */
-  overflow-x: auto; /* Enable horizontal scroll */
-  overflow-y: hidden; /* Prevent vertical scrolling */
-  position: relative; /* To position elements inside */
+  height: auto;
+  position: relative;
+  overflow-x: hidden; /* Disable horizontal scrolling */
+  overflow-y: auto; /* Allow vertical scrolling */
   -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
-  scroll-snap-type: x mandatory; /* Optional: Snap into place */
-  display: block; /* Ensure it's block-level so it adjusts to image height naturally */
+  scroll-snap-type: x mandatory; /* Optional: Makes scrolling snap into place */
+  touch-action: pan-y; /* Allow vertical scroll while blocking horizontal */
 }
 
-/* Wrapping the image inside the draggable container */
+/* Make sure the image inside the wrapper is properly sized */
 #draggable-wrapper {
-  width: 400%; /* Image's total width to allow horizontal scrolling */
-  height: auto; /* Allow height to adjust to the image's aspect ratio */
+  width: 400%; /* Image's total width (to allow scrolling) */
+  height: auto;
 }
 
-/* Image size setup */
+/* Ensure the image fits the container and doesn't stretch out */
 #draggable-wrapper img {
+  height: 100%; /* Image height fills the container */
   width: 100%; /* Image width fills the container */
-  height: auto; /* Maintain the image's aspect ratio */
 }
 
-/* Instructional Text (Visible on mobile) */
+/* Instructional Text (Only visible on small screens) */
 #instructional-text {
   text-align: center;
-  margin-top: 16px;
   color: #4B5563; /* Gray color */
   font-weight: 600;
   font-size: 14px;
+    margin: 12px 0 48px;
 }
+
+.draggable-container-wrapper {
+    border-radius: 12px;
+    border: 1px solid var(--classic-grey);
+}
+
+
+#scroll-slider {
+    appearance: none;
+    background: var(--tummy-tickle);
+    border-radius: 12px;
+    border: 1px solid var(--doodle-gold);
+    width: 100%;
+    height: 10px;
+    margin-top: 12px;
+    position: relative;
+}
+
+#scroll-slider::-webkit-slider-thumb {
+  width: 30px;
+  height: 30px;
+  background: var(--doodle-gold);
+  border-radius: 50%;
+  border: 1px solid var(--sienna);
+  cursor: grab;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+#scroll-slider::-moz-range-thumb {
+  width: 30px;
+  height: 30px;
+  background: var(--doodle-gold);
+  border-radius: 50%;
+  border: 1px solid var(--sienna);
+  cursor: grab;
+}
+
