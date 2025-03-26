@@ -1,7 +1,6 @@
 ---
-bodyclass: mx-auto bg-off-white text-forest-black case-study-page
+bodyclass: mx-auto bg-forest-black text-forest-black case-study-page
 ---
-<div class="loader w-full bg-green-grey fixed items-center">GOLDEN BEAR STUDIOS</div>
 
 {% include "snippets/header.html" %}
 
@@ -40,9 +39,10 @@ bodyclass: mx-auto bg-off-white text-forest-black case-study-page
 <!-- HERO SECTION END -->
 
 <!-- CONTENT START -->
+<div class="case-study-content bg-off-white py-16">
 
 <!-- Intro section start -->
-<div class="mx-8 m-8">
+<div class="mx-8">
     <div class="container w-full mx-auto">
 
         <!-- Left + right container -->
@@ -133,7 +133,7 @@ bodyclass: mx-auto bg-off-white text-forest-black case-study-page
 
 
 <!-- Text + image section start -->
-<div class="mx-8 m-8 case-study-content">
+<div class="mx-8 m-8">
 
 
 
@@ -151,7 +151,7 @@ bodyclass: mx-auto bg-off-white text-forest-black case-study-page
     </div>
 
     <!-- Instructional Text Below the Image (Only visible on small screens) -->
-    <div id="instructional-text" class="text-center mt-4 text-gray-600 font-semibold text-sm sm:hidden mb-16">
+    <div id="instructional-text" class="text-center mt-4 text-gray-600 font-semibold text-sm sm:hidden block mb-16">
         ← Drag to view more of the image →
     </div>
 
@@ -303,10 +303,13 @@ bodyclass: mx-auto bg-off-white text-forest-black case-study-page
 </div>
 <!-- Text + image section end -->
 
+{% include "snippets/case_study_navigator.html" %}
+
+</div>
 <!-- CONTENT END -->
 
 
 
-{% include "snippets/case_study_navigator.html" %}
+
 
 

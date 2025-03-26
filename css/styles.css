@@ -1005,18 +1005,24 @@ body.mobile-menu-open {
 
 /* Ensure the image container takes 70% of the screen height */
 #draggable-container {
-  height: 70vh; /* 70% of the screen height */
+  height: auto;
   overflow-x: auto; /* Enable horizontal scroll */
   overflow-y: hidden; /* Prevent vertical scrolling */
   position: relative; /* To position any elements inside it */
   -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
   scroll-snap-type: x mandatory; /* Optional: Makes scrolling snap into place */
+
+
 }
 
 /* Make sure the image inside the wrapper is properly sized */
 #draggable-wrapper {
   width: 400%; /* Image's total width (to allow scrolling) */
-  height: 100%;
+  height: auto;
+
+  touch-action: pan-y; /* Allow vertical scrolling but limit horizontal drag */
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 /* Ensure the image fits the container and doesn't stretch out */
@@ -1032,5 +1038,4 @@ body.mobile-menu-open {
   color: #4B5563; /* Gray color */
   font-weight: 600;
   font-size: 14px;
-  display: block; /* Make sure it's visible */
 }
