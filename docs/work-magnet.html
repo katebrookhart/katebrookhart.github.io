@@ -206,35 +206,35 @@
 <div class="mx-8 m-8">
 
     <!-- Image 1 start -->
-<div class="w-full relative overflow-hidden">
+    <div class="w-full relative overflow-hidden">
     
-    <!-- Draggable Container (only visible on small screens) -->
-    <div class="draggable-container-wrapper sm:hidden">
-        <div id="draggable-container-2" class="relative w-full h-[70vh] rounded-2xl draggable-container">
-            <div id="draggable-wrapper-2" class="relative w-[400%] h-full draggable-wrapper">
-                <img 
-                    src="img/magnet-cs-1-small.jpg" 
-                    alt="" 
-                    class="h-full w-full object-contain object-left" />
+        <!-- Draggable Container (only visible on small screens) -->
+        <div class="draggable-container-wrapper sm:hidden">
+            <div id="draggable-container-2" class="relative w-full h-[70vh] rounded-2xl draggable-container">
+                <div id="draggable-wrapper-2" class="relative w-[400%] h-full draggable-wrapper">
+                    <img 
+                        src="img/magnet-cs-1-small.jpg" 
+                        alt="" 
+                        class="h-full w-full object-contain object-left" />
+                </div>
             </div>
         </div>
+
+        <!-- Horizontal Scroll Slider -->
+        <input type="range" id="slider-1" class="w-full mt-2 sm:hidden block scroll-slider" min="0" max="100" value="0" step="1">
+
+        <!-- Instructional Text Below the Image (Only visible on small screens) -->
+        <div class="text-center text-gray-600 font-semibold text-sm sm:hidden block instructional-text">
+            Drag the slider to view more
+        </div>
+
+        <!-- Normal Image (only visible on screens larger than 640px) -->
+        <div class="w-full mt-16 mb-8 sm:block hidden">
+            <img src="img/magnet-cs-1.jpg" alt="" class="zoom-effect w-full h-full object-cover border rounded-2xl border-gray-200">
+        </div>
+
     </div>
-
-    <!-- Horizontal Scroll Slider -->
-    <input type="range" id="slider-1" class="w-full mt-2 sm:hidden block scroll-slider" min="0" max="100" value="0" step="1">
-
-    <!-- Instructional Text Below the Image (Only visible on small screens) -->
-    <div class="text-center text-gray-600 font-semibold text-sm sm:hidden block instructional-text">
-        Drag the slider to view more
-    </div>
-
-    <!-- Normal Image (only visible on screens larger than 640px) -->
-    <div class="w-full mt-16 mb-8 sm:block hidden">
-        <img src="img/magnet-cs-1.jpg" alt="" class="zoom-effect w-full h-full object-cover border rounded-2xl border-gray-200">
-    </div>
-
-</div>
-<!-- Image 1 end -->
+    <!-- Image 1 end -->
 
     <!-- Text 1 -->
     <div class="container w-full mx-auto grid grid-cols-12">
