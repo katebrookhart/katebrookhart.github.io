@@ -39,7 +39,7 @@ bodyclass: mx-auto bg-forest-black text-forest-black case-study-page
 <!-- HERO SECTION END -->
 
 <!-- CONTENT START -->
-<div class="case-study-content bg-off-white py-16">
+<div class="case-study-content bg-off-white pt-8 sm:pt-16">
 
 <!-- Intro section start -->
 <div class="mx-8">
@@ -110,7 +110,7 @@ bodyclass: mx-auto bg-forest-black text-forest-black case-study-page
             <!-- Left column end -->
 
             <!-- Right column -->
-            <div class="col-span-12 lg:col-span-7 xl:col-span-6 lg:mt-4 mt-16">
+            <div class="col-span-12 lg:col-span-7 xl:col-span-6 lg:mt-4 sm:mt-16 mt-8">
                 <div class="serif-heading-2 font-bold mb-8">
                 Elevating the ASOS shopping experience
                 </div>
@@ -142,8 +142,8 @@ bodyclass: mx-auto bg-forest-black text-forest-black case-study-page
     
     <!-- Draggable Container (only visible on small screens) -->
     <div class="draggable-container-wrapper sm:hidden">
-        <div id="draggable-container" class="relative w-full h-[70vh] rounded-2xl">
-            <div id="draggable-wrapper" class="relative w-[400%] h-full">
+        <div id="draggable-container-2" class="relative w-full h-[70vh] rounded-2xl draggable-container">
+            <div id="draggable-wrapper-2" class="relative w-[400%] h-full draggable-wrapper">
                 <img 
                     src="img/asos-cs-1-small.jpg" 
                     alt="" 
@@ -153,10 +153,10 @@ bodyclass: mx-auto bg-forest-black text-forest-black case-study-page
     </div>
 
     <!-- Horizontal Scroll Slider -->
-    <input type="range" id="scroll-slider" class="w-full mt-2 sm:hidden block" min="0" max="100" value="0" step="1">
+    <input type="range" id="slider-1" class="w-full mt-2 sm:hidden block scroll-slider" min="0" max="100" value="0" step="1">
 
     <!-- Instructional Text Below the Image (Only visible on small screens) -->
-    <div id="instructional-text" class="text-center text-gray-600 font-semibold text-sm sm:hidden block">
+    <div class="text-center text-gray-600 font-semibold text-sm sm:hidden block instructional-text">
         Drag the slider to view more
     </div>
 
@@ -187,11 +187,11 @@ bodyclass: mx-auto bg-forest-black text-forest-black case-study-page
                 <li><strong>Stakeholder alignment</strong> - Collaboration across multiple teams, including Commercial, Studios, Tech, and Product, was critical. Each had different priorities, and gaining buy-in required careful negotiation and alignment.</li>
             </ul>
 
-            <h2 class="fade-in mt-16">Role &amp; approach</h2>
+            <h2 class="fade-in sm:mt-16 mt-8">Role &amp; approach</h2>
 
             <p class="fade-in">
                 Leading the vision and execution of Curated Categories involved hands-on research, strategy, and design.
-                Me and the team began by consolidating insights from customer feedback, competitor benchmarking, and internal discussions to define the problem space;
+                My team and I began by consolidating insights from customer feedback, competitor benchmarking, and internal discussions to define the problem space;
                 A two-day workshop with Tech and Product teams helped align past and current initiatives, laying the groundwork for a structured feature roadmap.
             </p>
             <p class="fade-in mt-8">
@@ -221,7 +221,7 @@ bodyclass: mx-auto bg-forest-black text-forest-black case-study-page
     </div>
 
     <!-- Text 2 -->
-    <div class="container w-full mx-auto grid grid-cols-12 mt-16">
+    <div class="container w-full mx-auto grid grid-cols-12 sm:mt-16 mt-8">
         <div class="sm:col-start-3 sm:col-span-8 col-span-12 space-y-6 text-classic-grey">
             
             <h2 class="fade-in">Solutions</h2>
@@ -237,7 +237,7 @@ bodyclass: mx-auto bg-forest-black text-forest-black case-study-page
                 <li><strong>Integrated ‘buy the look’ feature</strong> - Encouraging complete outfit purchases through a more immersive shopping experience.</li>
             </ul>
 
-            <h2 class="fade-in mt-16">Results &amp; impact</h2>
+            <h2 class="fade-in sm:mt-16 mt-8">Results &amp; impact</h2>
 
             <p class="fade-in">The prototype successfully secured investment and prioritisation within ASOS, establishing a new standard for digital product presentation. Early testing results showed:</p>
 
@@ -259,15 +259,38 @@ bodyclass: mx-auto bg-forest-black text-forest-black case-study-page
     </div>
 
     <!-- Image 3 -->
-    <div class="w-full mt-32 sm:mb-16">
-        <img src="img/asos-cs-3.jpg" alt="" class="zoom-effect w-full h-full object-cover border rounded-2xl border-gray-200">
+    <div class="w-full relative overflow-hidden">
+    
+        <!-- Draggable Container (only visible on small screens) -->
+        <div class="draggable-container-wrapper sm:hidden mt-16">
+            <div id="draggable-container-1" class="relative w-full h-[70vh] rounded-2xl draggable-container">
+                <div id="draggable-wrapper-1" class="relative w-[400%] h-full draggable-wrapper">
+                    <img 
+                        src="img/asos-cs-3-small.jpg" 
+                        alt="" 
+                        class="h-full w-full object-contain object-left" />
+                </div>
+            </div>
+        </div>
+
+        <!-- Horizontal Scroll Slider -->
+        <input type="range" id="slider-2" class="w-full mt-2 sm:hidden block scroll-slider" min="0" max="100" value="0" step="1">
+
+        <!-- Instructional Text Below the Image (Only visible on small screens) -->
+        <div class="text-center text-gray-600 font-semibold text-sm sm:hidden block instructional-text">
+            Drag the slider to view more
+        </div>
+
+        <!-- Normal Image (only visible on screens larger than 640px) -->
+        <div class="w-full mt-16 mb-8 sm:block hidden">
+            <img src="img/asos-cs-3.jpg" alt="" class="zoom-effect w-full h-full object-cover border rounded-2xl border-gray-200">
+        </div>
+
     </div>
 
     <!-- Text 3 -->
     <div class="container w-full mx-auto grid grid-cols-12">
         <div class="sm:col-start-3 sm:col-span-8 col-span-12 space-y-6 text-classic-grey">
-            
-
             
 
             <h2 class="fade-in">Learnings &amp; next steps</h2>
@@ -292,7 +315,7 @@ bodyclass: mx-auto bg-forest-black text-forest-black case-study-page
 
             <!-- Disclaimer text -->
             <div class="w-full mt-0 sm:my-16 grid grid-cols-1 md:grid-cols-2 gap-8 fade-in">
-                    <p class="w-full sans-serif-body-4 text-classic-grey italic font-extralight">
+                    <p class="w-full sans-serif-body-4 text-classic-grey italic font-extralight disclaimer-text">
                         *Figures based on forecasted projection
                     </p>
             </div>

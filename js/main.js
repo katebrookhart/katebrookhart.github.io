@@ -221,48 +221,60 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+
+// IMAGE SLIDER
+
 document.addEventListener('DOMContentLoaded', function () {
-  const slider = document.getElementById('scroll-slider');
-  const draggableContainer = document.getElementById('draggable-container');
-  const draggableWrapper = document.getElementById('draggable-wrapper');
-  
-  // Set the max scroll value based on the container's scroll width
-  slider.max = draggableContainer.scrollWidth - draggableContainer.clientWidth;
+  // Select all sliders and draggable containers
+  const sliders = document.querySelectorAll('.scroll-slider');
+  const draggableContainers = document.querySelectorAll('.draggable-container');
 
-  // Listen for slider input changes
-  slider.addEventListener('input', function () {
-    draggableContainer.scrollLeft = slider.value; // Adjust scroll position based on slider value
-  });
+  // Loop through each draggable container and its corresponding slider
+  draggableContainers.forEach(function (draggableContainer, index) {
+    const slider = sliders[index]; // Get the corresponding slider
+    const draggableWrapper = draggableContainer.querySelector('.draggable-wrapper');
+    
+    // Set the max scroll value based on the container's scroll width
+    slider.max = draggableContainer.scrollWidth - draggableContainer.clientWidth;
 
-  // Prevent horizontal scrolling but allow vertical scrolling
-  draggableContainer.addEventListener('touchstart', function (e) {
-    // Only prevent horizontal scroll if the user starts interacting horizontally
-    if (e.touches.length > 1) {
-      return; // Allow multi-touch or other gestures
-    }
+    // Listen for slider input changes
+    slider.addEventListener('input', function () {
+      draggableContainer.scrollLeft = slider.value; // Adjust scroll position based on slider value
+    });
 
-    // Disable horizontal scrolling
-    const touch = e.touches[0];
-    initialTouchX = touch.pageX;
-  });
+    let initialTouchX = null;
 
-  draggableContainer.addEventListener('touchmove', function (e) {
-    const touch = e.touches[0];
-    const diffX = touch.pageX - initialTouchX;
+    // Prevent horizontal scrolling but allow vertical scrolling
+    draggableContainer.addEventListener('touchstart', function (e) {
+      // Only prevent horizontal scroll if the user starts interacting horizontally
+      if (e.touches.length > 1) {
+        return; // Allow multi-touch or other gestures
+      }
 
-    if (Math.abs(diffX) > 5) {
-      e.preventDefault(); // Prevent horizontal scrolling
-    } else {
-      return; // Allow vertical scroll
-    }
-  });
+      // Disable horizontal scrolling
+      const touch = e.touches[0];
+      initialTouchX = touch.pageX;
+    });
 
-  // Allow vertical scroll on page (not on the image itself)
-  draggableContainer.addEventListener('touchend', function (e) {
-    // Reset initial touch when the user stops interacting
-    initialTouchX = null;
+    draggableContainer.addEventListener('touchmove', function (e) {
+      const touch = e.touches[0];
+      const diffX = touch.pageX - initialTouchX;
+
+      if (Math.abs(diffX) > 5) {
+        e.preventDefault(); // Prevent horizontal scrolling
+      } else {
+        return; // Allow vertical scroll
+      }
+    });
+
+    // Allow vertical scroll on page (not on the image itself)
+    draggableContainer.addEventListener('touchend', function (e) {
+      // Reset initial touch when the user stops interacting
+      initialTouchX = null;
+    });
   });
 });
+
 
 
 

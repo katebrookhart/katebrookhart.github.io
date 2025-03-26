@@ -944,6 +944,12 @@ body.mobile-menu-open {
   overflow: hidden;
 }
 
+@media (max-width: 639px) {
+    .case-study-page #big-hero {
+        height: 90vh;
+    }
+}
+
 .case-study-page #big-hero .parallax-bg {
   position: absolute;
   top: 0;
@@ -975,6 +981,10 @@ body.mobile-menu-open {
     line-height: 26px;
     color: var(--classic-grey);
 }
+p.disclaimer-text {
+    font-size: 14px !important;
+}
+
 .case-study-page .case-study-content strong {
     color: var(--almost-black);
 }
@@ -986,6 +996,13 @@ body.mobile-menu-open {
     .case-study-page .case-study-content .sans-serif-heading-1-light {
         font-size: 28px;
         line-height: 32px;
+    }
+    .case-study-page .case-study-content li, .case-study-page .case-study-content p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    p.disclaimer-text {
+        font-size: 12px !important;
     }
 }
 
@@ -1004,7 +1021,7 @@ body.mobile-menu-open {
 
 
 /* Ensure no horizontal scrolling directly on the image */
-#draggable-container {
+.draggable-container {
   height: auto;
   position: relative;
   overflow-x: hidden; /* Disable horizontal scrolling */
@@ -1015,19 +1032,19 @@ body.mobile-menu-open {
 }
 
 /* Make sure the image inside the wrapper is properly sized */
-#draggable-wrapper {
+.draggable-wrapper {
   width: 400%; /* Image's total width (to allow scrolling) */
   height: auto;
 }
 
 /* Ensure the image fits the container and doesn't stretch out */
-#draggable-wrapper img {
+.draggable-wrapper img {
   height: 100%; /* Image height fills the container */
   width: 100%; /* Image width fills the container */
 }
 
 /* Instructional Text (Only visible on small screens) */
-#instructional-text {
+.instructional-text {
   text-align: center;
   color: #4B5563; /* Gray color */
   font-weight: 600;
@@ -1041,7 +1058,7 @@ body.mobile-menu-open {
 }
 
 
-#scroll-slider {
+.scroll-slider {
     appearance: none;
     background: var(--tummy-tickle);
     border-radius: 12px;
@@ -1052,7 +1069,7 @@ body.mobile-menu-open {
     position: relative;
 }
 
-#scroll-slider::-webkit-slider-thumb {
+.scroll-slider::-webkit-slider-thumb {
   width: 30px;
   height: 30px;
   background: var(--doodle-gold);
@@ -1063,7 +1080,7 @@ body.mobile-menu-open {
   appearance: none;
 }
 
-#scroll-slider::-moz-range-thumb {
+.scroll-slider::-moz-range-thumb {
   width: 30px;
   height: 30px;
   background: var(--doodle-gold);
