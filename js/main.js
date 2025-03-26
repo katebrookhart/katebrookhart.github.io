@@ -231,6 +231,7 @@ const enableHorizontalScrollOnMobile = () => {
 
   // Prevent default scrolling only when dragging horizontally
   draggableContainer.addEventListener('touchstart', (e) => {
+    // If the initial touch is on the image (horizontal scroll), allow it to drag horizontally
     isDragging = true;
     startX = e.touches[0].pageX;
     scrollLeft = draggableContainer.scrollLeft;
@@ -242,7 +243,7 @@ const enableHorizontalScrollOnMobile = () => {
     const moveX = e.touches[0].pageX - startX;
     draggableContainer.scrollLeft = scrollLeft - moveX; // Move the scroll position horizontally
     
-    // Prevent vertical scrolling while dragging horizontally
+    // Prevent vertical scrolling only while dragging horizontally
     e.preventDefault();
   });
 
