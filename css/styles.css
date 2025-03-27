@@ -5,6 +5,7 @@
 .homepage_hero {    background-image: url('../img/golden-bear-hero-ls.png'); }
 .about_hero {       background-image: url('../img/about-golden-bear.jpg'); }
 .adidas_hero {      background-image: url('../img/placeholder-cs-hero.jpg'); }
+.ordo_hero   {      background-image: url('../img/ordo-hero.jpg'); }
 .aqualung_hero {    background-image: url('../img/placeholder-cs-hero.jpg'); }
 .asos_1_hero {      background-image: url('../img/placeholder-cs-hero.jpg'); }
 .asos_2_hero {      background-image: url('../img/placeholder-cs-hero.jpg'); }
@@ -19,6 +20,7 @@
 .work_card_asos {   background-image: url('../img/work-masonry-asos-2.jpg'); }
 .work_card_coop {   background-image: url('../img/work-masonry-coop.jpg'); }
 .work_card_adidas { background-image: url('../img/work-masonry-adidas.jpg'); }
+.work_card_ordo   { background-image: url('../img/work-masonry-ordo.jpg'); }
 .work_card_magnet { background-image: url('../img/work-masonry-magnet.jpg'); }
 .work_card_brakes { background-image: url('../img/work-masonry-brakes.jpg'); }
 
@@ -811,8 +813,10 @@ body.mobile-menu-open {
 }
 
 #logos img {
-  width: 165px;
-  height: 165px;
+  max-width: 165px;
+  max-height: 165px;
+  width: 100%;
+  height: 100%;
 }
 
 @media (max-width: 639px) {
