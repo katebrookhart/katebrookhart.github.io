@@ -19,7 +19,8 @@ Then finally install all of the build requirements:
 Build the site:
 ```
 cd katebrookhart.github.io
-node build.js```
+node build.js
+```
 
 Validate the HTML:
 ```npx html-validate docs/*.html```
