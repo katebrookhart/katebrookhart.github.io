@@ -95,7 +95,7 @@ bodyclass: mx-auto bg-off-white text-forest-black case-study-page
                           </div>
                           <div class="flex items-center">
                             <div class="w-12 h-12 flex justify-center items-center">
-                              <div class="text-2xl metric-icon">🌸</div>
+                              <div class="text-2xl metric-icon">🌻</div>
                             </div>
                             <div class="ml-6">
                               <div class="sans-serif-body-1 font-bold">Emotional resonance</div>
@@ -139,10 +139,42 @@ bodyclass: mx-auto bg-off-white text-forest-black case-study-page
 <!-- Text + image section start -->
 <div class="mx-8 m-8">
 
-    <!-- Image 1 -->
-    <div class="w-full mt-16 sm:my-16">
-        <img src="img/placeholder-cs-ls.jpg" alt="" class="zoom-effect w-full h-full object-cover border border-gray-200">
+    
+
+
+    <!-- Image 1 start -->
+    <div class="w-full relative overflow-hidden">
+        
+        <!-- Draggable Container (only visible on small screens) -->
+        <div class="draggable-container-wrapper sm:hidden">
+            <div id="draggable-container-2" class="relative w-full h-[70vh] rounded-2xl draggable-container">
+                <div id="draggable-wrapper-2" class="relative w-[400%] h-full draggable-wrapper">
+                    <img 
+                        src="img/coop-cs-1-small.jpg" 
+                        alt="" 
+                        class="h-full w-full object-contain object-left" />
+                </div>
+            </div>
+        </div>
+
+        <!-- Horizontal Scroll Slider -->
+        <input type="range" id="slider-1" class="w-full mt-2 sm:hidden block scroll-slider" min="0" max="100" value="0" step="1">
+
+        <!-- Instructional Text Below the Image (Only visible on small screens) -->
+        <div class="text-center text-gray-600 font-semibold text-sm sm:hidden block instructional-text">
+            Drag the slider to view more
+        </div>
+
+        <!-- Normal Image (only visible on screens larger than 640px) -->
+        <div class="w-full mt-16 mb-8 sm:block hidden">
+            <img src="img/coop-cs-1.jpg" alt="" class="zoom-effect w-full h-full object-cover border rounded-2xl border-gray-200">
+        </div>
+
     </div>
+    <!-- Image 1 end -->
+
+
+
 
     <!-- Text 1 -->
     <div class="container w-full mx-auto grid grid-cols-12">
@@ -164,10 +196,36 @@ bodyclass: mx-auto bg-off-white text-forest-black case-study-page
         </div>
     </div>
 
-    <!-- Image 2 -->
-    <div class="w-full mt-16 sm:my-16">
-        <img src="img/placeholder-cs-ls.jpg" alt="" class="zoom-effect w-full h-full object-cover border border-gray-200">
+    <!-- Image 2 start -->
+    <div class="w-full relative overflow-hidden">
+    
+        <!-- Draggable Container (only visible on small screens) -->
+        <div class="draggable-container-wrapper sm:hidden mt-16">
+            <div id="draggable-container-1" class="relative w-full h-[70vh] rounded-2xl draggable-container">
+                <div id="draggable-wrapper-1" class="relative w-[400%] h-full draggable-wrapper">
+                    <img 
+                        src="img/coop-cs-2-small.jpg" 
+                        alt="" 
+                        class="h-full w-full object-contain object-left" />
+                </div>
+            </div>
+        </div>
+
+        <!-- Horizontal Scroll Slider -->
+        <input type="range" id="slider-2" class="w-full mt-2 sm:hidden block scroll-slider" min="0" max="100" value="0" step="1">
+
+        <!-- Instructional Text Below the Image (Only visible on small screens) -->
+        <div class="text-center text-gray-600 font-semibold text-sm sm:hidden block instructional-text">
+            Drag the slider to view more
+        </div>
+
+        <!-- Normal Image (only visible on screens larger than 640px) -->
+        <div class="w-full mt-16 mb-8 sm:block hidden">
+            <img src="img/coop-cs-2.jpg" alt="" class="zoom-effect w-full h-full object-cover border rounded-2xl border-gray-200">
+        </div>
+
     </div>
+    <!-- Image 2 end -->
 
     <!-- Text 2 -->
     <div class="container w-full mx-auto grid grid-cols-12 mb-8">
@@ -186,9 +244,8 @@ bodyclass: mx-auto bg-off-white text-forest-black case-study-page
     </div>
 
     <!-- Image 3 & 4 -->
-    <div class="w-full mt-16 sm:my-16 grid grid-cols-1 md:grid-cols-2 gap-8">
-        <img src="img/placeholder-cs-sq.jpg" alt="" class="zoom-effect w-full h-full object-cover border border-gray-200">
-        <img src="img/placeholder-cs-sq.jpg" alt="" class="zoom-effect w-full h-full object-cover border border-gray-200">
+    <div class="w-full mt-16 sm:my-16">
+        <img src="img/coop-cs-3.jpg" alt="" class="zoom-effect w-full h-full object-cover border border-gray-200">
     </div>
 
     <!-- Text 3 -->
