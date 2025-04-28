@@ -84,9 +84,18 @@
 <!-- HERO SECTION START -->
 <div id="big-hero" class="work-hero relative h-screen flex items-end xl:pb-24 pb-16">
 
-    <!-- Background Image (Now Static) -->
-    <div class="parallax-bg absolute inset-0 bg-cover bg-center h-screen asos_2_hero">
-    </div>
+    <!-- Video Background -->
+    <video
+        class="absolute inset-0 w-full h-full object-cover"
+        autoplay
+        loop
+        muted
+        playsinline
+        poster="img/asos-hero-2.jpg">
+        <source src="img/asos-hero-2.mp4" type="video/mp4">
+        <!-- Fallback Image -->
+        <img src="img/asos-hero-2.jpg" alt="ASOS Concept Design">
+    </video>
 
     <!-- Transparent Overlay -->
     <div class="image-overlay"></div>
@@ -345,7 +354,7 @@
 
 <!-- CUSTOM ICONS-->
 <script src="https://kit.fontawesome.com/e28f322942.js" crossorigin="anonymous"></script>
-<script src="js/main.js" defer></script>
+<script src="js/main.js"></script>
 
 <!-- SCRIPTS -->
 
