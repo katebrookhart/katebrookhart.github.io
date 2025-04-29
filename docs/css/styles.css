@@ -1033,8 +1033,8 @@ p.disclaimer-text {
 
 
 @media (max-width: 639px) {
-    .crop-on-small {
-        height: 75vh;
+    .crop-on-small, .crop-on-small img {
+        height: 75vh !important;
     }
 }
 
